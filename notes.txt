@@ -1,0 +1,18 @@
+// instalar para o auto complete do tailwind css funcionar direito
+npm install tailwindcss@latest postcss@latest autoprefixer@latest
+// Usar icones CDN do site https://boxicons.com/
+  copiar isso dentro da tag <Head>  do index.html
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+
+
+// installar biblioteca para gerar o pdf com as respostas do Formulário
+npm install jspdf jspdf-autotable
+
+
+// configurar o tailwind para conseguir customizar a sombra e outras coisas
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+    encontrei um problema eu não consigo baixar o executavel tailwind dentro da pasta .bin dentro da pasta node modules , o que eu coloco no arquivo tailwind.config.json não é executado para o projeto . com este arquivo estava tentando personalizar algumas coisas de tailwind 
+
+    aprendi a não passar mais de 20 minutos em uma coisa que inventei na hora e nem estava no escopo do projeto . pedi ajuda o chatGPT e mesmo assim não resolveu e passei muito tempo numa funcionalidade que nem precisava customizar box-shadow
