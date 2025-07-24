@@ -99,7 +99,7 @@ If you are developing a production application, we recommend using TypeScript wi
 21-07-2025   começei as 16:35 até 16:57------- 22'
                         18:23 até 21:31------- 3h8'
                                       -------- 12'
-                        22:33 até              
+                        22:33 até 23:23------- 50'             
                                        
 
     na página galeria de casos  para telas com a width da viewport >=640px eu quero fazer o tamanho do section específico referente ao bloco de um sucesso juridico com 3 opções de tamanho diferente
@@ -131,8 +131,8 @@ If you are developing a production application, we recommend using TypeScript wi
             VARIAVEL LOCAL                  fracionado-------- é a quantidade de blocos que vai ficar na primeira coluna
 
             1. fracionado = quantidade_total_blocos/2  -----divisão inteira
-              fazer um for do 0 até <= fracionado e por dentro de um JSX elemento que represente todos os blocos da coluna 1
-              fazer outro for apartir do (fracionado+1) até < quantidade_total_blocos e colocar dentro de outro elemento JSX que represente todos os blocos da coluna 1
+              fazer um for do 0 até <= fracionado e colocar dentro de um JSX elemento que represente todos os blocos da coluna 1
+              fazer outro for apartir do (fracionado+1) até < quantidade_total_blocos e colocar dentro de outro elemento JSX que represente todos os blocos da coluna 2
                           
 
                   cada loop do for antes de construir o componente react
@@ -146,7 +146,7 @@ If you are developing a production application, we recommend using TypeScript wi
                         NÃO: continua o fluxo
 
                       GERAR UM NUMERO ALEATÓRIO QUE SERÁ O INDICE DA ARRAY
-                        gerar um numero aleatório de intervalo 0 até o indice do último elemento na array global
+                        gerar um numero aleatório de intervalo 0 até o indice do último elemento na array global (opcoes_height)
                           guardar o resultado do sorteio dentro da variavel local (indice_escolhido)
                           guardar dentro da variavel (valor_height_escolhido) o especifico valor da array   opcoes_height[indice_escolhido]
                       criar uma nova array tirando da array aquele valor escolhido para não acontecer de sortear um valor repetido
@@ -157,7 +157,51 @@ If you are developing a production application, we recommend using TypeScript wi
                         ou usando o tailwind mesmo     <div className={valor_height_escolhido}></div>
 
 
+22-07-2025     começei 16:50 até as 17:50------------ 1h
+                          18:45 até 21:57------------ 3h12'
+                          22:18 até 22:48------------ 30'
+        como eu vou distrbuir as sections como eu vou colocar os blocos de um jeito para que fique em uma coluna, duas colunas , très colunas , quatro colunas, cinco colunas
+          montar uma coluna
+            sem calculo
+          montar duas colunas
+            construir o bloco react e nomear className em dois grupos coluna1 e coluna2
 
+            VARIAVEL LOCAL     array_dados-------- me diz o total de objetos dentro da array que contem todos os dados de cada um dos blocos
+            VARIAVEL LOCAL     array_blocos_construidos-------- me diz o total de objetos dentro da array que contem todos os dados de cada um dos blocos
+            VARIAVEL LOCAL     quantidade_total_blocos-------- me diz o total de objetos dentro da array que contem todos os dados de cada um dos blocos
+            VARIAVEL LOCAL                  fracionado-------- é a quantidade de blocos que vai ficar na primeira coluna
 
-    
+            1. fracionado = quantidade_total_blocos/2  -----divisão inteira
+              fazer um for do 0 até <= fracionado e colocar dentro de um JSX elemento que represente todos os blocos da coluna 1
+              fazer outro for apartir do (fracionado+1) até < quantidade_total_blocos e colocar dentro de outro elemento JSX que represente todos os blocos da coluna 2
+                          
+
+                  cada loop do for antes de construir o componente react
+                    1.ESCOLHER A HEIGHT DA IMAGEM DE UM JEITO QUE A HEIGHT DO PRÓXIMO BLOCO NÃO SEJA TAMANHO REPETIDO
+                         VARIAVEL GLOBAL LET                opcoes_height-------vai ter as opções diferentes de height  ["277px", "416px","540px"] ou ["h-[277px]", "h-[]"]
+                         VARIAVEL LOCAL DO FOR     valor_height_escolhido-------vai ser o tamanho da height da imagem
+                         VARIAVEL LOCAL DO FOR          indice_escolhido--------vai guardar o valor do sorteio
+
+                      verificar se a array global esta vazia
+                        SIM: adicionar todos valores
+                        NÃO: continua o fluxo
+
+                      GERAR UM NUMERO ALEATÓRIO QUE SERÁ O INDICE DA ARRAY
+                        gerar um numero aleatório de intervalo 0 até o indice do último elemento na array global (opcoes_height)
+                          guardar o resultado do sorteio dentro da variavel local (indice_escolhido)
+                          guardar dentro da variavel (valor_height_escolhido) o especifico valor da array   opcoes_height[indice_escolhido]
+                      criar uma nova array tirando da array aquele valor escolhido para não acontecer de sortear um valor repetido
+
+                    2.CONSTUIR O COMPONENTE USANDO A VARIÁVEL (valor_height_escolhido) NO ESTILO STYLE INLINE 
+                        style:{{height:`${valor_height_escolhido}`}}
+
+                        ou usando o tailwind mesmo     <div className={valor_height_escolhido}></div>
+
+23-07-2025
+                    NO TRABALHO ESTRUTUREI A LÓGICA DURANTE 1H
+                    16:30 até 17:10 ---- 40'
+                    17:20 até 20:35 ---- 3h15'
+                    20:48 até 22:00 ---- 12'
+                    total--------------- 4h7
+
 ```

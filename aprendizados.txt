@@ -1,0 +1,5 @@
+1º definir o que eu quero fazer especificamente e porque é importante ( n fazer a funcionalidade segundo a minha emoção e sim de acordo com a necessidade)
+2º definir como deve ser todas as saídas como quero que fique no final 
+3º testar todos as entradas e resultados possíveis registrando todo o processo da lógica
+4º ter um olhar crítico para o algoritmo procurando encontrando o padrão que se repete depois de analisar todas as entradas testadas
+5º depois de toda lógica validado no papel aos poucos vou testando programando funcionalidades intermediarias testar primeiro uma versão do algoritmo resumido não usando todos os dados necessários justamente para já ir encontrando possíveis erros na lógica(não escrever logo todo o código de uma vez mesmo que a lógica já esteja validada no papel)
