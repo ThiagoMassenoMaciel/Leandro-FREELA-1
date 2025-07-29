@@ -203,5 +203,25 @@ If you are developing a production application, we recommend using TypeScript wi
                     17:20 até 20:35 ---- 3h15'
                     20:48 até 22:00 ---- 12'
                     total--------------- 4h7
+24-07-2025
+
+                    16:30 até 20:32 ---- 4h 
+
+27-07-2025
+              8:17 até 12:34 ---- 4h
+              12:44 até 13:20 --- 36'   
+
+28-07-2025
+              17:07 até 21:07 ---- 4h
+              22:27 até  
+
+              assisti a playlist do curso até vid 9
+                                                vidio mais importante pois mostra a lógica de como vai exibir a página do blog clicado
+
+              204 minutos de curso https://youtube.com/playlist?list=PLl6EcvA_AoxHiX-2PjJ1eVOhKJ5HJGDvi&si=SS50GlkbqdSF2Tiv
+
+              para eu customizar os breakpoints do tailwind devo ir no arquivo theme.css dentro do diretório  
+                node_modules/@tailwindcss/vite/node_modules/tailwindcss/theme.css
+                adicionar --breakpoint-NomeDoBreakpointEscolhido: medida;
 
 ```
