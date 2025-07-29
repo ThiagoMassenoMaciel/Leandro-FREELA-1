@@ -213,7 +213,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 28-07-2025
               17:07 até 21:07 ---- 4h
-              22:27 até  
+              22:27 até 22:59 ---- 32'
 
               assisti a playlist do curso até vid 9
                                                 vidio mais importante pois mostra a lógica de como vai exibir a página do blog clicado
