@@ -224,4 +224,28 @@ If you are developing a production application, we recommend using TypeScript wi
                 node_modules/@tailwindcss/vite/node_modules/tailwindcss/theme.css
                 adicionar --breakpoint-NomeDoBreakpointEscolhido: medida;
 
+30-07-2025 
+        17:20 até 21h ----- 3h20
+        22:04 até 22:32 --- 28'
+
+03-08-2025
+        08:22 até 12:22 ---- 4h
+
+04-08-2025
+        20' 
+        18:20 até 20:20 ---- 2h
+10-08-2025 
+        16:43 até 17:10 ---- 27'
+        18:00 até 18:43 ---- 43'
+
+24-08-25
+        12:14 até 12:39 
+        13:40 até 14:16
+        16:27 até 17:40
+          tiver que ir no gerenciador de serviços do windowns achar a opção do serviço postegresql clicar com o botão direito e clicar em iniciar
+          depois disso executar dentro da pasta strapi "npm run dev"
+        18:45 até 19:00
+        19:04 até 20:04
+
+
 ```

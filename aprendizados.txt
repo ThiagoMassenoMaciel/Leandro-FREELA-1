@@ -5,3 +5,63 @@
 5º depois de toda lógica validado no papel aos poucos vou testando programando funcionalidades intermediarias testar primeiro uma versão do algoritmo resumido não usando todos os dados necessários justamente para já ir encontrando possíveis erros na lógica(não escrever logo todo o código de uma vez mesmo que a lógica já esteja validada no papel)
 
   quando vier na minha cabeça a primeira solução e ela for muito complexa devo analisar quanto tempo irei demorar para validar ela no papel . Se caso for demorar muito eu paro e penso outra maneira mais simples de conseguir-la
+
+
+204 minutos de curso https://youtube.com/playlist?list=PLl6EcvA_AoxHiX-2PjJ1eVOhKJ5HJGDvi&si=SS50GlkbqdSF2Tiv
+
+  aula 3 do curso 
+        configurar o strapiy
+  aula 9 do curso de react + tailwind + strapi = blog
+        ensina lógica para redirecionar para página do blog
+  aula 10 
+        usar api dos blogs que criei no strapi
+  aula 11 
+        percorrendo toda array e montando os componentes bloco react + dados que veio da api 
+          passando os dados que veio da api de componente pai para componente filho
+  aula 12 
+        filtrar apenas o objeto para a página do blog clicado
+  aula 13 
+        formatar o texto do blog em markdow
+
+
+        colocar espaços entre os paragrafos é eu adicionar no className do componente react que faz a formatação markdown  "line-break"
+        line-break{
+          white-space: pre-wrap;
+        }
+
+      https://docs.strapi.io/cms/cli#strapi-develop:~:text=strapi.db%20to,test%20code%20and
+      https://docs.strapi.io/cms/api/document-service
+
+      FAZER O DEPLOY LER A DOCUMENTAÇÃO DO STRAPI 
+      https://docs.strapi.io/cms/deployment
+
+outro curso para adicinar aside na página do blog 
+https://youtu.be/Q-cPtlYG1cY?si=7pYA8ZuX5tGG5Xka
+
+  apartir do minuto  (2:41:23) Section 6.5 - How to structure our blog data in Strapi
+
+curso como usar o strapi https://youtube.com/playlist?list=PLb6_WPJsxTrp1i5PcE9YRbEOVFMttVe9E&si=3CZyE3MrKz6tGWOW
+
+  aula 2 ensina como pegar os dados do strapi com api restful em dinamicos componentes e adicionar Section
+  aula 4 ensina add roles aos usuários
+  aula 9 ensina como renderizar o content Richt Text Block dentro do react 
+          strapi | blocks-react-rendered https://github.com/strapi/blocks-react-renderer
+          configuração do tailwind @tailwindcss/typography - TailwindCSS Docs: https://github.com/tailwindlabs/tailwindcss-typography
+
+
+
+
+
+usando o postgreSQL como banco de dados do strapi 
+
+1. pesquisar no windowns serviços e abrir o gerenciador de serviços , procurar pela opção do serviço de PostegreSQL, botão direito iniciar 
+      ir no pg Admin , conectar senha do usuário padrão 
+      clicar no icone do banco de dados que eu quero usar
+      our
+      criar o banco de dados que irie usar para o strapi
+      criar um outro usuário do banco de dados para ser utilizado pelo strapi 
+            dar todos os privilégios do banco para este novo usuário 
+
+      se eu quiser acessar o servidor do banco de dados postgres que esta rodando no terminal cmd windows digitar "psql -U postgres" dps digite a senha e pronto
+
+2. inslalar strapi respondendo as perguntas com usuário, senha, nome do banco novos do que criei no banco de dados

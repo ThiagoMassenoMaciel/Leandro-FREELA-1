@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "pagina_servicos",
+  "info": {
+    "singularName": "pagina-servico",
+    "pluralName": "pagina-servicos",
+    "displayName": "pagina_servico"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {}
+}

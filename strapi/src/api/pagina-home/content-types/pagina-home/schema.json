@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "pagina_homes",
+  "info": {
+    "singularName": "pagina-home",
+    "pluralName": "pagina-homes",
+    "displayName": "pagina_home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {}
+}

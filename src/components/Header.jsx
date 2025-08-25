@@ -14,48 +14,48 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-50 flex justify-between items-center text-black py-1 bg-white drop-shadow-md px-[24px] lg:px-[44px] md:px-[34px]">
+      <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-between bg-white px-[24px] py-1 text-black drop-shadow-md md:px-[34px] lg:px-[44px]">
         <a href="#">
           <img
             src={logo}
             alt="logo"
-            className="hover:scale-105 transition-all"
+            className="transition-all hover:scale-105"
           />
         </a>
 
-        <ul className="hidden md:flex items-center gap-4 text-base">
-          <li className="p-1 hover:bg-gray-900 hover:text-white rounded-md transition-all cursor-pointer ">
+        <ul className="hidden items-center gap-4 text-base md:flex">
+          <li className="cursor-pointer rounded-md p-1 transition-all hover:bg-gray-900 hover:text-white">
             <Link onClick={() => AfterClicked()} to="/">
               Home
             </Link>
           </li>
-          <li className="p-1 hover:bg-gray-900 hover:text-white rounded-md transition-all cursor-pointer ">
+          <li className="cursor-pointer rounded-md p-1 transition-all hover:bg-gray-900 hover:text-white">
             <Link onClick={() => AfterClicked()} to="/sobre">
               Sobre
             </Link>
           </li>
-          <li className="p-1 hover:bg-gray-900 hover:text-white rounded-md transition-all cursor-pointer ">
+          <li className="cursor-pointer rounded-md p-1 transition-all hover:bg-gray-900 hover:text-white">
             <Link onClick={() => AfterClicked()} to="/servicos">
               Serviços
             </Link>
           </li>
-          <li className="p-1 hover:bg-gray-900 hover:text-white rounded-md transition-all cursor-pointer ">
+          <li className="cursor-pointer rounded-md p-1 transition-all hover:bg-gray-900 hover:text-white">
             <Link onClick={() => AfterClicked()} to="/galeria">
               Galeria de Casos
             </Link>
           </li>
-          <li className="p-1 hover:bg-gray-900 hover:text-white rounded-md transition-all cursor-pointer ">
+          <li className="cursor-pointer rounded-md p-1 transition-all hover:bg-gray-900 hover:text-white">
             <Link onClick={() => AfterClicked()} to="/blog">
               Blog
             </Link>
           </li>
         </ul>
         {/*rounded-md*/}
-        <button className="p-2 bg-black text-white hover:bg-gray-600">
+        <button className="bg-black p-2 text-white hover:bg-gray-600">
           Entrar em contato
         </button>
 
-        <div className="  md:hidden text-5xl cursor pointer text-center flex items-center justify-center">
+        <div className="cursor pointer flex items-center justify-center text-center text-5xl md:hidden">
           {/* Icons for mobile menu toggle */}
 
           {isMenuOpen ? (
@@ -74,28 +74,28 @@ const Header = () => {
         </div>
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <ul className="absolute top-16 left-0 w-full bg-white text-black flex flex-col items-center gap-4 py-4 md:hidden">
-            <li className="p-1 hover:bg-gray-900 hover:text-white rounded-md transition-all cursor-pointer ">
+          <ul className="absolute top-16 left-0 flex w-full flex-col items-center gap-4 bg-white py-4 text-black md:hidden">
+            <li className="cursor-pointer rounded-md p-1 transition-all hover:bg-gray-900 hover:text-white">
               <Link onClick={() => AfterClicked()} to="/">
                 Home
               </Link>
             </li>
-            <li className="p-1 hover:bg-gray-900 hover:text-white rounded-md transition-all cursor-pointer ">
+            <li className="cursor-pointer rounded-md p-1 transition-all hover:bg-gray-900 hover:text-white">
               <Link onClick={() => AfterClicked()} to="/sobre">
                 Sobre
               </Link>
             </li>
-            <li className="p-1 hover:bg-gray-900 hover:text-white rounded-md transition-all cursor-pointer ">
+            <li className="cursor-pointer rounded-md p-1 transition-all hover:bg-gray-900 hover:text-white">
               <Link onClick={() => AfterClicked()} to="/servicos">
                 Serviços
               </Link>
             </li>
-            <li className="p-1 hover:bg-gray-900 hover:text-white rounded-md transition-all cursor-pointer ">
+            <li className="cursor-pointer rounded-md p-1 transition-all hover:bg-gray-900 hover:text-white">
               <Link onClick={() => AfterClicked()} to="/galeria">
                 Galeria de Casos
               </Link>
             </li>
-            <li className="p-1 hover:bg-gray-900 hover:text-white rounded-md transition-all cursor-pointer ">
+            <li className="cursor-pointer rounded-md p-1 transition-all hover:bg-gray-900 hover:text-white">
               <Link onClick={() => AfterClicked()} to="/blog">
                 Blog
               </Link>
