@@ -247,5 +247,7 @@ If you are developing a production application, we recommend using TypeScript wi
         18:45 até 19:00
         19:04 até 20:04
 
+31-08-2025
+        11:10 até 12:10      preparando o backlog de todo o projeto
 
 ```

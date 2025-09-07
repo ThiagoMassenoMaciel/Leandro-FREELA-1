@@ -35,8 +35,14 @@
       FAZER O DEPLOY LER A DOCUMENTAÇÃO DO STRAPI 
       https://docs.strapi.io/cms/deployment
 
+
+
+
+
+
 outro curso para adicinar aside na página do blog 
 https://youtu.be/Q-cPtlYG1cY?si=7pYA8ZuX5tGG5Xka
+  no minuto 12:38 tem comandos de script package.json antes de começar o projeto
 
   apartir do minuto  (2:41:23) Section 6.5 - How to structure our blog data in Strapi
 
