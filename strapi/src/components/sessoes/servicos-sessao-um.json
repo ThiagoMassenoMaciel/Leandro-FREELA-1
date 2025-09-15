@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sessoes_servicos_sessao_ums",
+  "info": {
+    "displayName": "servicos_sessaoUM"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

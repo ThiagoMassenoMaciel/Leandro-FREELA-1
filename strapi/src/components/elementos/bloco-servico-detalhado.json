@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_elementos_bloco_servico_detalhados",
+  "info": {
+    "displayName": "bloco_servico_detalhado_tipo1"
+  },
+  "options": {},
+  "attributes": {
+    "inverter_ordem": {
+      "type": "boolean",
+      "default": false
+    },
+    "servicos_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "titulo_do_servico": {
+      "type": "string"
+    },
+    "descricao_do_titulo_do_servico": {
+      "type": "string"
+    },
+    "qual_tipo_dos_subtitulos_desse_servico_detalhado": {
+      "type": "enumeration",
+      "enum": [
+        "tipo1",
+        "tipo2"
+      ]
+    },
+    "subtitulos": {
+      "type": "component",
+      "component": "elementos.bloco-servico-subtitulo-tipo1",
+      "repeatable": false
+    },
+    "qual_estilo_frontend_desse_subtitulo_desse_servico": {
+      "type": "enumeration",
+      "enum": [
+        "estilo1",
+        "estilo2",
+        "estilo3",
+        "estilo4"
+      ]
+    }
+  },
+  "config": {}
+}

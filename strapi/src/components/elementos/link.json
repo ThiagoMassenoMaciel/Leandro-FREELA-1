@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_elementos_links",
+  "info": {
+    "displayName": "link",
+    "icon": "cursor"
+  },
+  "options": {},
+  "attributes": {
+    "texto": {
+      "type": "string"
+    },
+    "link_href": {
+      "type": "string"
+    },
+    "link_externo": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

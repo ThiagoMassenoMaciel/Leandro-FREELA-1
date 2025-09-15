@@ -250,4 +250,16 @@ If you are developing a production application, we recommend using TypeScript wi
 31-08-2025
         11:10 até 12:10      preparando o backlog de todo o projeto
 
+
+
+13-09-2025
+        17:00 até 19:40 ------ 2h40'         construindo estrutura de conteudo no strapi e consumindo api no frontend
+
+14-09-2025 
+        08:10 até 09:50 ------ 1h40'
+        vid tutorial strapi criando estrutura content-type-builder https://youtu.be/Q-cPtlYG1cY?si=xCu3yicbYBYY8h8t
+        voltar no 43:50  esse tempo ele ensina a criar um componente dinâmico
+        parei em 53:40   esse tempo ele ensina como fazer uma query para pegar os dados da api do strapi
+
+        10:25 até 12:30 ------ 2h5'
 ```

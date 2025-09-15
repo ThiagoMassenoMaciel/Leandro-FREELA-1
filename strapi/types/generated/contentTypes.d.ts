@@ -392,30 +392,122 @@ export interface ApiPaginaHomePaginaHome extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> &
       Schema.Attribute.Private;
-    descricao: Schema.Attribute.String &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    Frase_resumida: Schema.Attribute.String &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
       "oneToMany",
       "api::pagina-home.pagina-home"
     >;
-    Nome: Schema.Attribute.String &
+    publishedAt: Schema.Attribute.DateTime;
+    sessao: Schema.Attribute.DynamicZone<
+      ["sessoes.home-sessao-dois", "sessoes.home-sessao-um"]
+    > &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    publishedAt: Schema.Attribute.DateTime;
+    sessaoDOIS_descricao: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sessaoDOIS_imagem_h11: Schema.Attribute.Media<"images" | "files"> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sessaoDOIS_subtitulo: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sessaoDOIS_titulo: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sessaoUM_descricao: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sessaoUM_Frase_resumida: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sessaoUM_imagem_coluna1_h1: Schema.Attribute.Media<"files" | "images"> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sessaoUM_imagem_coluna1_h2: Schema.Attribute.Media<"images" | "files"> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sessaoUM_imagem_coluna1_h3: Schema.Attribute.Media<"images" | "files"> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sessaoUM_imagem_coluna1_h4: Schema.Attribute.Media<"images" | "files"> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sessaoUM_imagem_coluna1_h5: Schema.Attribute.Media<"images" | "files"> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sessaoUM_imagem_coluna2_h10: Schema.Attribute.Media<"images" | "files"> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sessaoUM_imagem_coluna2_h6: Schema.Attribute.Media<"images" | "files"> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sessaoUM_imagem_coluna2_h7: Schema.Attribute.Media<"images" | "files"> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sessaoUM_imagem_coluna2_h8: Schema.Attribute.Media<"images" | "files"> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sessaoUM_imagem_coluna2_h9: Schema.Attribute.Media<"images" | "files"> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sessaoUM_Nome: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> &
       Schema.Attribute.Private;

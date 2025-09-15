@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_elementos_bloco_servico_subtitulo_tipo1s",
+  "info": {
+    "displayName": "bloco_servico_subtitulo_tipo1"
+  },
+  "options": {},
+  "attributes": {
+    "subtitulo1": {
+      "type": "string"
+    },
+    "descricao_subtitulo1": {
+      "type": "string"
+    },
+    "subtitulo2": {
+      "type": "string"
+    },
+    "descricao_subtitulo2": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
