@@ -26,9 +26,12 @@ import h_icon3 from "../../assets/h_icon3.png";
 import h_icon4 from "../../assets/h_icon4.png";
 import h_icon5 from "../../assets/h_icon5.svg";
 
-import { useStrapi } from "../../hooks/Load_data_to_webpage.jsx";
+//import { useStrapi } from "../../hooks/Load_data_to_webpage.jsx";
+
+import { GetDataHome } from "../../hooks/GetDataHome.js";
 
 import FormularioJuridico3 from "../../components/formulario_juridico_dinamico3.jsx";
+import UseStrapiURL from "../../hooks/UseStrapiURL.js";
 
 /*
 async function load_data_to_homepage() {
@@ -43,8 +46,12 @@ async function load_data_to_homepage() {
 */
 
 const Home = () => {
+  /*
   const { data: homeData, loading, error } = useStrapi("pagina-home");
-
+  */
+  const { homeData, loading, error } = GetDataHome();
+  console.log("homeData:", homeData);
+  console.log("sessoes", homeData?.sessoes[0].texto);
   const [faq1, setFaq1] = useState(true);
   const [faq2, setFaq2] = useState(true);
   const [faq3, setFaq3] = useState(true);
@@ -60,14 +67,12 @@ const Home = () => {
         <FormularioJuridico3 className="l-0 t-0 fixed z-100 h-full w-full" />
       )}
       <div className="flex h-[120vh] w-full flex-col-reverse gap-[calc(34px+1vw)] overflow-hidden bg-white px-[24px] md:px-[34px] lg:h-[calc(100vh-58px)] lg:flex-row-reverse lg:items-center lg:px-[44px]">
-        {loading && <p>Carregando conteúdo...</p>}
-        {error && <p className="text-red-500">Erro: {error}</p>}
-
         <div className="mx-auto flex h-[50vh] h-screen w-[80vw] flex-row gap-4 gap-[12px] overflow-hidden sm:w-[70vw] md:w-[60vw] lg:mx-0 lg:w-[50vw]">
           <div
             className="flex h-fit w-1/2 flex-col items-center justify-center gap-[10px] md:gap-[16px]"
             id="MOVEpartONE"
           >
+            {/*
             <div
               className="h-[50vw] w-full bg-cover bg-center sm:h-[calc(35vh+10vw)]"
               style={{ backgroundImage: `url(${h1})` }}
@@ -88,12 +93,30 @@ const Home = () => {
               className="h-[50vw] w-full bg-cover bg-center sm:h-[calc(35vh+10vw)]"
               style={{ backgroundImage: `url(${h5})` }}
             ></div>
+
+            */}
+
+            {homeData?.sessoes[0].imagens &&
+              Object.values(homeData?.sessoes[0].imagens).map(
+                (img, idx) =>
+                  img.id > 0 &&
+                  img.id < 6 && (
+                    <div
+                      key={idx}
+                      className="h-[50vw] w-full bg-cover bg-center sm:h-[calc(35vh+10vw)]"
+                      style={{
+                        backgroundImage: `url(${UseStrapiURL()}${img.url})`,
+                      }}
+                    ></div>
+                  ),
+              )}
           </div>
 
           <div
             className="flex h-fit w-1/2 flex-col items-center justify-center gap-[10px] md:gap-[16px]"
             id="MOVEpartTWO"
           >
+            {/*
             <div
               className="h-[50vw] w-full bg-cover bg-center sm:h-[calc(35vh+10vw)]"
               style={{ backgroundImage: `url(${h6})` }}
@@ -114,6 +137,23 @@ const Home = () => {
               className="h-[50vw] w-full bg-cover bg-center sm:h-[calc(35vh+10vw)]"
               style={{ backgroundImage: `url(${h10})` }}
             ></div>
+
+            */}
+
+            {homeData?.sessoes[0].imagens &&
+              Object.values(homeData?.sessoes[0].imagens).map(
+                (img, idx) =>
+                  img.id > 5 &&
+                  img.id < 11 && (
+                    <div
+                      key={idx}
+                      className="h-[50vw] w-full bg-cover bg-center sm:h-[calc(35vh+10vw)]"
+                      style={{
+                        backgroundImage: `url(${UseStrapiURL()}${img.url})`,
+                      }}
+                    ></div>
+                  ),
+              )}
           </div>
         </div>
         <section>
@@ -123,13 +163,13 @@ const Home = () => {
           {homeData && (
             <main className="flex h-fit w-full flex-col items-start justify-between text-center lg:w-[40vw]">
               <h1 className="mt-6 mb-4 w-full text-center text-4xl font-bold lg:mt-0 lg:text-start">
-                {homeData.sessaoUM_Nome}
+                {homeData?.sessoes[0].texto.titulo}
               </h1>
               <h3 className="mb-4 w-full text-center text-2xl font-semibold lg:text-start">
-                {homeData.sessaoUM_Frase_resumida}
+                {homeData?.sessoes[0].texto.subtitulo_resumo}
               </h3>
               <p className="text-center text-lg text-gray-700 lg:text-start">
-                {homeData.sessaoUM_descricao}
+                {homeData?.sessoes[0].texto.descricao}
               </p>
               <div className="mt-8 flex w-full justify-center gap-4 lg:justify-start">
                 <button className="bg-black px-6 py-3 text-white transition hover:bg-gray-900">
@@ -142,24 +182,33 @@ const Home = () => {
             </main>
           )}
         </section>
+        {loading && <p>Carregando conteúdo...</p>}
+        {error && <p className="text-red-500">Erro: {error}</p>}
       </div>
       <section className="box-border flex h-fit w-full flex-col-reverse items-start justify-center gap-[calc(34px+1vw)] px-[24px] py-[80px] md:px-[34px] lg:flex-row lg:px-[44px]">
+        {loading && <p>Carregando conteúdo...</p>}
+        {error && <p className="text-red-500">Erro: {error}</p>}
         <div
           className="h-[50vh] w-full bg-cover bg-center lg:h-[100vh] lg:w-1/2"
-          style={{ backgroundImage: `url(${h11})` }}
-        ></div>
+          style={{
+            backgroundImage: `url(${UseStrapiURL()}${homeData?.sessoes[1]?.imagem_sessaoDOIS_h11?.url})`,
+          }}
+        >
+          {console.log(
+            "---------------",
+            homeData?.sessoes[1].imagem_sessaoDOIS_h11.url,
+          )}
+        </div>
         <div className="box-border flex w-full flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-start">
-          {loading && <p>Carregando conteúdo...</p>}
-          {error && <p className="text-red-500">Erro: {error}</p>}
           {homeData && (
             <>
               <p className="text-center text-base font-bold lg:text-start">
-                {homeData.sessaoDOIS_subtitulo}
+                {homeData?.sessoes[1].subtitulo}
               </p>
               <h2 className="mb-4 text-2xl font-bold sm:text-3xl md:text-4xl lg:items-start lg:text-5xl">
-                {homeData.sessaoDOIS_titulo}
+                {homeData?.sessoes[1].titulo}
               </h2>
-              <p className="text-base">{homeData.sessaoDOIS_descricao}</p>
+              <p className="text-base">{homeData?.sessoes[1].descricao}</p>
               <div className="mt-8 flex w-full justify-center gap-4 lg:justify-start">
                 <button className="bg-white px-6 py-3 text-black shadow-[inset_0_0_0_2px_black] transition hover:bg-black hover:text-white">
                   Saiba Mais

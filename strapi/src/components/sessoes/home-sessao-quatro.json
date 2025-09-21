@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sessoes_home_sessao_quatros",
+  "info": {
+    "displayName": "home_sessaoQUATRO"
+  },
+  "options": {},
+  "attributes": {
+    "recomendacao_comentario": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

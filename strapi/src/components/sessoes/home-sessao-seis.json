@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sessoes_home_sessao_seis",
+  "info": {
+    "displayName": "home_sessaoSEIS"
+  },
+  "options": {},
+  "attributes": {
+    "perguntas": {
+      "type": "component",
+      "component": "elementos.bloco-home-pergunta",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_sessoes_home_sessao_tres",
+  "info": {
+    "displayName": "home_sessaoTRES"
+  },
+  "options": {},
+  "attributes": {
+    "introducao": {
+      "type": "component",
+      "component": "elementos.bloco-texto-introducao",
+      "repeatable": false
+    },
+    "bloco_um": {
+      "type": "component",
+      "component": "elementos.bloco-home-subtitulo-e-descricao",
+      "repeatable": false
+    },
+    "bloco_dois": {
+      "type": "component",
+      "component": "elementos.bloco-home-subtitulo-e-descricao",
+      "repeatable": false
+    },
+    "bloco_tres": {
+      "type": "component",
+      "component": "elementos.bloco-home-subtitulo-e-descricao",
+      "repeatable": false
+    },
+    "bloco_quatro": {
+      "type": "component",
+      "component": "elementos.bloco-home-subtitulo-e-descricao",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

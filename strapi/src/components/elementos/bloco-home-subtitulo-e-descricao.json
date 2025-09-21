@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elementos_bloco_home_subtitulo_e_descricaos",
+  "info": {
+    "displayName": "bloco-home-subtitulo-e-descricao"
+  },
+  "options": {},
+  "attributes": {
+    "subtitulo": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

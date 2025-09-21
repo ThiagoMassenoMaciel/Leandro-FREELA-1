@@ -1,5 +1,48 @@
 import type { Schema, Struct } from "@strapi/strapi";
 
+export interface ElementosBlocoHomeImagens extends Struct.ComponentSchema {
+  collectionName: "components_elementos_bloco_home_imagens";
+  info: {
+    displayName: "bloco_home_imagens";
+  };
+  attributes: {
+    imagem_coluna1_h1: Schema.Attribute.Media<"images">;
+    imagem_coluna1_h2: Schema.Attribute.Media<"images">;
+    imagem_coluna1_h3: Schema.Attribute.Media<"images">;
+    imagem_coluna1_h4: Schema.Attribute.Media<"images">;
+    imagem_coluna1_h5: Schema.Attribute.Media<"images">;
+    imagem_coluna2_h10: Schema.Attribute.Media<"images">;
+    imagem_coluna2_h6: Schema.Attribute.Media<"images">;
+    imagem_coluna2_h7: Schema.Attribute.Media<"images">;
+    imagem_coluna2_h8: Schema.Attribute.Media<"images">;
+    imagem_coluna2_h9: Schema.Attribute.Media<"images">;
+  };
+}
+
+export interface ElementosBlocoHomePergunta extends Struct.ComponentSchema {
+  collectionName: "components_elementos_bloco_home_perguntas";
+  info: {
+    displayName: "bloco_home_pergunta";
+    icon: "question";
+  };
+  attributes: {
+    pergunta: Schema.Attribute.String;
+    resposta: Schema.Attribute.RichText;
+  };
+}
+
+export interface ElementosBlocoHomeSubtituloEDescricao
+  extends Struct.ComponentSchema {
+  collectionName: "components_elementos_bloco_home_subtitulo_e_descricaos";
+  info: {
+    displayName: "bloco-home-subtitulo-e-descricao";
+  };
+  attributes: {
+    descricao: Schema.Attribute.String;
+    subtitulo: Schema.Attribute.String;
+  };
+}
+
 export interface ElementosBlocoServicoDetalhado extends Struct.ComponentSchema {
   collectionName: "components_elementos_bloco_servico_detalhados";
   info: {
@@ -80,7 +123,7 @@ export interface ElementosBlocoServicoSubtituloTipo2
 export interface ElementosBlocoTextoIntroducao extends Struct.ComponentSchema {
   collectionName: "components_elementos_bloco_texto_introducaos";
   info: {
-    displayName: "bloco_texto_introducao";
+    displayName: "bloco_home_texto_introducao";
     icon: "apps";
   };
   attributes: {
@@ -108,7 +151,64 @@ export interface SessoesHomeSessaoDois extends Struct.ComponentSchema {
   info: {
     displayName: "home_sessaoDOIS";
   };
-  attributes: {};
+  attributes: {
+    descricao: Schema.Attribute.String;
+    imagem_sessaoDOIS_h11: Schema.Attribute.Media<"images">;
+    subtitulo: Schema.Attribute.String;
+    titulo: Schema.Attribute.String;
+  };
+}
+
+export interface SessoesHomeSessaoQuatro extends Struct.ComponentSchema {
+  collectionName: "components_sessoes_home_sessao_quatros";
+  info: {
+    displayName: "home_sessaoQUATRO";
+  };
+  attributes: {
+    recomendacao_comentario: Schema.Attribute.String;
+  };
+}
+
+export interface SessoesHomeSessaoSeis extends Struct.ComponentSchema {
+  collectionName: "components_sessoes_home_sessao_seis";
+  info: {
+    displayName: "home_sessaoSEIS";
+  };
+  attributes: {
+    perguntas: Schema.Attribute.Component<
+      "elementos.bloco-home-pergunta",
+      true
+    >;
+  };
+}
+
+export interface SessoesHomeSessaoTres extends Struct.ComponentSchema {
+  collectionName: "components_sessoes_home_sessao_tres";
+  info: {
+    displayName: "home_sessaoTRES";
+  };
+  attributes: {
+    bloco_dois: Schema.Attribute.Component<
+      "elementos.bloco-home-subtitulo-e-descricao",
+      false
+    >;
+    bloco_quatro: Schema.Attribute.Component<
+      "elementos.bloco-home-subtitulo-e-descricao",
+      false
+    >;
+    bloco_tres: Schema.Attribute.Component<
+      "elementos.bloco-home-subtitulo-e-descricao",
+      false
+    >;
+    bloco_um: Schema.Attribute.Component<
+      "elementos.bloco-home-subtitulo-e-descricao",
+      false
+    >;
+    introducao: Schema.Attribute.Component<
+      "elementos.bloco-texto-introducao",
+      false
+    >;
+  };
 }
 
 export interface SessoesHomeSessaoUm extends Struct.ComponentSchema {
@@ -117,7 +217,13 @@ export interface SessoesHomeSessaoUm extends Struct.ComponentSchema {
     displayName: "home_sessaoUM";
     icon: "expand";
   };
-  attributes: {};
+  attributes: {
+    imagens: Schema.Attribute.Component<"elementos.bloco-home-imagens", false>;
+    texto: Schema.Attribute.Component<
+      "elementos.bloco-texto-introducao",
+      false
+    >;
+  };
 }
 
 export interface SessoesServicosSessaoDois extends Struct.ComponentSchema {
@@ -158,6 +264,9 @@ export interface SessoesServicosSessaoUm extends Struct.ComponentSchema {
 declare module "@strapi/strapi" {
   export module Public {
     export interface ComponentSchemas {
+      "elementos.bloco-home-imagens": ElementosBlocoHomeImagens;
+      "elementos.bloco-home-pergunta": ElementosBlocoHomePergunta;
+      "elementos.bloco-home-subtitulo-e-descricao": ElementosBlocoHomeSubtituloEDescricao;
       "elementos.bloco-servico-detalhado": ElementosBlocoServicoDetalhado;
       "elementos.bloco-servico-detalhado-tipo2": ElementosBlocoServicoDetalhadoTipo2;
       "elementos.bloco-servico-subtitulo-tipo1": ElementosBlocoServicoSubtituloTipo1;
@@ -165,6 +274,9 @@ declare module "@strapi/strapi" {
       "elementos.bloco-texto-introducao": ElementosBlocoTextoIntroducao;
       "elementos.link": ElementosLink;
       "sessoes.home-sessao-dois": SessoesHomeSessaoDois;
+      "sessoes.home-sessao-quatro": SessoesHomeSessaoQuatro;
+      "sessoes.home-sessao-seis": SessoesHomeSessaoSeis;
+      "sessoes.home-sessao-tres": SessoesHomeSessaoTres;
       "sessoes.home-sessao-um": SessoesHomeSessaoUm;
       "sessoes.servicos-sessao-dois": SessoesServicosSessaoDois;
       "sessoes.servicos-sessao-quatro": SessoesServicosSessaoQuatro;

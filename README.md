@@ -262,4 +262,26 @@ If you are developing a production application, we recommend using TypeScript wi
         parei em 53:40   esse tempo ele ensina como fazer uma query para pegar os dados da api do strapi
 
         10:25 até 12:30 ------ 2h5'
+
+20-09-2025 9h7'
+        11:05 até 12:40 ------ 1h35'
+        13:33 até 15:33 ------ 2h 
+        16:36 até 19:36 ------ 3h
+
+          apartir do minuto 58:38 ele começa a ensinar como consumir os dados que vai retornar da api no front-end
+            feito  criar um file/hook/funcao que recebe url pelo parametro e faz o fetch
+            --------------------------------------------------------------Load_data_to_webpage.jsx
+
+            feito  criar outro file/hook/funcao que vai fazer a chamada da outra funcao que executa o fetch [video](01:05:29)
+                                                                    aqui tem a string query enpoint parameters da pg home
+                                                                    aqui devo converter notação endpoint para url + params
+                                                                    https://www.npmjs.com/package/qs
+            --------------------------------------------------------------GetDataHome.js
+
+            feito  criar outro file/hook/funcao que vai pegar da variavel de ambiente url do site [video](01:03:08)
+            --------------------------------------------------------------UseStrapiURL.js
+
+
+      parei no minuto [video](01:09:39)
+        20:47 até 23:19 ------- 2h32
 ```

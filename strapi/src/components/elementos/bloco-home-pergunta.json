@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_elementos_bloco_home_perguntas",
+  "info": {
+    "displayName": "bloco_home_pergunta",
+    "icon": "question"
+  },
+  "options": {},
+  "attributes": {
+    "pergunta": {
+      "type": "string"
+    },
+    "resposta": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

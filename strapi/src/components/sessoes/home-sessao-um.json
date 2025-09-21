@@ -5,6 +5,17 @@
     "icon": "expand"
   },
   "options": {},
-  "attributes": {},
+  "attributes": {
+    "texto": {
+      "type": "component",
+      "component": "elementos.bloco-texto-introducao",
+      "repeatable": false
+    },
+    "imagens": {
+      "type": "component",
+      "component": "elementos.bloco-home-imagens",
+      "repeatable": false
+    }
+  },
   "config": {}
 }

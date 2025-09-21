@@ -44,6 +44,13 @@ outro curso para adicinar aside na página do blog
 https://youtu.be/Q-cPtlYG1cY?si=7pYA8ZuX5tGG5Xka
   no minuto 12:38 tem comandos de script package.json antes de começar o projeto
 
+  no minuto 53 começa a ensinar como usar query para acessar dados dos componentes e
+      na query ENDPOINT parameters sempre devo referenciar o nome do componente como "sessoes.home-sessao-um" 
+            letras sempre minusculas
+            sempre usar o dash "-" emvez do underscore "_"
+                  https://docs.strapi.io/cms/api/rest/interactive-query-builder
+            agora o nome do campo dentro de um componente, quando for usar o nome do campo na query do ENDPOINT PARAMETERS devo usar o nome do mesmo formato que salvei no content-type-builder. exemplo "imagem_sessaoDOIS_h11" 
+
   apartir do minuto  (2:41:23) Section 6.5 - How to structure our blog data in Strapi
 
 curso como usar o strapi https://youtube.com/playlist?list=PLb6_WPJsxTrp1i5PcE9YRbEOVFMttVe9E&si=3CZyE3MrKz6tGWOW

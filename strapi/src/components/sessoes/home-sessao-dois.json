@@ -4,6 +4,23 @@
     "displayName": "home_sessaoDOIS"
   },
   "options": {},
-  "attributes": {},
+  "attributes": {
+    "subtitulo": {
+      "type": "string"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "imagem_sessaoDOIS_h11": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
   "config": {}
 }

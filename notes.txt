@@ -5,6 +5,8 @@ npm install tailwindcss@latest postcss@latest autoprefixer@latest
   <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 
 
+//instalar conversor de endpoint_parameters para url+params do strapi para pegar todos dados dos campos dos componentes construidos no content-type-builder
+npm i qs
 
 // installar biblioteca para gerar o pdf com as respostas do Formulário
 npm install jspdf jspdf-autotable
