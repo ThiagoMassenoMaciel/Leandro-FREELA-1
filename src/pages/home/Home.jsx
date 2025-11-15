@@ -1,10 +1,14 @@
-import React, { use, useState } from "react";
+import React, { use, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleQuestion, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 import h1 from "../../assets/home1.png";
 import h2 from "../../assets/home2.png";
@@ -50,6 +54,7 @@ const Home = () => {
   const { data: homeData, loading, error } = useStrapi("pagina-home");
   */
   const { homeData, loading, error } = GetDataHome();
+  /*
   console.log("homeData:", homeData);
   console.log("sessoes", homeData?.sessoes[0].texto);
   const [faq1, setFaq1] = useState(true);
@@ -58,8 +63,134 @@ const Home = () => {
   const [faq4, setFaq4] = useState(true);
   const [faq5, setFaq5] = useState(true);
   const [faq6, setFaq6] = useState(true);
-
+*/
   const [showForm, setShowForm] = useState(false);
+
+  /*
+  const faqData = [
+    {
+      id: 1,
+      ask: "Quais são os tipos de acessoria jurídica?",
+      response:
+        "Direito Trabalhista, Família, Previdenciário, Criminal, Tributário, **incluindo consultas**,  Revisões de contratos em geral, Conciliação , Mediação e Representação Judicial.",
+    },
+    {
+      id: 2,
+      ask: "Qual a funcionalidade do serviço ?",
+      response:
+        "Minha expertise abrange diversas áreas do direito para atender às suas necessidades. Entre em contato comigo para saber mais sobre como posso ajudar. Para entrar em contato é muito simples, basta clicar no botão preto **Entrar em contato** na parte superior desse site ou no botão **Contato**.",
+    },
+    {
+      id: 3,
+      ask: "Como posso agendar?",
+      response:
+        "1. Você clica no botão preto **Entrar em contato** que fica na parte superior da tela desse site. Em seguida você deve responder todas as perguntas que aparecerá no formulário. E por fim, clique no botão verde **Agendar** >Caso prefira, entre em contato direto: ligue para o número : **(85)9 9298-6264** >ou mande um email para : **leandrovianaadv691@gmail.com**. Vamos combinar juntos um horário conveniente.",
+    },
+    {
+      id: 4,
+      ask: "Quanto você cobra?",
+      response:
+        "Os honorários **variam de acordo com o serviço prestado** e a complexidade do seu caso. Discutiremos os custos antecipadamente. Sinta-se à vontade para  questionamentos durante sua consultoria após entrar em contato depois de responder o formulário. Para responder ao formulário clique no botão preto **Entrar em contato** que está na parte superior da tela desse site",
+    },
+    {
+      id: 5,
+      ask: "Eu ofereço consultoria?",
+      response:
+        " Sim, ofereço consultoria para discutir suas necessidades jurídicas. Esta é uma  oportunidade para você tirar dúvidas e entender como posso ajudá-lo. Para melhorar sua experiência com a minha consultoria jurídica, antes do nosso encontro você precisa responder o meu formulário. Para fazer isso, clique no botão preto **Entrar em contato** que fica na parte superior da tela desse site e depois de responder todas as perguntas clique no botão verde **Agendar**. Depois, você será redirecionado para minhas redes sociais instagram e whatsapp.",
+    },
+    {
+      id: 6,
+      ask: "Quais informações relevantes você precisa entregar ?",
+      response:
+        "Traga todos os documentos relevantes relacionados ao seu caso, juntamente com uma lista de perguntas. Isso ajudará a entender melhor a sua situação. Quanto mais informações você fornecer, **mais personalizado será o aconselhamento**.",
+    },
+    {
+      id: 7,
+      ask: "Teste1",
+      response: "Teste  uuummmmm",
+    },
+    {
+      id: 8,
+      ask: "Teste2",
+      response: "Este aqui é feito apenas para teste2",
+    },
+  ];
+*/
+  // Inicialize com array vazio
+  const [openFaqIds, setOpenFaqIds] = useState([]);
+
+  // Use useEffect para atualizar quando os dados chegarem
+  useEffect(() => {
+    const faqData = homeData?.sessoes?.[3]?.perguntas;
+
+    if (faqData && Array.isArray(faqData)) {
+      // se variavel tiver algum valor e for uma array
+      // Quando os dados chegarem, atualize o estado com os IDs de cada objeto pergunta
+      // 1. O estado agora é um ARRAY de IDs.
+      // Iniciamos o estado com os IDs de todos os itens do FAQ para que todas os blocos comecem abertos.
+      setOpenFaqIds(faqData.map((item) => item.id));
+    }
+  }, [homeData]); // Executa quando homeData mudar
+
+  // Resto do código...
+  const faqData = homeData?.sessoes?.[3]?.perguntas;
+
+  console.log("faqData:-------------------", faqData, typeof faqData);
+
+  // 2. A função de toggle agora adiciona ou remove um ID do array. tal qual referencia se o bloco estará aberto ou fechado
+  const handleToggle = (id) => {
+    setOpenFaqIds((prevOpenIds) => {
+      // Se o ID já está no array (o card está aberto),
+      if (prevOpenIds.includes(id)) {
+        // ...retornamos um novo array sem esse ID (para fechar o card).
+        return prevOpenIds.filter((currentId) => currentId !== id);
+      } else {
+        // Se o ID não está no array (o card está fechado),
+        // ...retornamos um novo array com esse ID adicionado (para abrir o card).
+        return [...prevOpenIds, id];
+      }
+    });
+  };
+
+  // 1. AQUI VOCÊ CRIA O OBJETO markdownComponents para personalizar na renderização de conteúdos MARKDOWN
+  // Este objeto diz: "quando encontrar um <p>, use este componente customizado"
+  const markdownComponents = {
+    // Quando o Markdown criar um parágrafo <p>
+    p: ({ node, ...props }) => (
+      <p {...props} className="mb-4 leading-relaxed" />
+    ),
+
+    // Quando o Markdown criar negrito <strong>
+    strong: ({ node, ...props }) => (
+      <strong {...props} className="font-bold text-black" />
+    ),
+
+    // Quando o Markdown criar itálico <em>
+    em: ({ node, ...props }) => <em {...props} className="italic" />,
+
+    // Quando o Markdown criar lista ordenada <ol>
+    ol: ({ node, ...props }) => (
+      <ol {...props} className="my-4 ml-6 list-decimal space-y-2" />
+    ),
+
+    // Quando o Markdown criar lista não-ordenada <ul>
+    ul: ({ node, ...props }) => (
+      <ul {...props} className="my-4 ml-6 list-disc space-y-2" />
+    ),
+
+    // Quando o Markdown criar item de lista <li>
+    li: ({ node, ...props }) => <li {...props} className="leading-relaxed" />,
+
+    // Quando o Markdown criar blockquote (>)
+    blockquote: ({ node, ...props }) => (
+      <blockquote
+        {...props}
+        className="my-4 border-l-4 border-gray-400 bg-gray-50 py-2 pl-4 text-gray-700 italic"
+      />
+    ),
+  };
+
+  // 2. AGORA VOCÊ USA O OBJETO componentsMarkdown QUE CRIOU como prop do ReactMarkdown lá embaixo
 
   return (
     <>
@@ -222,22 +353,27 @@ const Home = () => {
         </div>
       </section>
       <section className="grid h-fit w-full grid-cols-1 items-center justify-center gap-22 bg-gradient-to-b from-[#f5f5f5] to-[#fefefe] px-[24px] py-20 md:px-[34px] lg:grid-cols-2 lg:flex-row lg:items-start lg:gap-20 lg:px-[44px]">
+        {loading && <p>Carregando conteúdo...</p>}
+        {error && <p className="text-red-500">Erro: {error}</p>}
         <div
           className="flex h-full w-full flex-col items-start gap-15"
           id="leftside"
         >
           <div className="flex h-fit w-full flex-col gap-3 text-center">
             <h2 className="text-center text-[24px] leading-7 font-bold md:text-3xl md:leading-8 lg:text-start lg:text-[43px] lg:leading-11">
-              Seu processo nas mãos certas, com quem entrega resultado.
+              {/* Seu processo nas mãos certas, com quem entrega resultado.*/}
+              {homeData?.sessoes[2].introducao.titulo}
             </h2>
             <p className="text-center text-[18px] font-bold md:text-[20px] lg:text-start">
-              Seu direito, minha prioridade. Sua vitória, minha missão.
+              {/*  Seu direito, minha prioridade. Sua vitória, minha missão.   */}
+              {homeData?.sessoes[2].introducao.subtitulo_resumo}
             </p>
             <p className="text-center text-[16px] md:text-[18px] lg:text-start">
-              Ao escolher Leandro Viana, você recebe atendimento jurídico
+              {/* Ao escolher Leandro Viana, você recebe atendimento jurídico
               personalizado para empresas, pessoas físicas e adaptado à sua
               situação específica. Atuando com ética e eficiência acompanhada de
-              uma ampla experiência e histórico comprovado.
+              uma ampla experiência e histórico comprovado.*/}
+              {homeData?.sessoes[2].introducao.descricao}
             </p>
             <div className="flex w-full justify-center gap-4 lg:justify-start">
               <button className="bg-white px-6 py-3 text-black shadow-[inset_0_0_0_2px_black] transition hover:bg-black hover:text-white">
@@ -259,6 +395,7 @@ const Home = () => {
           className="flex h-fit w-full flex-col items-start justify-center gap-8"
           id="rightside"
         >
+          {/*
           <section className="flex h-fit w-full flex-col items-center gap-4 border-2 border-solid border-black p-8 lg:items-start">
             <img className="h-[48px] w-[48px]" src={h_icon1} alt="icon1" />
             <h3 className="text-center text-2xl font-bold lg:text-start">
@@ -305,6 +442,39 @@ const Home = () => {
               menos erro, mais segurança e previsibilidade para o seu caso.
             </p>
           </section>
+
+        */}
+          {homeData &&
+            Object.values(homeData?.sessoes[2]).map(
+              (pedaco, idx) =>
+                idx > 2 &&
+                idx < 7 && (
+                  <section
+                    key={idx}
+                    className="flex h-fit w-full flex-col items-center gap-4 border-2 border-solid border-black p-8 lg:items-start"
+                  >
+                    <img
+                      className="h-[48px] w-[48px]"
+                      src={
+                        idx == 3
+                          ? h_icon1
+                          : idx == 4
+                            ? h_icon2
+                            : idx == 5
+                              ? h_icon3
+                              : h_icon4
+                      }
+                      alt="icone"
+                    />
+                    <h3 className="text-center text-2xl font-bold lg:text-start">
+                      {pedaco.subtitulo}
+                    </h3>
+                    <p className="text-center text-[16px] lg:text-start">
+                      {pedaco.descricao}
+                    </p>
+                  </section>
+                ),
+            )}
         </div>
       </section>
 
@@ -354,7 +524,7 @@ const Home = () => {
             jurídicos e como podemos ajudá-lo.
           </p>
         </div>
-
+        {/*
         <div className="mx-auto flex h-fit w-full max-w-[768px] flex-col gap-4 px-[24px] md:px-[34px] lg:px-[44px]">
           <section className="h-fit w-full border-2 border-black bg-white p-5 text-start">
             <div
@@ -579,6 +749,49 @@ const Home = () => {
             </p>
           </section>
         </div>
+        */}
+        {/*--------------------------------------------------------------------------------------------------*/}
+        {faqData && Array.isArray(faqData) && (
+          <section className="mx-auto flex h-fit w-full max-w-[768px] flex-col gap-4 px-[24px] md:px-[34px] lg:px-[44px]">
+            {faqData.map((faqItem) => {
+              // 3. A verificação para saber se está aberto agora usa .includes()
+              const isOpen = openFaqIds.includes(faqItem.id);
+
+              return (
+                <section
+                  key={faqItem.id}
+                  className="h-fit w-full border-2 border-black bg-white p-5 text-start"
+                >
+                  <div
+                    className="flex items-center justify-between"
+                    style={{ marginBottom: isOpen ? "16px" : "0px" }}
+                  >
+                    <h2 className="text-lg font-bold">{faqItem.pergunta}</h2>
+
+                    <FontAwesomeIcon
+                      icon={isOpen ? faXmark : faCircleQuestion}
+                      className="cursor-pointer text-[30px]"
+                      onClick={() => handleToggle(faqItem.id)}
+                    />
+                  </div>
+
+                  <div
+                    className="text-base text-black"
+                    style={{ display: isOpen ? "block" : "none" }}
+                  >
+                    <ReactMarkdown
+                      remarkPlugins={[remarkGfm]}
+                      rehypePlugins={[rehypeRaw]}
+                      components={markdownComponents}
+                    >
+                      {faqItem.resposta}
+                    </ReactMarkdown>
+                  </div>
+                </section>
+              );
+            })}
+          </section>
+        )}
 
         <div className="mx-auto flex h-fit max-w-[428px] flex-col gap-4 px-[24px] py-20 text-center md:px-[34px] lg:px-[44px]">
           <h2 className="text-2xl font-bold md:text-[34px]">

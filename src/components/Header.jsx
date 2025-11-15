@@ -40,12 +40,12 @@ const Header = () => {
             </Link>
           </li>
           <li className="cursor-pointer rounded-md p-1 transition-all hover:bg-gray-900 hover:text-white">
-            <Link onClick={() => AfterClicked()} to="/galeria">
+            <Link onClick={() => AfterClicked()} to="/galerias">
               Galeria de Casos
             </Link>
           </li>
           <li className="cursor-pointer rounded-md p-1 transition-all hover:bg-gray-900 hover:text-white">
-            <Link onClick={() => AfterClicked()} to="/blog">
+            <Link onClick={() => AfterClicked()} to="/blogs">
               Blog
             </Link>
           </li>

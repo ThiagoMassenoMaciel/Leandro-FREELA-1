@@ -1,0 +1,100 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pagina_do_blogs",
+  "info": {
+    "singularName": "pagina-do-blog",
+    "pluralName": "pagina-do-blogs",
+    "displayName": "pagina_do_blog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "titulo_do_blog": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "autor_escreveu_blog": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "numero_OAB": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "resumo_do_assunto_do_blog": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug_do_blog": {
+      "type": "uid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "targetField": "titulo_do_blog"
+    },
+    "tipo_assunto_do_blog": {
+      "type": "enumeration",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "enum": [
+        "Dicas Jurídicas",
+        "Estudos de Caso",
+        "Histórias de Clientes",
+        "Notícias Jurídicas"
+      ]
+    },
+    "imagem_capa_blog": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "conteudo_blog": {
+      "type": "dynamiczone",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "components": [
+        "elementos.bloco-blog-paragrafo",
+        "elementos.bloco-blog-paragrafo-e-imagem",
+        "elementos.bloco-blog-imagem-grande",
+        "elementos.bloco-blog-cabecalho"
+      ]
+    }
+  }
+}

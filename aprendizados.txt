@@ -78,3 +78,53 @@ usando o postgreSQL como banco de dados do strapi
       se eu quiser acessar o servidor do banco de dados postgres que esta rodando no terminal cmd windows digitar "psql -U postgres" dps digite a senha e pronto
 
 2. inslalar strapi respondendo as perguntas com usuário, senha, nome do banco novos do que criei no banco de dados
+
+
+
+
+
+Para renderizar conteudo markdown dentro do react é necessário customizar com tailwind para de fato renderizar todos os estilos de markdown : headding negrito <bold> h1,h2,h3, italico <em>, lista ordenada por numero <ol>, lista nao ordenada <ul> , notas <blackquotes> 
+
+                  // 1. AQUI VOCÊ CRIA O OBJETO markdownComponents
+                  // Este objeto diz: "quando encontrar um <p>, use este componente customizado"
+                  const markdownComponents = {
+                  // Quando o Markdown criar um parágrafo <p>
+                  p: ({node, ...props}) => (
+                        <p {...props} className="mb-4 leading-relaxed" />
+                  ),
+                  
+                  // Quando o Markdown criar negrito <strong>
+                  strong: ({node, ...props}) => (
+                        <strong {...props} className="font-bold text-black" />
+                  ),
+                  
+                  // Quando o Markdown criar itálico <em>
+                  em: ({node, ...props}) => (
+                        <em {...props} className="italic" />
+                  ),
+                  
+                  // Quando o Markdown criar lista ordenada <ol>
+                  ol: ({node, ...props}) => (
+                        <ol {...props} className="list-decimal ml-6 my-4 space-y-2" />
+                  ),
+                  
+                  // Quando o Markdown criar lista não-ordenada <ul>
+                  ul: ({node, ...props}) => (
+                        <ul {...props} className="list-disc ml-6 my-4 space-y-2" />
+                  ),
+                  
+                  // Quando o Markdown criar item de lista <li>
+                  li: ({node, ...props}) => (
+                        <li {...props} className="leading-relaxed" />
+                  ),
+                  
+                  // Quando o Markdown criar blockquote (>)
+                  blockquote: ({node, ...props}) => (
+                        <blockquote 
+                        {...props} 
+                        className="border-l-4 border-gray-400 pl-4 py-2 my-4 italic text-gray-700 bg-gray-50" 
+                        />
+                  ),
+                  };
+
+                  // 2. AGORA VOCÊ USA O OBJETO QUE CRIOU dentro do JSX que irá retornar do componente react utilizado

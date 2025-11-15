@@ -1,0 +1,49 @@
+{
+  "data": {
+    "id": 56,
+    "documentId": "gq07nl8qv8jy66o0i4cfxm5c",
+    "createdAt": "2025-09-13T20:31:08.772Z",
+    "updatedAt": "2025-10-13T22:25:25.826Z",
+    "publishedAt": "2025-10-13T22:25:26.352Z",
+    "locale": "pt-BR",
+    "sessoes": [
+      {
+        "__component": "sessoes.home-sessao-seis",
+        "id": 29,
+        "perguntas": [
+          {
+            "id": 169,
+            "pergunta": "Quais são os tipos de acessoria jurídica?",
+            "resposta": "Direito Trabalhista, Família, Previdenciário, Criminal, Tributário, **incluindo consultas**,  Revisões de contratos em geral, Conciliação , Mediação e Representação Judicial."
+          },
+          {
+            "id": 170,
+            "pergunta": "Qual a funcionalidade do serviço ?",
+            "resposta": "\nMinha expertise abrange diversas áreas do direito para atender às suas necessidades. Entre em contato comigo para saber mais sobre como posso ajudar. Para entrar em contato é muito simples, basta clicar no botão preto **Entrar em contato** na parte superior desse site ou no botão **Contato** presente nesta página web.\n"
+          },
+          {
+            "id": 171,
+            "pergunta": "Como posso agendar?",
+            "resposta": "1. Você clica no botão preto **Entrar em contato** que fica na parte superior da tela desse site.\n2. Em seguida você deve responder todas as perguntas que aparecerá no formulário.\n3. E por fim, clique no botão verde **Agendar** .\n\n>Caso prefira, entre em contato direto: ligue para o número : **(85)9 9298-6264**\n>ou mande um email para : **leandrovianaadv691@gmail.com**\n \n Vamos combinar juntos um horário conveniente."
+          },
+          {
+            "id": 172,
+            "pergunta": "Quanto você cobra?",
+            "resposta": "Os honorários **variam de acordo com o serviço prestado** e a complexidade do seu caso. Discutiremos os custos antecipadamente. Sinta-se à vontade para  questionamentos durante sua consultoria após entrar em contato depois de responder o formulário. Para responder ao formulário clique no botão preto **Entrar em contato** que está na parte superior da tela desse site"
+          },
+          {
+            "id": 173,
+            "pergunta": "Eu ofereço consultoria?",
+            "resposta": " Sim, ofereço consultoria para discutir suas necessidades jurídicas. Esta é uma  oportunidade para você tirar dúvidas e entender como posso ajudá-lo. Para melhorar sua experiência com a minha consultoria jurídica, antes do nosso encontro você precisa responder o meu formulário. Para fazer isso, clique no botão preto **Entrar em contato** que fica na parte superior da tela desse site e depois de responder todas as perguntas clique no botão verde **Agendar**. "
+          },
+          {
+            "id": 174,
+            "pergunta": "Quais informações relevantes você precisa entregar ?",
+            "resposta": "Traga todos os documentos relevantes relacionados ao seu caso, juntamente com uma lista de perguntas. Isso ajudará a entender melhor a sua situação. Quanto mais informações você fornecer, **mais personalizado será o aconselhamento**."
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {}
+}

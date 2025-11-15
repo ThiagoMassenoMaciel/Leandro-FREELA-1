@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_elementos_bloco_blog_imagem_grandes",
+  "info": {
+    "displayName": "blog_imagem_grande"
+  },
+  "options": {},
+  "attributes": {
+    "imagem": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

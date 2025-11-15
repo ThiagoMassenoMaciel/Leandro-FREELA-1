@@ -8,15 +8,16 @@ const Sobre = () => {
   return (
     <>
       <section
-        className="w-full h-fit  text-white bg-cover bg-center"
+        id="cabecalho"
+        className="h-fit w-full bg-cover bg-center text-white"
         style={{ backgroundImage: `url(${s1})` }}
       >
         {/*SECTION 1*/}
         <div
-          className=" w-full h-full flex justify-start items-center py-17 px-[24px] min-[700px]:py-20 md:px-[34px] lg:px-[44px] lg:py-25"
+          className="flex h-full w-full items-center justify-start px-[24px] py-17 min-[700px]:py-20 md:px-[34px] lg:px-[44px] lg:py-25"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
         >
-          <div className="w-full h-fit flex flex-col gap-5 max-w-[768px]">
+          <div className="flex h-fit w-full max-w-[768px] flex-col gap-5">
             <h2 className="text-[40px] font-bold md:text-5xl">
               Excelência e Compromisso
             </h2>
@@ -30,9 +31,9 @@ const Sobre = () => {
       </section>
       {/*SECTION 2*/}
 
-      <section className="w-full h-fit bg-white flex flex-col gap-8 py-16 px-[24px] lg:px-[44px] lg:flex-row-reverse md:px-[34px]">
-        <div className="w-full h-fit flex flex-col gap-5 md:gap-8 lg:gap-10">
-          <h2 className="text-4xl font-bold text-start md:text-5xl">
+      <section className="flex h-fit w-full flex-col gap-8 bg-white px-[24px] py-16 md:px-[34px] lg:flex-row-reverse lg:px-[44px]">
+        <div className="flex h-fit w-full flex-col gap-5 md:gap-8 lg:gap-10">
+          <h2 className="text-start text-4xl font-bold md:text-5xl">
             Conheça Leandro Viana: Seu Consultor Jurídico de Confiança
           </h2>
           <p className="text-[18px]">
@@ -44,35 +45,35 @@ const Sobre = () => {
             soluções jurídicas personalizadas e adaptadas aos seus interesses.
           </p>
 
-          <div className="mt-4 flex gap-4 w-full justify-start">
-            <button className="px-6 py-3 bg-black text-white hover:bg-gray-900 transition">
+          <div className="mt-4 flex w-full justify-start gap-4">
+            <button className="bg-black px-6 py-3 text-white transition hover:bg-gray-900">
               Contato
             </button>
           </div>
         </div>
 
         <div
-          className="w-full h-[65vh] bg-cover bg-center min-[375px]:h-[calc(70vh+50vw)] min-[687px]:h-[calc(80vh+60vw)]  px-[24px] md:px-[34px] lg:px-[44px] lg:h-[calc(400px+20vw)]"
+          className="h-[65vh] w-full bg-cover bg-center px-[24px] min-[375px]:h-[calc(70vh+50vw)] min-[687px]:h-[calc(80vh+60vw)] md:px-[34px] lg:h-[calc(400px+20vw)] lg:px-[44px]"
           style={{ backgroundImage: `url(${s2})` }}
         ></div>
       </section>
 
       {/*SECTION 3*/}
       <section
-        className="w-full h-fit bg-cover bg-center"
+        className="h-fit w-full bg-cover bg-center"
         style={{ backgroundImage: `url(${s3})` }}
       >
-        <div className="w-full h-full bg-[rgba(0,0,0,0.8)] py-16 px-[24px] md:px-[34px] lg:px-[44px] lg:py-26 ">
-          <div className="w-full h-fit flex flex-col justify-center items-center gap-5 max-w-[768px] mx-auto text-white ">
-            <h2 className="text-4xl font-bold text-center">
+        <div className="h-full w-full bg-[rgba(0,0,0,0.8)] px-[24px] py-16 md:px-[34px] lg:px-[44px] lg:py-26">
+          <div className="mx-auto flex h-fit w-full max-w-[768px] flex-col items-center justify-center gap-5 text-white">
+            <h2 className="text-center text-4xl font-bold">
               Aguardo a sua consultoria jurídica
             </h2>
-            <p className="text-base text-center">
+            <p className="text-center text-base">
               Entre em contato comigo para discutir suas necessidades jurídicas
               e descobrir como posso ajudá-lo.
             </p>
-            <div className="mt-4 text-center w-full">
-              <button className="px-6 py-3 bg-white text-black hover:font-bold transition">
+            <div className="mt-4 w-full text-center">
+              <button className="bg-white px-6 py-3 text-black transition hover:font-bold">
                 Contato
               </button>
             </div>

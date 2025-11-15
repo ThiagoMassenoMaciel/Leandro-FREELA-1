@@ -54,6 +54,20 @@ const endpoint_QUERY_URL_PARAMS = qs.stringify(
               },
             },
           },
+          "sessoes.home-sessao-tres": {
+            populate: {
+              introducao: true,
+              bloco_um: true,
+              bloco_dois: true,
+              bloco_tres: true,
+              bloco_quatro: true,
+            },
+          },
+          "sessoes.home-sessao-seis": {
+            populate: {
+              perguntas: true,
+            },
+          },
         },
       },
     },

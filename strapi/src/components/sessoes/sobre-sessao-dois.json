@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sessoes_sobre_sessao_dois",
+  "info": {
+    "displayName": "sobre_sessaoDOIS"
+  },
+  "options": {},
+  "attributes": {
+    "introducao_pessoal": {
+      "type": "component",
+      "component": "elementos.cabecalho",
+      "repeatable": false
+    },
+    "imagem_sobre_2": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_elementos_cabecalhos",
+  "info": {
+    "displayName": "Cabecalho",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "subtitulo": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

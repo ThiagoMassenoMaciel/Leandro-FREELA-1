@@ -1,5 +1,52 @@
 import type { Schema, Struct } from "@strapi/strapi";
 
+export interface ElementosBlocoBlogCabecalho extends Struct.ComponentSchema {
+  collectionName: "components_elementos_bloco_blog_cabecalhos";
+  info: {
+    displayName: "blog_cabecalho";
+  };
+  attributes: {
+    link_id: Schema.Attribute.String;
+    Texto_Cabecalho: Schema.Attribute.String;
+  };
+}
+
+export interface ElementosBlocoBlogImagemGrande extends Struct.ComponentSchema {
+  collectionName: "components_elementos_bloco_blog_imagem_grandes";
+  info: {
+    displayName: "blog_imagem_grande";
+  };
+  attributes: {
+    imagem: Schema.Attribute.Media<"images">;
+  };
+}
+
+export interface ElementosBlocoBlogParagrafo extends Struct.ComponentSchema {
+  collectionName: "components_elementos_bloco_blog_paragrafos";
+  info: {
+    displayName: "blog_paragrafo";
+  };
+  attributes: {
+    conteudo_blog: Schema.Attribute.Blocks;
+  };
+}
+
+export interface ElementosBlocoBlogParagrafoEImagem
+  extends Struct.ComponentSchema {
+  collectionName: "components_elementos_bloco_blog_paragrafo_e_imagems";
+  info: {
+    displayName: "blog_paragrafo_e_imagem";
+  };
+  attributes: {
+    conteudo_blog: Schema.Attribute.Blocks;
+    imagem: Schema.Attribute.Media<"images">;
+    imagem_do_lado_esquerdo: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    tamanho_imagem_paisagem: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<true>;
+  };
+}
+
 export interface ElementosBlocoHomeImagens extends Struct.ComponentSchema {
   collectionName: "components_elementos_bloco_home_imagens";
   info: {
@@ -133,6 +180,18 @@ export interface ElementosBlocoTextoIntroducao extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementosCabecalho extends Struct.ComponentSchema {
+  collectionName: "components_elementos_cabecalhos";
+  info: {
+    displayName: "Cabecalho";
+    icon: "apps";
+  };
+  attributes: {
+    subtitulo: Schema.Attribute.Text;
+    titulo: Schema.Attribute.String;
+  };
+}
+
 export interface ElementosLink extends Struct.ComponentSchema {
   collectionName: "components_elementos_links";
   info: {
@@ -261,9 +320,27 @@ export interface SessoesServicosSessaoUm extends Struct.ComponentSchema {
   };
 }
 
+export interface SessoesSobreSessaoDois extends Struct.ComponentSchema {
+  collectionName: "components_sessoes_sobre_sessao_dois";
+  info: {
+    displayName: "sobre_sessaoDOIS";
+  };
+  attributes: {
+    imagem_sobre_2: Schema.Attribute.Media<"images">;
+    introducao_pessoal: Schema.Attribute.Component<
+      "elementos.cabecalho",
+      false
+    >;
+  };
+}
+
 declare module "@strapi/strapi" {
   export module Public {
     export interface ComponentSchemas {
+      "elementos.bloco-blog-cabecalho": ElementosBlocoBlogCabecalho;
+      "elementos.bloco-blog-imagem-grande": ElementosBlocoBlogImagemGrande;
+      "elementos.bloco-blog-paragrafo": ElementosBlocoBlogParagrafo;
+      "elementos.bloco-blog-paragrafo-e-imagem": ElementosBlocoBlogParagrafoEImagem;
       "elementos.bloco-home-imagens": ElementosBlocoHomeImagens;
       "elementos.bloco-home-pergunta": ElementosBlocoHomePergunta;
       "elementos.bloco-home-subtitulo-e-descricao": ElementosBlocoHomeSubtituloEDescricao;
@@ -272,6 +349,7 @@ declare module "@strapi/strapi" {
       "elementos.bloco-servico-subtitulo-tipo1": ElementosBlocoServicoSubtituloTipo1;
       "elementos.bloco-servico-subtitulo-tipo2": ElementosBlocoServicoSubtituloTipo2;
       "elementos.bloco-texto-introducao": ElementosBlocoTextoIntroducao;
+      "elementos.cabecalho": ElementosCabecalho;
       "elementos.link": ElementosLink;
       "sessoes.home-sessao-dois": SessoesHomeSessaoDois;
       "sessoes.home-sessao-quatro": SessoesHomeSessaoQuatro;
@@ -282,6 +360,7 @@ declare module "@strapi/strapi" {
       "sessoes.servicos-sessao-quatro": SessoesServicosSessaoQuatro;
       "sessoes.servicos-sessao-tres": SessoesServicosSessaoTres;
       "sessoes.servicos-sessao-um": SessoesServicosSessaoUm;
+      "sessoes.sobre-sessao-dois": SessoesSobreSessaoDois;
     }
   }
 }

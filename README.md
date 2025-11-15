@@ -1,19 +1,20 @@
+# Javascript + React + Vite + Tailwind + Strapi 5 + Postegre sql
 
+## API's
 
+###### retornar todos os posts do blog (find)
 
+```
+/api/pagina-do-blogs
 
-# React + Vite
+```
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+###### retornar o post do blog clicado (findOne)
 
-Currently, two official plugins are available:
+```
+/api/pagina-do-blogs/:id
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
 
 ```
 4h
@@ -23,8 +24,8 @@ If you are developing a production application, we recommend using TypeScript wi
 12-07-2025  4h10'
   como eu faço isso de css "height: calc(100vh - 60px);" para tailwind ? ajeitar home com header
   1h
-  #aprendizado 
-    uma das melhores maneiras de voce fazer imagem de qualquer tamanho caber direitinho é não usar tag img mas sim definir o tamanho dinamico da div e por a imagem como backgroun-image , centralizar a div e object-cover 
+  #aprendizado
+    uma das melhores maneiras de voce fazer imagem de qualquer tamanho caber direitinho é não usar tag img mas sim definir o tamanho dinamico da div e por a imagem como backgroun-image , centralizar a div e object-cover
   1h15
 12-07-2025 1h
 
@@ -44,8 +45,8 @@ If you are developing a production application, we recommend using TypeScript wi
   1h25
 ------------------------------------------------------------------------------------------- apartir daqui é página sobre
 
-    começei 23:36 fui até 23:59   
-  +23'  
+    começei 23:36 fui até 23:59
+  +23'
 ------------------------------------- neste dia trabalhei  5h13'
 
 
@@ -64,7 +65,7 @@ If you are developing a production application, we recommend using TypeScript wi
                   de 20:36 até 21:50----------------1h14
                    total-----------------------------8h50
           eu queria ficar mudando o quantidade de colunas no grid
-                  aprendi que os breakpoints padronizados lg:grid-cols-1 do tailwind tem maior prioridade do que um breakpoint customidado min-[896px]:grid-cols-6 por este motivo de um breakpoint estiver escrito depois de um breakpoint custumizado 
+                  aprendi que os breakpoints padronizados lg:grid-cols-1 do tailwind tem maior prioridade do que um breakpoint customidado min-[896px]:grid-cols-6 por este motivo de um breakpoint estiver escrito depois de um breakpoint custumizado
                   aqui vai a importancia do conteúdo que tive na disciplina de "Linguagems de programação" com a professora Neusa Liberato Evangelista eu sigo ela no linkedin ------lateralidade(efeito colateral) que executa a linha de código se começa executar da direita para esquerda ou começa executar da esquerda para direita
 
                    Comportamento desejado
@@ -72,7 +73,7 @@ If you are developing a production application, we recommend using TypeScript wi
                     < 640px	                            1 coluna
                     ≥ 640px e < 896px                 	2 colunas
                     ≥ 896px e < 1024px	                6 colunas
-                    ≥ 1024px	                          1 coluna 
+                    ≥ 1024px	                          1 coluna
 
                   <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 min-[896px]:grid-cols-6 lg:grid-cols-1">
                   Explicando:
@@ -99,24 +100,24 @@ If you are developing a production application, we recommend using TypeScript wi
 21-07-2025   começei as 16:35 até 16:57------- 22'
                         18:23 até 21:31------- 3h8'
                                       -------- 12'
-                        22:33 até 23:23------- 50'             
-                                       
+                        22:33 até 23:23------- 50'
+
 
     na página galeria de casos  para telas com a width da viewport >=640px eu quero fazer o tamanho do section específico referente ao bloco de um sucesso juridico com 3 opções de tamanho diferente
       elementos do bloco
-        imagem       
+        imagem
         título
         subtítulo
         ler mais
       colocar este design todo dentro de um link que redireciona para uma página do específico caso juridico
-          irei mudar de um jeito aleatótio o tamanho da height da imagem 
+          irei mudar de um jeito aleatótio o tamanho da height da imagem
           h-[277px]
           h-[416px]
           h-[540px]
-          
+
 
     <  640px       grid 1 coluna             imagem h-[188]
-    >= 640px       grid 2 coluna 
+    >= 640px       grid 2 coluna
     >= 1024px      grid 3 coluna
     >= 1280px      grid 4 colunas
     >= 1536px      grid 5 colunas
@@ -133,7 +134,7 @@ If you are developing a production application, we recommend using TypeScript wi
             1. fracionado = quantidade_total_blocos/2  -----divisão inteira
               fazer um for do 0 até <= fracionado e colocar dentro de um JSX elemento que represente todos os blocos da coluna 1
               fazer outro for apartir do (fracionado+1) até < quantidade_total_blocos e colocar dentro de outro elemento JSX que represente todos os blocos da coluna 2
-                          
+
 
                   cada loop do for antes de construir o componente react
                     1.ESCOLHER A HEIGHT DA IMAGEM DE UM JEITO QUE A HEIGHT DO PRÓXIMO BLOCO NÃO SEJA TAMANHO REPETIDO
@@ -151,7 +152,7 @@ If you are developing a production application, we recommend using TypeScript wi
                           guardar dentro da variavel (valor_height_escolhido) o especifico valor da array   opcoes_height[indice_escolhido]
                       criar uma nova array tirando da array aquele valor escolhido para não acontecer de sortear um valor repetido
 
-                    2.CONSTUIR O COMPONENTE USANDO A VARIÁVEL (valor_height_escolhido) NO ESTILO STYLE INLINE 
+                    2.CONSTUIR O COMPONENTE USANDO A VARIÁVEL (valor_height_escolhido) NO ESTILO STYLE INLINE
                         style:{{height:`${valor_height_escolhido}`}}
 
                         ou usando o tailwind mesmo     <div className={valor_height_escolhido}></div>
@@ -174,7 +175,7 @@ If you are developing a production application, we recommend using TypeScript wi
             1. fracionado = quantidade_total_blocos/2  -----divisão inteira
               fazer um for do 0 até <= fracionado e colocar dentro de um JSX elemento que represente todos os blocos da coluna 1
               fazer outro for apartir do (fracionado+1) até < quantidade_total_blocos e colocar dentro de outro elemento JSX que represente todos os blocos da coluna 2
-                          
+
 
                   cada loop do for antes de construir o componente react
                     1.ESCOLHER A HEIGHT DA IMAGEM DE UM JEITO QUE A HEIGHT DO PRÓXIMO BLOCO NÃO SEJA TAMANHO REPETIDO
@@ -192,7 +193,7 @@ If you are developing a production application, we recommend using TypeScript wi
                           guardar dentro da variavel (valor_height_escolhido) o especifico valor da array   opcoes_height[indice_escolhido]
                       criar uma nova array tirando da array aquele valor escolhido para não acontecer de sortear um valor repetido
 
-                    2.CONSTUIR O COMPONENTE USANDO A VARIÁVEL (valor_height_escolhido) NO ESTILO STYLE INLINE 
+                    2.CONSTUIR O COMPONENTE USANDO A VARIÁVEL (valor_height_escolhido) NO ESTILO STYLE INLINE
                         style:{{height:`${valor_height_escolhido}`}}
 
                         ou usando o tailwind mesmo     <div className={valor_height_escolhido}></div>
@@ -205,11 +206,11 @@ If you are developing a production application, we recommend using TypeScript wi
                     total--------------- 4h7
 24-07-2025
 
-                    16:30 até 20:32 ---- 4h 
+                    16:30 até 20:32 ---- 4h
 
 27-07-2025
               8:17 até 12:34 ---- 4h
-              12:44 até 13:20 --- 36'   
+              12:44 até 13:20 --- 36'
 
 28-07-2025
               17:07 até 21:07 ---- 4h
@@ -220,11 +221,11 @@ If you are developing a production application, we recommend using TypeScript wi
 
               204 minutos de curso https://youtube.com/playlist?list=PLl6EcvA_AoxHiX-2PjJ1eVOhKJ5HJGDvi&si=SS50GlkbqdSF2Tiv
 
-              para eu customizar os breakpoints do tailwind devo ir no arquivo theme.css dentro do diretório  
+              para eu customizar os breakpoints do tailwind devo ir no arquivo theme.css dentro do diretório
                 node_modules/@tailwindcss/vite/node_modules/tailwindcss/theme.css
                 adicionar --breakpoint-NomeDoBreakpointEscolhido: medida;
 
-30-07-2025 
+30-07-2025
         17:20 até 21h ----- 3h20
         22:04 até 22:32 --- 28'
 
@@ -232,14 +233,14 @@ If you are developing a production application, we recommend using TypeScript wi
         08:22 até 12:22 ---- 4h
 
 04-08-2025
-        20' 
+        20'
         18:20 até 20:20 ---- 2h
-10-08-2025 
+10-08-2025
         16:43 até 17:10 ---- 27'
         18:00 até 18:43 ---- 43'
 
 24-08-25
-        12:14 até 12:39 
+        12:14 até 12:39
         13:40 até 14:16
         16:27 até 17:40
           tiver que ir no gerenciador de serviços do windowns achar a opção do serviço postegresql clicar com o botão direito e clicar em iniciar
@@ -255,7 +256,7 @@ If you are developing a production application, we recommend using TypeScript wi
 13-09-2025
         17:00 até 19:40 ------ 2h40'         construindo estrutura de conteudo no strapi e consumindo api no frontend
 
-14-09-2025 
+14-09-2025
         08:10 até 09:50 ------ 1h40'
         vid tutorial strapi criando estrutura content-type-builder https://youtu.be/Q-cPtlYG1cY?si=xCu3yicbYBYY8h8t
         voltar no 43:50  esse tempo ele ensina a criar um componente dinâmico
@@ -265,7 +266,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 20-09-2025 9h7'
         11:05 até 12:40 ------ 1h35'
-        13:33 até 15:33 ------ 2h 
+        13:33 até 15:33 ------ 2h
         16:36 até 19:36 ------ 3h
 
           apartir do minuto 58:38 ele começa a ensinar como consumir os dados que vai retornar da api no front-end
@@ -284,4 +285,69 @@ If you are developing a production application, we recommend using TypeScript wi
 
       parei no minuto [video](01:09:39)
         20:47 até 23:19 ------- 2h32
+
+
+22-09-2025
+        20:20 até 21:30 ---- 1h10'
+
+        criar endpoint parameters da sessão 3 home
+        criar url endpoint params da sessão 3 home
+        testar no postman endpoint url params criado
+        escrever o código para front-end consumir nova sessão e fazer testes
+
+
+12-10-2025
+      18:36 até 19:36 ----- 1h
+      19h   até 20:28 ----- 1h28'
+
+
+27-10-2025
+      10:20 até 11:40
+      18:03 até 19:33 ----- 1h 30 so para resolver o problema de renderizar markdown em react
+
+      21:18 até 01:23
+
+03-11-2025
+    19:07 até 20:07
+
+04-11-2025
+    18:05 até 19:25
+    19:42 até 20:50
+
+07-11-2025
+    19:14 até 20:17
+
+09-11-2025
+    14:40 15:38 -------- 58'100v
+
+09-11-2025
+    19:20 até 20:45 ---- 1h25
+    22:30 até 00:20 ---- 1h50
+
+    parei no minuto do video 2:54:20
+
+10-11-2025
+    19:10 até 20:10 ---- 1h
+    20:45 até 21:45 ---- 1h
+
+11-11-2025
+    20:00 até 21:50 ---- 1h50
+    23:11 até 00:28 ---- 1h17
+
+12-11-2025
+    18:33 até 19:03 ---- 30min
+    21:30 até 22:00 ---- 30 min
+
+13-11-2025
+    20:51 até 22:01 ---- 1h10
+
+14-11-2025
+    19:15 até 20:15
+
+    3h01 minuto do video
+
+    21h até
+
+
+
 ```

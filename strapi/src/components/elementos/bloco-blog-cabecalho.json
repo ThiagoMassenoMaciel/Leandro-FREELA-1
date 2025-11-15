@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elementos_bloco_blog_cabecalhos",
+  "info": {
+    "displayName": "blog_cabecalho"
+  },
+  "options": {},
+  "attributes": {
+    "Texto_Cabecalho": {
+      "type": "string"
+    },
+    "link_id": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

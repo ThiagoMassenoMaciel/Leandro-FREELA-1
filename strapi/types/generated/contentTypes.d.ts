@@ -373,6 +373,139 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiInscritosNewsletterInscritosNewsletter
+  extends Struct.CollectionTypeSchema {
+  collectionName: "inscritos_newsletters";
+  info: {
+    displayName: "inscritos_newsletter";
+    pluralName: "inscritos-newsletters";
+    singularName: "inscritos-newsletter";
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email &
+      Schema.Attribute.Unique &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      "oneToMany",
+      "api::inscritos-newsletter.inscritos-newsletter"
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPaginaDoBlogPaginaDoBlog
+  extends Struct.CollectionTypeSchema {
+  collectionName: "pagina_do_blogs";
+  info: {
+    displayName: "pagina_do_blog";
+    pluralName: "pagina-do-blogs";
+    singularName: "pagina-do-blog";
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    autor_escreveu_blog: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    conteudo_blog: Schema.Attribute.DynamicZone<
+      [
+        "elementos.bloco-blog-paragrafo",
+        "elementos.bloco-blog-paragrafo-e-imagem",
+        "elementos.bloco-blog-imagem-grande",
+        "elementos.bloco-blog-cabecalho",
+      ]
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> &
+      Schema.Attribute.Private;
+    imagem_capa_blog: Schema.Attribute.Media<"images"> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      "oneToMany",
+      "api::pagina-do-blog.pagina-do-blog"
+    >;
+    numero_OAB: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    publishedAt: Schema.Attribute.DateTime;
+    resumo_do_assunto_do_blog: Schema.Attribute.Text &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    slug_do_blog: Schema.Attribute.UID<"titulo_do_blog"> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    tipo_assunto_do_blog: Schema.Attribute.Enumeration<
+      [
+        "Dicas Jur\u00EDdicas",
+        "Estudos de Caso",
+        "Hist\u00F3rias de Clientes",
+        "Not\u00EDcias Jur\u00EDdicas",
+      ]
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    titulo_do_blog: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPaginaHomePaginaHome extends Struct.SingleTypeSchema {
   collectionName: "pagina_homes";
   info: {
@@ -993,6 +1126,8 @@ declare module "@strapi/strapi" {
       "admin::transfer-token": AdminTransferToken;
       "admin::transfer-token-permission": AdminTransferTokenPermission;
       "admin::user": AdminUser;
+      "api::inscritos-newsletter.inscritos-newsletter": ApiInscritosNewsletterInscritosNewsletter;
+      "api::pagina-do-blog.pagina-do-blog": ApiPaginaDoBlogPaginaDoBlog;
       "api::pagina-home.pagina-home": ApiPaginaHomePaginaHome;
       "api::pagina-servico.pagina-servico": ApiPaginaServicoPaginaServico;
       "api::pagina-sobre.pagina-sobre": ApiPaginaSobrePaginaSobre;

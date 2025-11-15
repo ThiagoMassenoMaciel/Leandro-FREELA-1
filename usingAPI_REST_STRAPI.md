@@ -832,7 +832,76 @@ http://localhost:1337/api/pagina-home?populate[sessoes][on][sessoes.home-sessao-
 }
 ```
 
+## ENDPOINT QUERY PARAMETERS acessando os campos de 3 componentes dinamic zone
 
+```
+{
+  populate:{
+    sessoes : {
+      on:{
+       "sessoes.home-sessao-um" : {
+            populate:{
+              texto: true,
+              
+              imagens:{
+                populate:{
+                  imagem_coluna1_h1 :{
+                    fields: ["url"]
+                  },
+                  imagem_coluna1_h2 :{
+                    fields: ["url"]
+                  },
+                  imagem_coluna1_h3 :{
+                    fields: ["url"]
+                  },
+                  imagem_coluna1_h4 :{
+                    fields: ["url"]
+                  },
+                  imagem_coluna1_h5 :{
+                    fields: ["url"]
+                  },
+                  imagem_coluna2_h6 :{
+                    fields: ["url"]
+                  },
+                  imagem_coluna2_h7 :{
+                    fields: ["url"]
+                  },
+                  imagem_coluna2_h8 :{
+                    fields: ["url"]
+                  },
+                  imagem_coluna2_h9 :{
+                    fields: ["url"]
+                  },
+                  imagem_coluna2_h10 :{
+                    fields: ["url"]
+                  },
+                }
+              }
+            }
+        },
+        "sessoes.home-sessao-dois":{
+          populate : {
+            "imagem_sessaoDOIS_h11":{
+              fields: ["url"]
+            }           
+          }
+        }
+        "sessoes.home-sessao-tres":{
+          populate : {
+            introducao: true,
+            bloco_um: true,
+            bloco_dois: true,
+            bloco_tres: true,
+            bloco_quatro: true,
+
+                       
+          }
+        }
+      }
+    }
+  }
+}
+```
 
 
 

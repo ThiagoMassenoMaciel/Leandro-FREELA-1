@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_elementos_bloco_blog_paragrafo_e_imagems",
+  "info": {
+    "displayName": "blog_paragrafo_e_imagem"
+  },
+  "options": {},
+  "attributes": {
+    "conteudo_blog": {
+      "type": "blocks"
+    },
+    "imagem": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imagem_do_lado_esquerdo": {
+      "type": "boolean",
+      "default": false
+    },
+    "tamanho_imagem_paisagem": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "config": {}
+}

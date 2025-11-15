@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_elementos_bloco_blog_paragrafos",
+  "info": {
+    "displayName": "blog_paragrafo"
+  },
+  "options": {},
+  "attributes": {
+    "conteudo_blog": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

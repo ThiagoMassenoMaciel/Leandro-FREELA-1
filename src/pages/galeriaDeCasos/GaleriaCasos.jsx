@@ -1,9 +1,10 @@
 import galeria1 from "../../assets/galeriaCasos1.png";
+import { useRef } from "react";
 
 const Bloco = ({ texto, height }) => {
   return (
     <>
-      <article className={`bg-red-500 h-fit w-[300px]`}>
+      <article className={`h-fit w-[300px] bg-red-500`}>
         <img className={` h-[${height}] w-full`} src={galeria1} alt="imagem" />
         <h1 className="text-4xl">{texto}</h1>
       </article>
@@ -15,10 +16,10 @@ const Bloco1 = ({ texto, height }) => {
   console.log(classHeight);
   return (
     <>
-      <article className={`bg-red-500 h-fit`}>
+      <article className={`h-fit bg-red-500`}>
         <img
           style={{ height: classHeight }}
-          className={`w-full object-cover block`}
+          className={`block w-full object-cover`}
           src={galeria1}
           alt="imagem"
         />
@@ -59,15 +60,24 @@ function retornarCOLUNA1() {
 }
 
 const GaleriaCasos = () => {
+  const nextSectionRef = useRef(null);
+
+  const scrollToNextSection = () => {
+    nextSectionRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <>
       {/* SECTION 1 */}
       <section
-        className="w-full h-fit bg-cover bg-center"
+        className="h-fit w-full bg-cover bg-center"
         style={{ backgroundImage: `url(${galeria1})` }}
       >
-        <div className="w-full h-[calc(100vh-58px)] min-h-[558px] bg-[rgba(0,0,0,0.75)] flex flex-col gap-6 justify-center items-center px-[24px] md:px-[34px] lg:px-[44px]">
-          <div className="text-white text-center flex flex-col gap-6">
+        <div className="flex h-[calc(100vh-58px)] min-h-[558px] w-full flex-col items-center justify-center gap-6 bg-[rgba(0,0,0,0.75)] px-[24px] md:px-[34px] lg:px-[44px]">
+          <div className="flex flex-col gap-6 text-center text-white">
             <h1 className="text-[40px] font-bold">Sucessos Jurídicos</h1>
             <p className="text-base">
               <i className="font-bold">
@@ -76,15 +86,24 @@ const GaleriaCasos = () => {
               &nbsp; em fornecer serviços excepcionais e adaptado aos clientes
             </p>
           </div>
-          <div className="w-[190px] text-black grid grid-cols-1 mx-auto gap-2 min-[420px]:grid-cols-2  min-[420px]:w-[376px] md:grid-cols-3 md:w-[600px] md:gap-4">
-            <button className="border-0 bg-white hover:bg-gray-700 font-bold p-2">
+          <div className="mx-auto grid w-[190px] grid-cols-1 gap-2 text-black min-[420px]:w-[376px] min-[420px]:grid-cols-2 md:w-[600px] md:grid-cols-3 md:gap-4">
+            <button
+              className="border-0 bg-white p-2 font-bold hover:bg-gray-700"
+              onClick={scrollToNextSection}
+            >
               Serviços jurídicos
             </button>
-            <button className="border-0 bg-white hover:bg-gray-700 font-bold p-2">
+            <button
+              className="border-0 bg-white p-2 font-bold hover:bg-gray-700"
+              onClick={scrollToNextSection}
+            >
               Foco no cliente
             </button>
 
-            <button className="border-0 bg-white  hover:bg-gray-700 font-bold p-2 min-[420px]:col-span-2 md:col-span-1">
+            <button
+              className="border-0 bg-white p-2 font-bold hover:bg-gray-700 min-[420px]:col-span-2 md:col-span-1"
+              onClick={scrollToNextSection}
+            >
               Consultor de confiança
             </button>
           </div>
@@ -92,7 +111,10 @@ const GaleriaCasos = () => {
       </section>
 
       {/* SECTION 2 */}
-      <section className="flex flex-col gap-6 justify-center items-center py-16 px-[24px] md:px-[34px] lg:px-[44px]">
+      <section
+        className="flex flex-col items-center justify-center gap-6 px-[24px] py-16 md:px-[34px] lg:px-[44px]"
+        ref={nextSectionRef}
+      >
         <div className="text-center">
           <h2 className="text-[43px] font-bold">Casos jurídicos notáveis</h2>
           <p className="text-[18px]">
@@ -111,9 +133,10 @@ const GaleriaCasos = () => {
 */}
 
       <section className="bg-white px-[24px] md:px-[34px] lg:px-[44px]">
-        <div className="bg-red-950 p-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5 justify-center">
-          {retornarCOLUNA1()}
+        {/*<div className="grid grid-cols-1 justify-center gap-2.5 bg-red-950 p-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {retornarCOLUNA1()
         </div>
+        */}
       </section>
       {/* SECTION 3 */}
       {/* SECTION 3 */}

@@ -1,0 +1,43 @@
+{
+    "data": {
+        "id": 34,
+        "documentId": "gq07nl8qv8jy66o0i4cfxm5c",
+        "createdAt": "2025-09-13T20:31:08.772Z",
+        "updatedAt": "2025-09-22T21:56:26.473Z",
+        "publishedAt": "2025-09-22T21:56:26.705Z",
+        "locale": "pt-BR",
+        "sessoes": [
+            {
+                "__component": "sessoes.home-sessao-tres",
+                "id": 15,
+                "introducao": {
+                    "id": 36,
+                    "titulo": "Seu processo nas mãos certas, com quem entrega resultado.",
+                    "subtitulo_resumo": "Seu direito, minha prioridade. Sua vitória, minha missão.",
+                    "descricao": "Ao escolher Leandro Viana, você recebe atendimento jurídico personalizado para empresas, pessoas físicas e adaptado à sua situação específica. Atuando com ética e eficiência acompanhada de uma ampla experiência e histórico comprovado."
+                },
+                "bloco_um": {
+                    "id": 34,
+                    "subtitulo": "Estratégias Jurídicas Exclusivas",
+                    "descricao": "Cada caso é tratado com um plano estratégico único. Eu realizo análises profundas para criar soluções personalizadas, garantindo vantagem competitiva e melhores resultados para os meus clientes."
+                },
+                "bloco_dois": {
+                    "id": 35,
+                    "subtitulo": "Experiência local",
+                    "descricao": "Através de anos dedicados à advocacia construi uma sólida experiência , desenvolvendo expertise em diferentes áreas do Direito para melhor atendê-lo. Isso garante maior agilidade e transparência em todo o atendimento."
+                },
+                "bloco_tres": {
+                    "id": 36,
+                    "subtitulo": "Sucesso Processual",
+                    "descricao": "Os meus índices de vitória superam a média do mercado, refletindo a eficiência técnica e a dedicação extrema em cada ação. Trabalho com metas e resultados concretos."
+                },
+                "bloco_quatro": {
+                    "id": 37,
+                    "subtitulo": "Especialização em Nichos Estratégicos",
+                    "descricao": "Considerando o foco em áreas específicas do Direito Trabalhista, Família, Previdenciário, Criminal, Tributário, tenho conhecimento aprofundado e atuação extremamente qualificada. Isso significa menos erro, mais segurança e previsibilidade para o seu caso."
+                }
+            }
+        ]
+    },
+    "meta": {}
+}

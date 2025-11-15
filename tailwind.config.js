@@ -5,6 +5,7 @@ export default {
     extend: {},
     screens: {
       xs: "480px", // novo breakpoint para telas pequenas (smartphones menores)
+      small: "700px",
     },
     boxShadow: {
       custom:

@@ -6,25 +6,25 @@ import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
-    <footer className="w-full h-fit bg-white text-black text-[18px] text-center flex flex-col gap-8 px-[24px] lg:px-[44px] md:px-[34px] py-12">
-      <section className="w-full h-fit flex flex-col md:flex-row justify-between items-center gap-6">
+    <footer className="flex h-fit w-full flex-col gap-8 bg-white px-[24px] py-12 text-center text-[18px] text-black md:px-[34px] lg:px-[44px]">
+      <section className="flex h-fit w-full flex-col items-center justify-between gap-6 md:flex-row">
         <img src={logo} alt="imagem logo" />
         <nav>
-          <ul className="md:flex items-center gap-4 text-base font-semibold">
-            <li className="p-1 hover:bg-gray-900 hover:text-white rounded-md transition-all cursor-pointer hover:underline hover:font-bold">
+          <ul className="items-center gap-4 text-base font-semibold md:flex">
+            <li className="cursor-pointer rounded-md p-1 transition-all hover:bg-gray-900 hover:font-bold hover:text-white hover:underline">
               <Link to="/">Home</Link>
             </li>
-            <li className="p-1 hover:bg-gray-900 hover:text-white rounded-md transition-all cursor-pointer hover:underline hover:font-bold">
+            <li className="cursor-pointer rounded-md p-1 transition-all hover:bg-gray-900 hover:font-bold hover:text-white hover:underline">
               <Link to="/sobre">Sobre</Link>
             </li>
-            <li className="p-1 hover:bg-gray-900 hover:text-white rounded-md transition-all cursor-pointer hover:underline hover:font-bold">
+            <li className="cursor-pointer rounded-md p-1 transition-all hover:bg-gray-900 hover:font-bold hover:text-white hover:underline">
               <Link to="/servicos">Serviços</Link>
             </li>
-            <li className="p-1 hover:bg-gray-900 hover:text-white rounded-md transition-all cursor-pointer hover:underline hover:font-bold">
-              <Link to="/galeria">Galeria de Casos</Link>
+            <li className="cursor-pointer rounded-md p-1 transition-all hover:bg-gray-900 hover:font-bold hover:text-white hover:underline">
+              <Link to="/galerias">Galeria de Casos</Link>
             </li>
-            <li className="p-1 hover:bg-gray-900 hover:text-white rounded-md transition-all cursor-pointer hover:underline hover:font-bold">
-              <Link to="/blog">Blog</Link>
+            <li className="cursor-pointer rounded-md p-1 transition-all hover:bg-gray-900 hover:font-bold hover:text-white hover:underline">
+              <Link to="/blogs">Blog</Link>
             </li>
           </ul>
         </nav>
@@ -38,23 +38,23 @@ const Footer = () => {
         </div>
       </section>
       <section className="border-t-2 border-black">
-        <ul className="md:flex-row md:justify-center flex flex-col items-center gap-4 pt-6 text-base font-semibold">
-          <li className="p-1 hover:bg-gray-900 hover:text-white rounded-md transition-all cursor-pointer underline hover:font-bold ">
+        <ul className="flex flex-col items-center gap-4 pt-6 text-base font-semibold md:flex-row md:justify-center">
+          <li className="cursor-pointer rounded-md p-1 underline transition-all hover:bg-gray-900 hover:font-bold hover:text-white">
             <Link to="/politica">Políticas de privacidade</Link>
           </li>
-          <li className="p-1 hover:bg-gray-900 hover:text-white rounded-md transition-all cursor-pointer underline hover:font-bold ">
+          <li className="cursor-pointer rounded-md p-1 underline transition-all hover:bg-gray-900 hover:font-bold hover:text-white">
             <Link to="/termos">Termos e condições</Link>
           </li>
-          <li className="p-1 hover:bg-gray-900 hover:text-white rounded-md transition-all cursor-pointer underline hover:font-bold">
+          <li className="cursor-pointer rounded-md p-1 underline transition-all hover:bg-gray-900 hover:font-bold hover:text-white">
             <Link to="/cookies">Configurações de Cookies</Link>
           </li>
         </ul>
       </section>
-      <p className="text-sm text-gray-500 ">
+      <p className="text-sm text-gray-500">
         &copy;{new Date().getFullYear()} Leandro Viana. Todos os direitos
         reservados. Desenvolvido por{" "}
         <a
-          className="text-blue-800 hover:underline hover:font-bold"
+          className="text-blue-800 hover:font-bold hover:underline"
           href="https://www.linkedin.com/in/tmm3/"
           target="_blank"
           rel="noopener noreferrer"
