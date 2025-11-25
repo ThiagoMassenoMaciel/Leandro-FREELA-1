@@ -2,19 +2,62 @@
 
 ## API's
 
-###### retornar todos os posts do blog (find)
+###### Retornar os dados do strapi referentes a página home
+
+```
+/api/pagina-home
+
+```
+
+###### Retornar os dados do strapi referentes a página sobre
+
+```
+/api/pagina-sobre
+
+```
+
+###### retornar array com todos os posts do blog em formato de miniatura (find)
 
 ```
 /api/pagina-do-blogs
 
 ```
 
-###### retornar o post do blog clicado (findOne)
+###### retornar objeto do post do blog clicado (findOne)
 
 ```
 /api/pagina-do-blogs/:id
 
 ```
+
+###### retornar array com todos os post de caso juridico em formato de miniatura (find)
+
+```
+/api/pagina-casos-juridicos
+```
+
+###### retornar aquele post de caso juridico clicado (findOne)
+
+```
+/api/pagina-casos-juridicos/:id
+```
+
+### ordem do desenvolvimento
+
+1. construir todo o design front-end e os textos escolhidos `definir quantas páginas vai ter o site`, `perceber quais páginas vão precisar receber informação da api do strapi`, `quais api do strapi eu preciso e para quais paginas eles vao ser usados`
+2. node instalado e ter o programa postgresql instalado `descobrir o usuario do banco` ,`descobrir a senha do usuario do banco `, `criar o nome do banco`
+3. escolher pasta , intalar vite + boilerplate react + tailwind na raiz do projeto `npm run dev apartir da raiz do projeto`
+4. instalar strapi e ja ir conectando com o banco de dados ja criado `cd strapi entrar pelo terminal na pasta do strapi e executar npm run dev`, `acessar interface do strapi pelo navegador usando localhost:PORTA_DE_CONEXÃO_diferente_da_porta_do_frontend ` `construir todos os campos de conteúdo de um pedaço` `adicionar todo o conteúdo conteúdo de um pedaço`
+5. construir a base código dos componentes de cada uma das páginas do frontend `configurar a estrutura dos arquivos`, `criar os componentes basicos sem conteudo`, `estruturar as rotas`
+6. estruturar de como vai ser a forma que vou fazer a requisição do front-end para api do strapi
+7. para cada api testar se o URL QUERY PARAMS estao retornando todos os dados de conteúdo que preciso [sempre testando no postman](https://docs.strapi.io/cms/api/rest/interactive-query-builder)
+8. Salvar a resposta das api dentro de arquivos json testes para depois eu perceber `como vou conseguir acessar dentro do json as informações que preciso` e `fazer todo o dado requisitado retornarem` para os componente react frontend que irão consumir os dados
+9. e vai intercalando com a contrução de código do passo 6 com o passo 5, de pedaço por pedaço , resumo `faz pedaço um no strapi`, `prepara a api, testa ela , perceber como eu acessarei a informação que preciso daquilo que vem como resposta da api` `construir o pedaço no front-end que vai consumir este pedaço ja feito no content-type-builder do strapi 5 e preenchido no manager content do strapi 5`.
+10. criar conta no github para o cliente e hospedar todo código do projeto lá
+11. criar conta no BD postgresql da nuvem chamado neon servless postegresql [link aqui](https://www.bing.com/ck/a?!&&p=3d6c2eac9d19392d9e9b992ffd7b5227ad6f2d534787dbe387c85aebd7a840f5JmltdHM9MTc2Mzg1NjAwMA&ptn=3&ver=2&hsh=4&fclid=1442babb-d3c0-6047-12de-a855d2166138&psq=neon+servless&u=a1aHR0cHM6Ly9uZW9uLmNvbS8)
+12. seguir o tutorial do video [link aqui](https://youtu.be/FR3Qcjymz9Q?si=FgqKY_dyLRsB7Frs)
+
+# o ideal seria instalar o strapi depois de ja ter criado o banco no neon servless postgresql, e `conectar strapi ao BD feiot no neon`
 
 ```
 4h
@@ -346,8 +389,40 @@
 
     3h01 minuto do video
 
-    21h até
+    21h até 22:00 ----- 1h
 
+15-11-2025
+    10:50 até 12:10 --- 1h20
 
+16-11-2025
+    10:13 até 11:13 --- 1h
 
+17-11-2025 noite da segunda feira
+    18:44 até 21:44 --- 3h
+
+18-11-2025
+    01:30 até 03:45 --- 2h15
+    04:40 até 05:45 --- 1h5
+
+    18:10 até 20:15 --- 2h5
+
+    21:34 até 23:34 --- 2h
+
+19-11-2025
+    21:10 até 20:10 --- 1h
+
+23-11-2025
+    08:05 até 09:20 --- 1h15
+    09:56 até 11:05 --- 1h9
+    11:30 até 12:07 --- 37'
+    14:26 até 16:46 --- 2h26'
+
+    21:09 até 22:9  --- 1h
+    22:24 até 01:39 --- 3h15'
+
+    10:00 até 10:33 --- 30'
+
+    18:40 até 22:00 ---3h20'
+
+    23:16 até
 ```

@@ -1,12 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
-const Header = () => {
+import ModalFormContato from "./ModalFormContato";
+
+const Header = ({ suaveTransicao }) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+  const [showModal, setShowModal] = useState(false); // Novo estado para modal
+
+  const exibirFormularioNoModal = () => {
+    setShowModal(true); // Abre o modal
+  };
 
   const AfterClicked = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,14 +23,17 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-between bg-white px-[24px] py-1 text-black drop-shadow-md md:px-[34px] lg:px-[44px]">
-        <a href="#">
+      {showModal && <ModalFormContato onClose={() => setShowModal(false)} />}
+      <header
+        className={`fixed top-0 left-0 z-50 flex w-full items-center justify-between bg-white px-[24px] py-1 text-black drop-shadow-md md:px-[34px] lg:px-[44px] ${suaveTransicao}`}
+      >
+        <Link to="/" className="no-underline">
           <img
             src={logo}
             alt="logo"
             className="transition-all hover:scale-105"
           />
-        </a>
+        </Link>
 
         <ul className="hidden items-center gap-4 text-base md:flex">
           <li className="cursor-pointer rounded-md p-1 transition-all hover:bg-gray-900 hover:text-white">
@@ -51,7 +63,10 @@ const Header = () => {
           </li>
         </ul>
         {/*rounded-md*/}
-        <button className="bg-black p-2 text-white hover:bg-gray-600">
+        <button
+          className="bg-black p-2 text-white hover:bg-gray-600"
+          onClick={() => exibirFormularioNoModal()}
+        >
           Entrar em contato
         </button>
 

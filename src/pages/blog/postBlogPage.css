@@ -1,0 +1,21 @@
+@media only screen and (min-width: 510px) {
+  #descricao_metadado_blog {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #paragrafo_metadado_blog {
+    display: inline;
+  }
+
+  #primeira_frase_metadato_blog {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  #paragrafo_metadado_blog {
+    text-align: center;
+  }
+}

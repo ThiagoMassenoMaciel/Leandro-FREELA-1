@@ -412,6 +412,50 @@ export interface ApiInscritosNewsletterInscritosNewsletter
   };
 }
 
+export interface ApiPaginaCasosJuridicoPaginaCasosJuridico
+  extends Struct.CollectionTypeSchema {
+  collectionName: "pagina_casos_juridicos";
+  info: {
+    displayName: "pagina_casos_juridico";
+    pluralName: "pagina-casos-juridicos";
+    singularName: "pagina-casos-juridico";
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    conteudo_caso_juridico: Schema.Attribute.DynamicZone<
+      ["elementos.bloco-blog-paragrafo"]
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> &
+      Schema.Attribute.Private;
+    imagem_capa_desse_caso_juridico: Schema.Attribute.Media<"images">;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      "oneToMany",
+      "api::pagina-casos-juridico.pagina-casos-juridico"
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    resumo_desse_caso_juridico_no_max_13_palavras: Schema.Attribute.Text;
+    slug_caso_juridico: Schema.Attribute.UID<"titulo_caso_juridico">;
+    tag_categoria_deste_caso_juridico: Schema.Attribute.Enumeration<
+      [
+        "Direito da Fam\u00EDlia",
+        "Direito Criminal",
+        "Direito previdenci\u00E1rio",
+        "Direito Trabalhista",
+        "Direito Tribut\u00E1rio",
+      ]
+    >;
+    titulo_caso_juridico: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPaginaDoBlogPaginaDoBlog
   extends Struct.CollectionTypeSchema {
   collectionName: "pagina_do_blogs";
@@ -1127,6 +1171,7 @@ declare module "@strapi/strapi" {
       "admin::transfer-token-permission": AdminTransferTokenPermission;
       "admin::user": AdminUser;
       "api::inscritos-newsletter.inscritos-newsletter": ApiInscritosNewsletterInscritosNewsletter;
+      "api::pagina-casos-juridico.pagina-casos-juridico": ApiPaginaCasosJuridicoPaginaCasosJuridico;
       "api::pagina-do-blog.pagina-do-blog": ApiPaginaDoBlogPaginaDoBlog;
       "api::pagina-home.pagina-home": ApiPaginaHomePaginaHome;
       "api::pagina-servico.pagina-servico": ApiPaginaServicoPaginaServico;

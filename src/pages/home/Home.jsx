@@ -1,11 +1,8 @@
 import React, { use, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleQuestion, faXmark } from "@fortawesome/free-solid-svg-icons";
-
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
@@ -33,8 +30,7 @@ import h_icon5 from "../../assets/h_icon5.svg";
 //import { useStrapi } from "../../hooks/Load_data_to_webpage.jsx";
 
 import { GetDataHome } from "../../hooks/GetDataHome.js";
-
-import FormularioJuridico3 from "../../components/formulario_juridico_dinamico3.jsx";
+import ModalFormContato from "../../components/ModalFormContato.jsx";
 import UseStrapiURL from "../../hooks/UseStrapiURL.js";
 
 /*
@@ -64,7 +60,11 @@ const Home = () => {
   const [faq5, setFaq5] = useState(true);
   const [faq6, setFaq6] = useState(true);
 */
-  const [showForm, setShowForm] = useState(false);
+  const [showModal, setShowModal] = useState(false); // Novo estado para modal
+
+  const exibirFormularioNoModal = () => {
+    setShowModal(true); // Abre o modal
+  };
 
   /*
   const faqData = [
@@ -135,7 +135,7 @@ const Home = () => {
   // Resto do código...
   const faqData = homeData?.sessoes?.[3]?.perguntas;
 
-  console.log("faqData:-------------------", faqData, typeof faqData);
+  //console.log("faqData:-------------------", faqData, typeof faqData);
 
   // 2. A função de toggle agora adiciona ou remove um ID do array. tal qual referencia se o bloco estará aberto ou fechado
   const handleToggle = (id) => {
@@ -194,9 +194,8 @@ const Home = () => {
 
   return (
     <>
-      {showForm && (
-        <FormularioJuridico3 className="l-0 t-0 fixed z-100 h-full w-full" />
-      )}
+      {showModal && <ModalFormContato onClose={() => setShowModal(false)} />}
+
       <div className="flex h-[120vh] w-full flex-col-reverse gap-[calc(34px+1vw)] overflow-hidden bg-white px-[24px] md:px-[34px] lg:h-[calc(100vh-58px)] lg:flex-row-reverse lg:items-center lg:px-[44px]">
         <div className="mx-auto flex h-[50vh] h-screen w-[80vw] flex-row gap-4 gap-[12px] overflow-hidden sm:w-[70vw] md:w-[60vw] lg:mx-0 lg:w-[50vw]">
           <div
@@ -317,7 +316,9 @@ const Home = () => {
         {error && <p className="text-red-500">Erro: {error}</p>}
       </div>
       <section className="box-border flex h-fit w-full flex-col-reverse items-start justify-center gap-[calc(34px+1vw)] px-[24px] py-[80px] md:px-[34px] lg:flex-row lg:px-[44px]">
-        {loading && <p>Carregando conteúdo...</p>}
+        {loading && (
+          <p className="text-7xl font-bold">Carregando conteúdo...</p>
+        )}
         {error && <p className="text-red-500">Erro: {error}</p>}
         <div
           className="h-[50vh] w-full bg-cover bg-center lg:h-[100vh] lg:w-1/2"
@@ -325,10 +326,10 @@ const Home = () => {
             backgroundImage: `url(${UseStrapiURL()}${homeData?.sessoes[1]?.imagem_sessaoDOIS_h11?.url})`,
           }}
         >
-          {console.log(
+          {/*console.log(
             "---------------",
             homeData?.sessoes[1].imagem_sessaoDOIS_h11.url,
-          )}
+          )*/}
         </div>
         <div className="box-border flex w-full flex-col items-center text-center lg:w-1/2 lg:items-start lg:text-start">
           {homeData && (
@@ -353,8 +354,17 @@ const Home = () => {
         </div>
       </section>
       <section className="grid h-fit w-full grid-cols-1 items-center justify-center gap-22 bg-gradient-to-b from-[#f5f5f5] to-[#fefefe] px-[24px] py-20 md:px-[34px] lg:grid-cols-2 lg:flex-row lg:items-start lg:gap-20 lg:px-[44px]">
-        {loading && <p>Carregando conteúdo...</p>}
-        {error && <p className="text-red-500">Erro: {error}</p>}
+        {loading && (
+          <p className="text-3xl font-bold text-black">
+            Carregando conteúdo...
+          </p>
+        )}
+        {error && (
+          <p className="text-3xl font-bold text-red-500">
+            Infelizmente não foi possível exibir o conteúdo, aconteceu um erro:{" "}
+            {error}
+          </p>
+        )}
         <div
           className="flex h-full w-full flex-col items-start gap-15"
           id="leftside"
@@ -376,10 +386,21 @@ const Home = () => {
               {homeData?.sessoes[2].introducao.descricao}
             </p>
             <div className="flex w-full justify-center gap-4 lg:justify-start">
+              {/*
+              <Link
+                to="/servicos"
+                className="m-0 h-fit w-fit p-0 no-underline"
+                onClick={() => setShowForm(true)}
+              ></Link>
+*/}
               <button className="bg-white px-6 py-3 text-black shadow-[inset_0_0_0_2px_black] transition hover:bg-black hover:text-white">
                 Saiba Mais
               </button>
-              <button className="bg-black px-6 py-3 text-white transition hover:bg-gray-900">
+
+              <button
+                className="bg-black px-6 py-3 text-white transition hover:bg-gray-900"
+                onClick={() => exibirFormularioNoModal()}
+              >
                 Contato
               </button>
             </div>
@@ -503,7 +524,10 @@ const Home = () => {
               personalizada para você.
             </p>
             <div className="flex w-full justify-start gap-4 lg:justify-start">
-              <button className="border-none bg-white px-6 py-3 text-black transition hover:bg-gray-100">
+              <button
+                className="border-none bg-white px-6 py-3 text-black transition hover:bg-gray-100"
+                onClick={() => exibirFormularioNoModal()}
+              >
                 Contato
               </button>
               <button className="bg-transparent px-6 py-3 text-white shadow-[inset_0_0_0_1px_white] transition hover:bg-black hover:text-white">
@@ -801,7 +825,10 @@ const Home = () => {
             Entre em contato agora e tire todas as suas dúvidas sem compromisso!
           </p>
           <div className="mt-4 flex w-full justify-center gap-4">
-            <button className="bg-black px-6 py-3 text-white transition hover:bg-gray-900">
+            <button
+              className="bg-black px-6 py-3 text-white transition hover:bg-gray-900"
+              onClick={() => exibirFormularioNoModal()}
+            >
               Contato
             </button>
           </div>

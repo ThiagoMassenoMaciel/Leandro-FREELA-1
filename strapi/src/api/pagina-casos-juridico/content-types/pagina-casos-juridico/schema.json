@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pagina_casos_juridicos",
+  "info": {
+    "singularName": "pagina-casos-juridico",
+    "pluralName": "pagina-casos-juridicos",
+    "displayName": "pagina_casos_juridico"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo_caso_juridico": {
+      "type": "string"
+    },
+    "resumo_desse_caso_juridico_no_max_13_palavras": {
+      "type": "text"
+    },
+    "tag_categoria_deste_caso_juridico": {
+      "type": "enumeration",
+      "enum": [
+        "Direito da Família",
+        "Direito Criminal",
+        "Direito previdenciário",
+        "Direito Trabalhista",
+        "Direito Tributário"
+      ]
+    },
+    "imagem_capa_desse_caso_juridico": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "conteudo_caso_juridico": {
+      "type": "dynamiczone",
+      "components": [
+        "elementos.bloco-blog-paragrafo"
+      ]
+    },
+    "slug_caso_juridico": {
+      "type": "uid",
+      "targetField": "titulo_caso_juridico"
+    }
+  }
+}

@@ -1,0 +1,4136 @@
+{
+  "data": [
+    {
+      "id": 14,
+      "documentId": "fmy02tuika6y7jqlg2ozspya",
+      "titulo_do_blog": "STJ anula provas de 'denúncia anônima'. O que isso muda para você?",
+      "autor_escreveu_blog": "Leandro Vianna",
+      "numero_OAB": "OAB/CE n° 51.588",
+      "resumo_do_assunto_do_blog": "STJ decide se denúncia anônima justifica abordagem policial; entenda os impactos nos seus direitos.",
+      "slug_do_blog": "stj-anula-provas-de-denuncia-anonima-o-que-isso-muda-para-voce",
+      "tipo_assunto_do_blog": "Notícias Jurídicas",
+      "createdAt": "2025-11-12T02:16:11.776Z",
+      "imagem_capa_blog": {
+        "id": 21,
+        "documentId": "y32s598sias07r3pkq8amdk3",
+        "url": "/uploads/denuncia_anonima_311b18df31.jpg",
+        "alternativeText": null,
+        "caption": null
+      },
+      "conteudo_blog": [
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 64,
+          "Texto_Cabecalho": "Denúncia anônima permite abordagem policial?",
+          "link_id": "parte1"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo-e-imagem",
+          "id": 8,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Você já ouviu falar de prisões baseadas em ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "'denúncia anônima'",
+                  "type": "text"
+                },
+                {
+                  "text": "? É uma das abordagens policiais mais comuns no dia a dia.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Mas uma denúncia, sozinha, ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "é suficiente para a polícia invadir sua casa",
+                  "type": "text"
+                },
+                {
+                  "text": " ou revistar seu carro? O Superior Tribunal de Justiça (STJ) bateu o martelo sobre isso.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Neste artigo, vamos explicar essa ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "notícia urgente",
+                  "type": "text"
+                },
+                {
+                  "text": " e o que ela significa para os seus direitos fundamentais.",
+                  "type": "text"
+                }
+              ]
+            }
+          ],
+          "imagem_do_lado_esquerdo": false,
+          "tamanho_imagem_paisagem": false
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 65,
+          "Texto_Cabecalho": "O que é uma denúncia anônima?",
+          "link_id": "parte2"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 62,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "É quando alguém informa à polícia sobre um possível crime ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "sem revelar sua identidade",
+                  "type": "text"
+                },
+                {
+                  "text": ". Pode ser feita por telefone (como o 190), aplicativos, e-mails ou até bilhetes deixados em delegacias.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Esse tipo de denúncia é comum e, muitas vezes, útil. Ela permite que cidadãos alertem as autoridades ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "sem medo de represálias",
+                  "type": "text"
+                },
+                {
+                  "text": ". No entanto, por não ter identificação, ela precisa ser tratada com cautela.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "A denúncia anônima ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "não tem valor absoluto",
+                  "type": "text"
+                },
+                {
+                  "text": ". Ela não pode, por si só, justificar ações invasivas como entrar em uma casa ou revistar um carro. É apenas o início de uma apuração.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 66,
+          "Texto_Cabecalho": "A polícia pode agir com base na denúncia anônima ?",
+          "link_id": "parte3"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 63,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Sim, a polícia pode — e deve — investigar a informação recebida. A denúncia anônima funciona como ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "uma pista inicia",
+                  "type": "text"
+                },
+                {
+                  "text": "l, um alerta que pode levar à descoberta de um crime.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "bold": true,
+                  "text": "Mas atenção: ",
+                  "type": "text"
+                },
+                {
+                  "text": "ela não é uma autorização automática para abordagem, revista ou entrada em domicílio. Para que essas ações sejam legais, é necessário que a polícia obtenha outros elementos que confirmem a suspeita.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Por exemplo, se após a denúncia os agentes observarem movimentações suspeitas, escutarem barulhos incomuns ou identificarem comportamentos típicos de crime, aí sim podem agir. ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "A abordagem precisa ser justificada por elementos concretos.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "O ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "Superior Tribunal de Justiça (STJ)",
+                  "type": "text"
+                },
+                {
+                  "text": " já decidiu que a denúncia anônima, isoladamente, não autoriza medidas invasivas. É preciso que ela seja acompanhada de diligências, investigações ou flagrante.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 67,
+          "Texto_Cabecalho": "Qual foi a grande notícia (decisão) do STJ sobre isso ?",
+          "link_id": "parte4"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 64,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "O ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "STJ",
+                  "type": "text"
+                },
+                {
+                  "text": " decidiu, em diversos julgamentos recentes, que a denúncia anônima, por si só,",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": " não justifica ",
+                  "type": "text"
+                },
+                {
+                  "text": "uma busca pessoal ou a invasão de domicílio.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Ela não é uma \"",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "carta branca",
+                  "type": "text"
+                },
+                {
+                  "text": "\". Se a polícia recebe a denúncia, ela não pode ir direto revistando a pessoa ou a casa indicada.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Isso é considerado uma \"",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "prova ilícita\"",
+                  "type": "text"
+                },
+                {
+                  "text": ", pois não havia ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "\"fundada suspeita\"",
+                  "type": "text"
+                },
+                {
+                  "text": " (justa causa) para a abordagem, apenas um boato.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 68,
+          "Texto_Cabecalho": "O que a polícia precisa fazer antes da abordagem ?",
+          "link_id": "parte5"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 65,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Esta é a parte central da notícia. Para que a denúncia anônima se torne legal, a polícia precisa fazer",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": " uma investigação prévia",
+                  "type": "text"
+                },
+                {
+                  "text": ".",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Os policiais devem ir ao local e, discretamente, confirmar se há algo suspeito. Isso se chama ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "\"verificação preliminar",
+                  "type": "text"
+                },
+                {
+                  "text": "\".",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Por exemplo: se a denúncia diz que há tráfico em uma casa, os policiais devem monitorar e ver se há, de fato, um entra e sai de usuários.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Eles precisam encontrar outras provas (como a atitude suspeita) que confirmem a denúncia",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": " antes de abordar ou invadir",
+                  "type": "text"
+                },
+                {
+                  "text": ".",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Se a polícia simplesmente para o carro denunciado, sem ver nada de errado antes, e acha algo, essa prova (droga, arma) será anulada pela Justiça.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 69,
+          "Texto_Cabecalho": "O que acontece se a prova for anulada ?",
+          "link_id": "parte6"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 66,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "No Direito Criminal, usamos a ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "\"Teoria dos Frutos da Árvore Envenenada\"",
+                  "type": "text"
+                },
+                {
+                  "text": ". Se a prova inicial (a busca) foi ilegal, tudo que veio dela é contaminado.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Vamos supor que a polícia invadiu a casa só com a denúncia. Lá dentro, encontrou drogas. Na delegacia, o suspeito confessou.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "A invasão foi ilegal. Portanto, as drogas (a prova) são ilegais. A confissão que só aconteceu por causa da apreensão das drogas também é ilegal.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Na prática, o juiz ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "\"apaga\"",
+                  "type": "text"
+                },
+                {
+                  "text": " essas provas do processo. Sem provas válidas, a consequência mais comum é a absolvição do acusado.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 70,
+          "Texto_Cabecalho": "Como era o entendimento do STJ antes dessa nova decisão  ?",
+          "link_id": "parte7"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 67,
+          "conteudo_blog": [
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": "Denúncia anônima genérica",
+                      "type": "text"
+                    },
+                    {
+                      "text": " (sem muitos detalhes) era frequentemente usada como justificativa para abordagens policiais, especialmente em regiões com alta criminalidade.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "A jurisprudência permitia que, em alguns casos, ",
+                      "type": "text"
+                    },
+                    {
+                      "bold": true,
+                      "text": "a simples existência da denúncia fosse suficiente para revista pessoal ou abordagem",
+                      "type": "text"
+                    },
+                    {
+                      "text": ", mesmo sem flagrante ou investigação prévia.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Muitos tribunais aceitavam provas obtidas nessas abordagens, mesmo que não houvesse elementos concretos além da denúncia.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 71,
+          "Texto_Cabecalho": "Conclusão",
+          "link_id": "parte8"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 68,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Como vimos, a recente posição do ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "STJ reforça",
+                  "type": "text"
+                },
+                {
+                  "text": " um direito básico: ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "a polícia não pode invadir sua privacidade baseada apenas em boatos",
+                  "type": "text"
+                },
+                {
+                  "text": ".",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Denúncia anônima ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "exige investigação e confirmação",
+                  "type": "text"
+                },
+                {
+                  "text": " (fundada suspeita) antes de qualquer abordagem invasiva.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Saber disso é fundamental. ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "Muitas prisões são baseadas em provas ",
+                  "type": "text"
+                },
+                {
+                  "text": "que, na origem, são ilícitas, e o réu pode ser absolvido por essa nulidade.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Se você ou um familiar está respondendo a um processo criminal iniciado por uma busca duvidosa ou uma denúncia anônima, ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "é vital agir rápido.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "A diferença entre a condenação e a liberdade pode estar na análise técnica da legalidade das provas.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Clique no botão preto [entrar em contato] na parte superior deste site",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "documentId": "jc68lwzi8xapl8j9fnbg7pav",
+      "titulo_do_blog": "INSS negou? A história de como Dona Maria conseguiu se aposentar.",
+      "autor_escreveu_blog": "Leandro Vianna",
+      "numero_OAB": "OAB/CE n° 51.588",
+      "resumo_do_assunto_do_blog": "Dona Maria teve aposentadoria negada injustamente pelo INSS e conseguiu reverter com provas e apoio jurídico.",
+      "slug_do_blog": "inss-negou-a-historia-de-como-dona-maria-conseguiu-se-aposentar",
+      "tipo_assunto_do_blog": "Histórias de Clientes",
+      "createdAt": "2025-11-12T00:41:21.400Z",
+      "imagem_capa_blog": {
+        "id": 19,
+        "documentId": "zobdsssol4m5ax262ctjn52v",
+        "url": "/uploads/inss_negado_c3ec0754e1.jpg",
+        "alternativeText": null,
+        "caption": null
+      },
+      "conteudo_blog": [
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 51,
+          "Texto_Cabecalho": "Você está passando por isso ?",
+          "link_id": "parte1"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 50,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Introdução (O \"Lide\" de 10 Segundos)",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Você passou a vida inteira trabalhando, foi ao INSS com seus papéis e, após ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "meses de espera",
+                  "type": "text"
+                },
+                {
+                  "text": ", recebeu um \"Não\"? A sensação é de profunda injustiça.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "O INSS indeferiu seu pedido dizendo que ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "\"falta tempo de contribuição\"",
+                  "type": "text"
+                },
+                {
+                  "text": ", mesmo você sabendo que trabalhou muito mais do que o sistema diz?",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Você não está sozinho. Vamos contar a história real de ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "\"Dona Maria\"",
+                  "type": "text"
+                },
+                {
+                  "text": ", que estava exatamente nessa situação, e mostrar como ela reverteu essa decisão.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 52,
+          "Texto_Cabecalho": "Qual era o problema de Dona Maria?",
+          "link_id": "parte2"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 51,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Dona Maria foi ao INSS pedir sua aposentadoria por idade. Ela tinha 62 anos e a carteira de trabalho cheia de anotações.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "O INSS negou. Na carta de indeferimento, dizia que ela tinha apenas 12 anos de contribuição. Faltavam 3 anos para o mínimo de 15.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Mas Dona Maria sabia que isso não estava certo. Ela havia trabalhado em diversas empresas, inclusive antes da informatização do sistema. Muitos desses vínculos não apareciam no CNIS — o cadastro oficial do INSS.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Ela saiu do posto com um sentimento de injustiça. Afinal, como pode o Estado ignorar anos de trabalho só porque não estão registrados digitalmente?",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Foi aí que ela procurou ajuda jurídica. E descobriu que não estava sozinha: milhares de brasileiros enfrentam o mesmo problema todos os dias.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "A falha não era dela. Era do sistema, que não reconhece automaticamente vínculos antigos, trabalhos rurais ou períodos em empresas que não repassaram corretamente as contribuições.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Com orientação profissional, Dona Maria iniciou uma verdadeira investigação sobre sua vida laboral. E o que ela encontrou mudou tudo.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 53,
+          "Texto_Cabecalho": "O que fizemos para reverter a negativa do INSS?",
+          "link_id": "parte3"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 52,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Aqui entra o trabalho do advogado previdenciário. Não aceitamos o \"Não\" e iniciamos uma investigação da vida contributiva dela.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Descobrimos que o ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "INSS ignorou dois períodos cruciais que não estavam no sistema",
+                  "type": "text"
+                },
+                {
+                  "text": ", mas estavam na vida dela.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "bold": true,
+                  "text": "Primeiro: ",
+                  "type": "text"
+                },
+                {
+                  "text": "ela trabalhou 5 anos (de 1985 a 1990) em uma fábrica de calçados que faliu.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "A empresa faliu e nunca repassou as contribuições, embora o desconto viesse no contracheque dela. A anotação estava na Carteira de Trabalho.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "bold": true,
+                  "text": "Atenção: ",
+                  "type": "text"
+                },
+                {
+                  "text": "A culpa pela falta de repasse é da empresa, não do trabalhador. A anotação na Carteira de Trabalho é prova plena.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "bold": true,
+                  "text": "Segundo: ",
+                  "type": "text"
+                },
+                {
+                  "text": "Dona Maria trabalhou 4 anos na roça com seus pais, dos 12 aos 16 anos, em regime de economia familiar.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "bold": true,
+                  "text": "Muitos não sabem,",
+                  "type": "text"
+                },
+                {
+                  "text": " mas o trabalho rural (mesmo sem registro) pode contar para a aposentadoria por idade, desde que provado.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Com a anotação da fábrica (5 anos) e o tempo rural (4 anos), somamos 9 anos ao tempo de contribuição dela.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-imagem-grande",
+          "id": 7
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 54,
+          "Texto_Cabecalho": "Qual foi o resultado final de Dona Maria?",
+          "link_id": "parte4"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 53,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Entramos com uma ação judicial. O INSS, mesmo no processo, insistia que o tempo não existia.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Apresentamos as provas: ",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "a Carteira de Trabalho com o vínculo da fábrica ",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "e os documentos que provavam o tempo rural.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Usamos a certidão de casamento dela (onde o pai constava como \"lavrador\") e o antigo título de eleitor dos pais.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "O Juiz reconheceu os 9 anos \"perdidos\" e determinou que o INSS concedesse a aposentadoria imediatamente.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Os 12 anos que o INSS via viraram 21 anos. Mais do que o suficiente.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "bold": true,
+                  "text": "O melhor:",
+                  "type": "text"
+                },
+                {
+                  "text": " ela recebeu todo o valor \"atrasado\" (os retroativos), desde a data em que o INSS negou o pedido errado, lá no início.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 55,
+          "Texto_Cabecalho": "Conclusão",
+          "link_id": "parte5"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 54,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "A história de Dona Maria prova que uma negativa do INSS raramente é o fim da linha. O sistema (CNIS) é falho e omite períodos rurais ou vínculos antigos.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "O seu direito não está apenas no computador do INSS; está na sua história de trabalho, na sua carteira de trabalho, nos seus documentos guardados.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Não aceite um \"não\" como resposta final sem antes fazer uma análise profunda.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "documentId": "jvm4pdi382un15yf858gx0kq",
+      "titulo_do_blog": "Trabalho como PJ, mas tenho chefe e horário. Tenho direitos?",
+      "autor_escreveu_blog": "Leandro Vianna",
+      "numero_OAB": "OAB/CE n° 51.588",
+      "resumo_do_assunto_do_blog": "Pejotização disfarçada: entenda como a Justiça reconhece vínculo empregatício e garante seus direitos trabalhistas.",
+      "slug_do_blog": "pejotizacao-disfarcada-quando-o-pj-e-clt-oculto",
+      "tipo_assunto_do_blog": "Estudos de Caso",
+      "createdAt": "2025-11-11T23:32:53.870Z",
+      "imagem_capa_blog": {
+        "id": 18,
+        "documentId": "rzsqqdibgjdkr0gkm00nes3t",
+        "url": "/uploads/pejotizacao_f38aa0ec48.jpg",
+        "alternativeText": null,
+        "caption": null
+      },
+      "conteudo_blog": [
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 39,
+          "Texto_Cabecalho": "Pejotização disfarçada: quando o “PJ” é CLT oculto",
+          "link_id": "parte1"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 38,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Você foi orientado a \"abrir um CNPJ\" para conseguir a vaga? Você cumpre horário, responde a um chefe e usa o e-mail da empresa, mas sua nota fiscal é de \"prestador de serviços\"?",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "E agora, ao ter o contrato encerrado, você descobre que não tem direito a aviso prévio, FGTS ou seguro-desemprego. Se essa é sua situação, este estudo de caso é para você.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Vamos analisar um caso real e mostrar como a Justiça do Trabalho vê a \"pejotização\" e quais são seus verdadeiros direitos.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 40,
+          "Texto_Cabecalho": "O que é \"pejotização\"?",
+          "link_id": "parte2"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 39,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "A ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "pejotização",
+                  "type": "text"
+                },
+                {
+                  "text": " é uma prática cada vez mais comum — e perigosa — no mercado de trabalho. Ela ocorre quando uma empresa exige que o profissional abra um CNPJ para prestar serviços, mesmo que, na prática, ele exerça funções típicas de um empregado.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Na prática, a",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": " pejotização ",
+                  "type": "text"
+                },
+                {
+                  "text": "é uma fraude trabalhista. É a prática de contratar um trabalhador como Pessoa Jurídica (PJ) para esconder uma relação de emprego (CLT).",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "O objetivo da empresa é simples: economizar, deixando de pagar todos os direitos trabalhistas.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Essa manobra é usada para mascarar uma relação de emprego. O trabalhador continua cumprindo horário, recebendo ordens, usando os sistemas da empresa e tendo obrigações diárias. Mas, no papel, aparece como “prestador de serviço”.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Quando a empresa contrata como PJ, ela evita pagar:",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "FGTS",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "13º salário",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Férias com adicional de 1/3",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Aviso prévio",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Seguro-desemprego",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "INSS patronal",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Ou seja, transfere todos os riscos e encargos para o trabalhador, que fica desprotegido.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 41,
+          "Texto_Cabecalho": "Mas assinar o contrato PJ não torna o ato legal ?",
+          "link_id": "parte3"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 40,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Não. O simples fato de existir um contrato de prestação de serviços não legaliza a fraude. No Direito do Trabalho, o que vale é a realidade dos fatos — e não o que está escrito no papel.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Esse princípio tem nome: ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "Primazia da Realidade.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Ele significa que, se o trabalhador age como empregado, com subordinação, habitualidade e pessoalidade, então ele é, de fato, um empregado. E tem direito a todos os benefícios da CLT.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Mesmo que tenha assinado um contrato como PJ, isso não impede que a Justiça reconheça o vínculo empregatício.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "children": [
+                {
+                  "bold": true,
+                  "text": "Por que isso é importante?",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Porque muitos trabalhadores acreditam que, ao aceitar ser PJ, renunciam aos seus direitos. Isso não é verdade.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Se você cumpre jornada, recebe ordens, não pode se fazer substituir e depende economicamente da empresa, você pode — e deve — buscar o reconhecimento do vínculo.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "A Justiça do Trabalho tem sido firme em condenar empresas que usam a pejotização como forma de burlar a legislação.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 42,
+          "Texto_Cabecalho": "Quais são os requisitos que provam o vínculo de emprego?",
+          "link_id": "parte4"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 41,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Irei mencionar aqui como exemplo, o caso de um profissional da área de tecnologia T.I. de Porto Alegre. ",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Um programador atuou por dois anos em uma consultoria empresarial, prestando serviços de informática. Ele foi contratado por meio de sua própria empresa de suporte técnico em tecnologia da informação. ",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "O contrato entre as partes previa que a contratada deveria “designar um técnico capacitado para o bom desempenho das atividades objeto deste contrato, de segunda às sextas-feiras, entre 9 e 18 h, perfazendo 40 horas semanais de efetivo trabalho”, mediante o pagamento mensal de R$ 6,2 mil até o dia 5 do mês subsequente ao da prestação de serviços.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Nesse caso ele tinha CNPJ, mas o juiz reconheceu o vínculo ao provar quatro pontos-chave:",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Primeiro, ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "Pessoalidade.",
+                  "type": "text"
+                },
+                {
+                  "text": " Só Carlos podia fazer o trabalho. Ele não podia, em hipótese alguma, enviar um \"substituto\" no lugar dele se ficasse doente.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Segundo, ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "Onerosidade.",
+                  "type": "text"
+                },
+                {
+                  "text": " Ele recebia um valor fixo todo mês, no dia 5. Isso não é pagamento por projeto; isso é salário.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Terceiro, ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "Não-Eventualidade",
+                  "type": "text"
+                },
+                {
+                  "text": ". Ele trabalhava todos os dias, de segunda a sexta, em horário comercial. Não era um trabalho esporádico, era uma rotina fixa.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "E o mais importante: ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "Subordinação.",
+                  "type": "text"
+                },
+                {
+                  "text": " Este é o ponto central. Carlos tinha um gerente direto, precisava \"bater ponto\" por software e recebia ordens diárias.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Ele não tinha autonomia alguma sobre como ou quando faria seu trabalho. Ele era um funcionário em tudo, exceto no papel. mais detalhes sobre esse caso acesse esse link ",
+                  "type": "text"
+                },
+                {
+                  "url": "https://www.csjt.jus.br/web/csjt/-/programador-de-porto-alegre-que-prestava-servicos-por-meio-de-pessoa-juridica-tem-vinculo-de-emprego-reconhecido",
+                  "type": "link",
+                  "children": [
+                    {
+                      "text": "www.csjt.jus.br/web/csjt/",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 43,
+          "Texto_Cabecalho": "O que esse programador de Porto Alegre conseguiu ao ter o vínculo reconhecido pela Justiça?",
+          "link_id": "parte5"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 42,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Ao provar os quatro requisitos, a Justiça \"anulou\" o contrato PJ e declarou que ele sempre foi um funcionário CLT.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Isso significa que a empresa foi condenada a pagar todos os direitos dos últimos 5 anos de contrato, que é o limite que a lei permite cobrar.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "A lista de direitos que ele recebeu foi extensa:",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Aviso prévio indenizado;",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Férias vencidas e proporcionais, todas pagas com 1/3;",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Todos os 13º salários do período;",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "O recolhimento de todo o FGTS (8%) que nunca foi depositado;",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "A multa de 40% sobre o saldo total do FGTS.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Além disso, o juiz determinou a entrega das guias para que ele pudesse solicitar o seguro-desemprego.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "O caso desse programador de Porto Alegre mostra que o nome dado ao contrato não importa. Se a realidade é de emprego, os direitos da CLT são devidos.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 44,
+          "Texto_Cabecalho": "Conclusão",
+          "link_id": "parte6"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 43,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Como vimos no caso de Carlos, a ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "\"pejotização\"",
+                  "type": "text"
+                },
+                {
+                  "text": " é uma prática ilegal que pode ser revertida na Justiça. A presença de subordinação, horário fixo e pessoalidade descaracteriza o contrato de PJ.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "O reconhecimento do vínculo de emprego garante ao trabalhador o acesso a todos os direitos da CLT :",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": "Remuneração e Benefícios",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "ordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Salário mínimo nacional: R$ 1.518,00 em 2025",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "13º salário: pagamento proporcional ao tempo trabalhado no ano",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Adicional de periculosidade: 30% sobre o salário base",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Adicional de insalubridade: 10%, 20% ou 40%, conforme grau de risco",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Horas extras: acréscimo de 50% (dias normais) ou 100% (feriados e domingos)",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Adicional noturno: 20% sobre o valor da hora diurna",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": "Férias e Descanso",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "ordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Férias anuais: 30 dias com adicional de 1/3",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Descanso semanal remunerado: geralmente aos domingos",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Intervalo intrajornada: mínimo de 1 hora para jornadas acima de 6 horas",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": "Proteção ao Emprego",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "ordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Aviso prévio: mínimo de 30 dias, podendo ser proporcional ao tempo de serviço",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Estabilidade gestante: desde a confirmação da gravidez até 5 meses após o parto",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Estabilidade acidentária: 12 meses após o fim do auxílio-doença acidentário",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Multa por dispensa sem justa causa: 40% sobre o saldo do FGTS",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": "FGTS e Previdência",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "ordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Depósito mensal de FGTS: 8% do salário",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Seguro-desemprego: em caso de demissão sem justa causa",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Contribuição previdenciária (INSS): obrigatória para acesso à aposentadoria e benefícios",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": "Jornada de Trabalho",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "ordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Carga horária padrão: 8 horas diárias e 44 horas semanais",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Banco de horas: permitido por acordo individual ou coletivo",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Teletrabalho (home office): regulamentado com controle de jornada e direitos iguais",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": "Licenças e Benefícios Familiares",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "ordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Licença-maternidade: 120 dias (prorrogável em empresas do programa Empresa Cidadã)",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Licença-paternidade: 5 dias (prorrogável em empresas do programa Empresa Cidadã)",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Afastamento por adoção: mesmo prazo da licença-maternidade",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": "Direitos Coletivos e Sindicais",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "ordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Contribuição sindical: opcional desde a reforma trabalhista",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Negociação coletiva: prevalece sobre a lei em alguns pontos, desde que não suprima direitos essenciais",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Participação em comissão de empregados: garantida em empresas com mais de 10 funcionários",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": "Documentação e Registro",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "ordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Carteira de Trabalho Digital: obrigatória e integrada ao eSocial",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Contrato de trabalho: deve conter função, salário, jornada e condições",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Registro em até 5 dias úteis: após início das atividades",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "O mais importante é: ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "não presuma que, por ter um CNPJ, você perdeu seus direitos",
+                  "type": "text"
+                },
+                {
+                  "text": ". Guarde provas (e-mails, mensagens, relatórios) que demonstrem a subordinação.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 45,
+          "Texto_Cabecalho": "Sobre o autor ...",
+          "link_id": "parte7"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 44,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Escrito por Leandro Viana, OAB/SP nº 51.588",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Advogado especialista em Direito Trabalhista com mais de 7 anos de experiência, atuando em casos de reconhecimento de vínculo, horas extras e assédio moral.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Membro da Comissão de Direito do Trabalho da OAB.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "documentId": "mvt9knmkzlrylj8ndh27lhs5",
+      "titulo_do_blog": "Guarda Compartilhada: Como Funciona e Quando é a Melhor Opção para Seu Filho",
+      "autor_escreveu_blog": "Leandro Vianna",
+      "numero_OAB": "OAB/CE n° 51.588",
+      "resumo_do_assunto_do_blog": "Compreenda a guarda compartilhada, seus benefícios, aplicação e como agir diante do descumprimento.",
+      "slug_do_blog": "guarda-compartilhada-como-funciona-e-quando-e-a-melhor-opcao-para-seu-filho",
+      "tipo_assunto_do_blog": "Dicas Jurídicas",
+      "createdAt": "2025-11-10T23:35:48.443Z",
+      "imagem_capa_blog": {
+        "id": 15,
+        "documentId": "chjihhjbhr6xfs18e5p5xomg",
+        "url": "/uploads/guarda_compartilhada_70d71cde76.png",
+        "alternativeText": null,
+        "caption": null
+      },
+      "conteudo_blog": [
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 24,
+          "Texto_Cabecalho": "Guarda Compartilhada: Entenda Seus Direitos e Deveres",
+          "link_id": "parte1"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 25,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Separar-se do cônjuge é doloroso. Mas o que mais tira o sono dos pais é a dúvida sobre o ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "futuro dos filhos:",
+                  "type": "text"
+                },
+                {
+                  "text": " ",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "\"Quem vai ficar com a guarda?\", ",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "\"Vou poder ver meu filho todo fim de semana?\", ",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "\"E se o outro genitor não colaborar?\". ",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Se você está passando por isso, este artigo foi feito para você.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Nos próximos minutos, você vai entender de forma clara como funciona a guarda compartilhada, quando ela é aplicada, quais são seus benefícios e o que fazer se o outro genitor não cumpre o acordo.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 25,
+          "Texto_Cabecalho": "O que é guarda compartilhada?",
+          "link_id": "parte2"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo-e-imagem",
+          "id": 6,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "A guarda compartilhada é um modelo legal em que ambos os pais continuam responsáveis pelas decisões importantes da vida dos filhos, mesmo após a separação. Isso inclui :  ",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "educação, ",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "saúde, ",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "lazer e valores.",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Importante: não significa que o filho vai morar metade da semana com cada um. A residência pode ser fixa, mas as decisões são tomadas em conjunto.",
+                  "type": "text"
+                }
+              ]
+            }
+          ],
+          "imagem_do_lado_esquerdo": true,
+          "tamanho_imagem_paisagem": false
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 26,
+          "Texto_Cabecalho": "Quando a guarda compartilhada é aplicada?",
+          "link_id": "parte3"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 26,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Desde 2014, a guarda compartilhada passou a ser a regra no Brasil, mesmo quando há conflito entre os pais. ",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "O juiz só decide por guarda unilateral se um dos genitores estiver ausente ou for considerado incapaz.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Ela é aplicada quando:",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Ambos os pais têm condições de cuidar da criança",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Há desejo de manter o vínculo afetivo com ambos",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "O ambiente familiar é saudável e seguro",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 27,
+          "Texto_Cabecalho": "Quais são os benefícios da guarda compartilhada?",
+          "link_id": "parte4"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 27,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "A guarda compartilhada traz inúmeros benefícios tanto para os filhos quanto para os pais. Esse modelo visa garantir que ambos os genitores participem ativamente da criação, educação e convivência com a criança, mesmo após a separação. A seguir os principais benefícios : ",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "A criança mantém contato frequente com ambos os pais, preservando o vínculo afetivo e emocional com cada um deles. ",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Além disso, a guarda compartilhada reduz os conflitos e a alienação parental, uma vez que as responsabilidades e decisões são divididas. ",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "Outro ponto importante é que as decisões sobre a vida do menor tornam-se mais equilibradas, pois são tomadas em conjunto, considerando a opinião e o bem-estar da criança acima de qualquer divergência entre os pais.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Em resumo, a guarda compartilhada promove o diálogo, a cooperação e o equilíbrio familiar, garantindo que a criança cresça em um ambiente de afeto, estabilidade e respeito mútuo.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 28,
+          "Texto_Cabecalho": "E se o outro genitor não cumpre o acordo?",
+          "link_id": "parte5"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 28,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Quando um dos genitores não cumpre o acordo de guarda compartilhada, é essencial agir de forma legal e equilibrada. ",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "O descumprimento dos horários de convivência, das decisões sobre a criança ou qualquer tentativa de afastamento do outro responsável pode gerar prejuízos emocionais ao filho e conflitos familiares.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Nessas situações, as possíveis atitudes a serem tomadas são : ",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": "Solicitar mediação ou conciliação judicial",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Quando há descumprimento leve ou desentendimentos pontuais, o ideal é buscar a mediação ou conciliação judicial. Esse processo permite que ambos os pais, com a ajuda de um mediador, encontrem uma solução amigável, priorizando o bem-estar da criança e evitando conflitos maiores.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": "Registrar boletim de ocorrência em caso de descumprimento grave",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Se um dos genitores impede o outro de ver o filho, muda os horários sem aviso ou descumpre o acordo de forma recorrente, é possível registrar um boletim de ocorrência. Esse registro formaliza a infração e serve como prova para medidas judiciais futuras.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "bold": true,
+                      "text": "Pedir revisão da guarda ou aplicação de multa",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Nos casos em que o descumprimento é constante ou prejudica o convívio familiar, o genitor prejudicado pode solicitar a revisão da guarda ou pedir a aplicação de multa ao outro responsável. O juiz avaliará a situação e poderá alterar o regime de guarda para garantir que os direitos da criança sejam respeitados.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 29,
+          "Texto_Cabecalho": "Prioridade é o Bem-Estar da Criança",
+          "link_id": "parte6"
+        },
+        {
+          "__component": "elementos.bloco-blog-imagem-grande",
+          "id": 5
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 29,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Como vimos, a guarda compartilhada é o modelo que mais preserva ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "o bem-estar da criança",
+                  "type": "text"
+                },
+                {
+                  "text": " após a separação dos pais. Ela exige diálogo, responsabilidade e respeito mútuo. Quando bem aplicada, evita traumas e fortalece os vínculos familiares.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "O mais importante é lembrar: a guarda não é sobre os pais, é sobre o melhor interesse do filho. Decisões precipitadas ou movidas por mágoas podem comprometer o futuro emocional da criança.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 30,
+          "Texto_Cabecalho": "Um pouco sobre o autor",
+          "link_id": "parte7"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 30,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Escrito por Leandro Viana, OAB/CE nº 51.588",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Advogado especialista em ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "Direito de Família",
+                  "type": "text"
+                },
+                {
+                  "text": " com mais de 7 anos de experiência, atuando em casos de guarda, divórcio, pensão alimentícia e alienação parental.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Membro da Comissão de Direito de Família da OAB Ceará.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 31,
+          "Texto_Cabecalho": "Ainda tem dúvidas sobre este assunto ?",
+          "link_id": "parte8"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "documentId": "g9w7oqwn12lfn0l10c1e4xne",
+      "titulo_do_blog": "Holding é pacto de legado, não escudo de oportunista",
+      "autor_escreveu_blog": "Leandro Vianna",
+      "numero_OAB": "943/234",
+      "resumo_do_assunto_do_blog": "A holding familiar é uma ferramenta jurídica para organizar e perpetuar o patrimônio, promovendo sucessão consciente e governança.",
+      "slug_do_blog": "holding-e-pacto-de-legado-nao-escudo-de-oportunista",
+      "tipo_assunto_do_blog": "Dicas Jurídicas",
+      "createdAt": "2025-11-10T02:40:15.536Z",
+      "imagem_capa_blog": {
+        "id": 12,
+        "documentId": "j1j4ynt3ehfazi7ijdvmeiqf",
+        "url": "/uploads/holding_253ef48969.jpg",
+        "alternativeText": null,
+        "caption": null
+      },
+      "conteudo_blog": [
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 12,
+          "Texto_Cabecalho": "Introdução",
+          "link_id": "parte1"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 14,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Muito se fala sobre a criação de",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": " holdings familiares",
+                  "type": "text"
+                },
+                {
+                  "text": " como solução para blindagem patrimonial. Mas essa é, na verdade, uma das maiores distorções em torno do tema. A holding não é um escudo contra credores ou um instrumento mágico de economia tributária. ",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Ela é, antes de tudo, uma ferramenta jurídica de organização patrimonial e sucessória, feita para perdurar no tempo e transformar herdeiros em sucessores conscientes. Vou te explicar.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "A holding familiar é uma pessoa jurídica criada com o objetivo de centralizar bens e/ou participações societárias da família, promovendo uma gestão profissionalizada e, principalmente, facilitando a sucessão patrimonial. Ela permite que os bens sejam organizados, administrados e transferidos em vida, com critérios claros e cláusulas de proteção.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "É importante dizer: não existe valor mínimo para criar uma holding. Tudo depende dos objetivos da família. Em muitos casos, famílias iniciam com um único imóvel, e a estrutura vai sendo fortalecida com o tempo, reinvestindo recursos e planejando a longo prazo.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Apesar da popularização da ideia de que holdings servem para blindar patrimônio, a realidade jurídica é outra. Vou te dar um exemplo: se você é endividado e utiliza da criação de uma holding para fugir dos seus credores, você cometerá fraude a credores. Ou, se tiver processo judicial, fraude à execução.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Já vi, na prática, criarem holdings para movimentar contas bancárias por terem as pessoais bloqueadas, colocarem automóveis e outros bens, tudo com intuito de fugir do pagamento das dívidas. Má notícia: isso é abuso de personalidade, uma manobra que no máximo fará você ganhar tempo, e já te digo o porquê.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "O artigo 50 do Código Civil é claro ao estabelecer que, em caso de abuso de personalidade, desvio de finalidade ou confusão patrimonial, é possível desconsiderar a personalidade jurídica da holding para alcançar os bens nela incorporados. Ou seja, bela blindagem seu advogado proporcionou para você. que, além de ter gastado tempo e dinheiro, verá que seus bens — que “deveriam” estar protegidos — estarão expostos novamente.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 13,
+          "Texto_Cabecalho": "Planejamento, previsibilidade e estrutura",
+          "link_id": "parte2"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo-e-imagem",
+          "id": 4,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Na questão dos tributos, sim, é possível economizar, e muito, em certos casos. O planejamento tributário permitirá redução do montante pago a ",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "título de Imposto de Renda (pessoa física), ",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "de Imposto de ",
+                      "type": "text"
+                    },
+                    {
+                      "bold": true,
+                      "text": "Transmissão Causa Mortis e Doação (ITCMD)",
+                      "type": "text"
+                    },
+                    {
+                      "text": " ",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "format": "unordered",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "e outras tributações, ",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "que podem ser reduzidas e gerar uma grande economia, claro que observadas as peculiaridades de cada caso.",
+                  "type": "text"
+                }
+              ]
+            }
+          ],
+          "imagem_do_lado_esquerdo": false,
+          "tamanho_imagem_paisagem": true
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 15,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Assim, a eventual economia com",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": " ITCMD, ITBI e custos de inventário",
+                  "type": "text"
+                },
+                {
+                  "text": " deve ser vista como uma consequência natural de um planejamento eficaz, e não como a razão principal da criação da holding. Inclusive, há decisões judiciais (como a do Tema 796 do STF) que delimitam a aplicação de ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "imunidades tributárias",
+                  "type": "text"
+                },
+                {
+                  "text": ", como no caso do ITBI na integralização de capital.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Outro ponto importantíssimo relacionado a tributos é a ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "previsibilidade",
+                  "type": "text"
+                },
+                {
+                  "text": ". O sentimento de perder um familiar, chocante por si só, não precisa vir acompanhado da burocracia associada a um inventário e do choque referente ao ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "pagamento de tributos",
+                  "type": "text"
+                },
+                {
+                  "text": " que o herdeiro, em estado de luto, terá que providenciar.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Nessa situação, é comum ter que se desfazer de parte do patrimônio para o pagamento do",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": " imposto de transmissão",
+                  "type": "text"
+                },
+                {
+                  "text": ", assim como também é comum a família brigar porque, por exemplo, o pai queria que o filho ficasse com o topo da colina em que eles tomavam chimarrão todo final de tarde de domingo.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Então, a verdadeira força da holding está na sucessão bem estruturada. Ela permite que o patriarca ou matriarca defina, em vida, como será a divisão do patrimônio, respeitando a legítima (artigo 1.846 do CC) e criando cláusulas como ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "incomunicabilidade, inalienabilidade e impenhorabilidade para proteger os bens",
+                  "type": "text"
+                },
+                {
+                  "text": " no futuro, além da previsibilidade dos impostos caso venham a falecer.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Além disso, a holding cria um ambiente de educação patrimonial e sucessória, ao envolver filhos e herdeiros nas decisões, capacitando-os para atuar como gestores, e não apenas como beneficiários do patrimônio. É para isso que ela serve.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "E vou além: o patrimônio unido é mais rentável do que dividido. Explico: pense em uma fazenda de cem hectares, dividida por três irmãos (33,333 para cada um). Quem fica com a área verde, com a casa que está em cima, quem fica com a parte da pedreira que não produz, quem fica com os campos de cultivo? Quem produzirá mais, qual área valerá mais? Como que ficará a divisão? Enfim, a briga é certa, sem falar na burocracia de criação de matriculas imobiliárias novas, contratação de agrimensor e etc.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 14,
+          "Texto_Cabecalho": "Prevenção",
+          "link_id": "parte3"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 16,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Como destacam os estudiosos do tema, ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "a governança familiar",
+                  "type": "text"
+                },
+                {
+                  "text": " é o que diferencia uma sociedade de papel de uma sociedade real. A holding tem que ser utilizada para fazer a família prosperar, para criar acordos familiares, regimentos internos e atas de reunião que garantam que o patrimônio será gerido com base em valores, princípios e estratégias compartilhadas. ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "Feita para que os filhos não herdem apenas bens",
+                  "type": "text"
+                },
+                {
+                  "text": ", mas sim um sistema de gestão com objetivos claros, normas e identidade familiar.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-imagem-grande",
+          "id": 3
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 17,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Exemplo prático: você, baseado nos seus princípios e valores, jamais venderia sua fazenda, seu negócio ou seu imóvel para comprar um veículo e ostentar. Você só venderia esse bem se o dinheiro fosse investido com propósito claro e alinhado ao crescimento patrimonial da família. Mas será que seus filhos e netos pensam dessa forma também? E, caso eles não pensem como você, como se prevenir?",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Basta formalizar seu desejo no próprio contrato social da holding. Nele, é possível estabelecer, por cláusula contratual, que os ativos da holding só poderão ser vendidos com a finalidade de reinvestimento em patrimônio ou negócios previamente definidos. Caso o objetivo seja abstrato, incongruente com o planejamento, ou sem justificativa econômica, a própria holding, por força de seu estatuto, poderá segurar ou negar a autorização para a venda.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Ou seja, mesmo após sua partida, seus princípios e diretrizes seguirão vinculando as decisões futuras da família, funcionando como um guia permanente. Não é só uma questão de controle, mas de continuidade consciente do seu legado. Isso é governança.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Acredito que você já deve ter entendido a real finalidade de uma holding. Saiba que constituí-la dessa forma valerá a pena, sem contar a chance de ela perdurar por muitos anos após a sua partida. Por outro lado, se você tem uma holding já criada com o intuito errado, sempre há tempo de alterá-la ou implementar seu real objetivo.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Porém, é preciso deixar um alerta. Se alguém te der a ideia de criar as chamadas",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": " “três células” ",
+                  "type": "text",
+                  "italic": true
+                },
+                {
+                  "text": "(cofre, veículo e destino), que são nada mais, nada menos, que estruturas artificiais para burlar a tributação, pode aguardar sentando a chegada de autuações, multas e, em alguns casos, da responsabilização penal por fraude fiscal. Ou seja, fuja disso. Não caia na ladainha de charlatões.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Por fim, saiba que não é indicado deixar uma holding em que os familiares vivem em pé de guerra. Como bem diz Fábio Ulhoa Coelho, ",
+                  "type": "text"
+                },
+                {
+                  "bold": true,
+                  "text": "“a holding familiar depende de um pacto de confiança e racionalidade entre os seus integrantes, sendo inviável sua constituição em ambientes conflituosos ou litigiosos”",
+                  "type": "text",
+                  "italic": true
+                },
+                {
+                  "text": ".",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__component": "elementos.bloco-blog-cabecalho",
+          "id": 15,
+          "Texto_Cabecalho": "Conclusão",
+          "link_id": "parte4"
+        },
+        {
+          "__component": "elementos.bloco-blog-paragrafo",
+          "id": 18,
+          "conteudo_blog": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "A holding familiar é uma ferramenta poderosa, mas exige responsabilidade, planejamento e orientação jurídica. Ela não serve para esconder bens ou economizar milagrosamente tributos, como muitos prometem. Serve para organizar seus negócios, aplicar um planejamento tributário adequado, instituir seus valores e princípios como rumo da sociedade e perpetuar no tempo com sua família, mesmo depois da sua partida.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "O intuito é transformar herdeiros em gestores sucessores do que você construiu, criar em vida um caminho seguro para a continuidade de um legado depois que você se for. É de certa forma, continuar cuidando da sua família até depois de morto.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 100,
+      "pageCount": 1,
+      "total": 5
+    }
+  }
+}
