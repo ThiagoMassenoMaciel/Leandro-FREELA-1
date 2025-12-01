@@ -1,6 +1,5 @@
 # Javascript + React + Vite + Tailwind + Strapi 5 + Postegre sql
 
-# Plugins do strapi usados :
 
 [LiquidJS - template email](https://github.com/dynolabs/strapi-liquid-templates#readme)
 
