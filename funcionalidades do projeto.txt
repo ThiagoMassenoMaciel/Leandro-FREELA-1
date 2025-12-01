@@ -1,4 +1,20 @@
 
 Formulário Pré-Atendimento Jurídico — Cliente Autônomo
     Objetivo: Coletar dados prévios para entender a situação jurídica do cliente e preparar um atendimento personalizado, reduzindo o tempo da consulta e aumentando a efetividade da análise.
+	depois que a pessoa clicar no botão enviar, ela deve receber um email automático informando que a inscrição dela foi enviada para analise do Leandro advogado, e que depois ele entrará em contato , por email , ou pelo numero informado pelo que ela escreveu no formulário , ou pelo telefone, ou pelo email.
 
+Criação de pdf contendo as respostas do formulário respondido pelo cliente do Leandro 
+
+Envio desse pdf para o email do Leandro
+
+
+Cadastro na newsletter : a pessoa deve conseguir receber um email automático enviado pelo Leandro toda vez que no site do Leandro criar um novo post dá página blog ou da página Galeria de casos . depois que a pessoa cadastrar o email dela, deve receber um email agradecendo pela inscrição na newsletter 
+	criar uma função que vai ser disparada depois que a pessoa clicar no botão de cadastramento na newsletter
+	esta função somente deve ser executada se o email que a pessoa digitou no input for um email válido,
+		esta função deve receber como parâmetro o valor email validado que a pessoa digitou, e fazer uma requisição post para o collection types do strapi 5 que armazena os e-mails justamente com o objetivo de armazenar apartir da api do strapi o email .  .
+
+
+
+1. A pessoa clica no botão contato no site do Leandro
+2. Aparecerá um modal com formulário . E a pessoa começa a e=responder as perguntas
+3. Nao vai conseguir enviar caso a pessoa clicou no botão de consentimento, aceito os termos e serviço . Se caso a pessoa respondeu todas as perguntas e não marcou a checkbox do consentimento ela não vai conseguir enviar o formulário e deve aparecer um aviso avisando para ela marcar a checkbox um texto da cor vermelha mesmo emcima do checkbox

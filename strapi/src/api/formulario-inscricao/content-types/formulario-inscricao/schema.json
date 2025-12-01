@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formulario_inscricaos",
+  "info": {
+    "singularName": "formulario-inscricao",
+    "pluralName": "formulario-inscricaos",
+    "displayName": "formulario_inscricao"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "email": {
+      "type": "email",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "telefone": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "area": {
+      "type": "enumeration",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "enum": [
+        "Direito Trabalhista",
+        "Direito de Família",
+        "Direito Previdenciário,",
+        "Direito Criminal",
+        "Direito Tributário",
+        "Consultas Contratuais / Revisão de Contratos",
+        "Conciliação ou Mediação"
+      ]
+    },
+    "statuss": {
+      "type": "enumeration",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "enum": [
+        "Pendente",
+        "Enviado",
+        "Arquivado"
+      ]
+    }
+  }
+}

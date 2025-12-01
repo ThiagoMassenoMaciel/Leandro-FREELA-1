@@ -1,5 +1,9 @@
 # Javascript + React + Vite + Tailwind + Strapi 5 + Postegre sql
 
+# Plugins do strapi usados :
+
+[LiquidJS - template email](https://github.com/dynolabs/strapi-liquid-templates#readme)
+
 ## API's
 
 ###### Retornar os dados do strapi referentes a página home
@@ -40,6 +44,14 @@
 
 ```
 /api/pagina-casos-juridicos/:id
+
+```
+
+###### plugin email (send)
+
+```
+/api/email/
+
 ```
 
 ### ordem do desenvolvimento
@@ -428,5 +440,21 @@
 
 26-11-2025
     03:10 até 03:46 ---
-    05:31 até
+    05:31 até 05:51 ---
+    10:54 até 11:54 --- 1h
+    13:15 até 13:35 ---
+27-11-2025
+    01:00 até 02:13 --- 1h
+    02:53 até 04:05 --- 1h12'
+
+29-11-2025
+    16:55 até 18:10 --- 1h15
+
+30-11-2025
+    10:24 até 10:38 --- 12'
+    11:18 até 13:13 --- 2h15'
+    14:30 até 15:40 --- 1h10'
+
+01-12-2025
+    18:02 até
 ```

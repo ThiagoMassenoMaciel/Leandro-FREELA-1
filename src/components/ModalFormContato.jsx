@@ -1,4 +1,4 @@
-import FormularioJuridico3 from "./Formulario_juridico_dinamico3.jsx"; // Ajuste o path se necessário
+import FormularioJuridico4 from "./Formulario_juridico_dinamico4.jsx"; // Ajuste o path se necessário
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
@@ -27,7 +27,7 @@ const ModalFormContato = ({ onClose }) => {
         </h2>
 
         {/* O form em si */}
-        <FormularioJuridico3 className="w-full" />
+        <FormularioJuridico4 className="w-full" />
       </div>
     </div>
   );

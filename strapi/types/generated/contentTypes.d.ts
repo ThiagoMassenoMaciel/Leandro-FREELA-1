@@ -373,6 +373,80 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiFormularioInscricaoFormularioInscricao
+  extends Struct.CollectionTypeSchema {
+  collectionName: "formulario_inscricaos";
+  info: {
+    displayName: "formulario_inscricao";
+    pluralName: "formulario-inscricaos";
+    singularName: "formulario-inscricao";
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    area: Schema.Attribute.Enumeration<
+      [
+        "Direito Trabalhista",
+        "Direito de Fam\u00EDlia",
+        "Direito Previdenci\u00E1rio,",
+        "Direito Criminal",
+        "Direito Tribut\u00E1rio",
+        "Consultas Contratuais / Revis\u00E3o de Contratos",
+        "Concilia\u00E7\u00E3o ou Media\u00E7\u00E3o",
+      ]
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      "oneToMany",
+      "api::formulario-inscricao.formulario-inscricao"
+    >;
+    nome: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    publishedAt: Schema.Attribute.DateTime;
+    statuss: Schema.Attribute.Enumeration<
+      ["Pendente", "Enviado", "Arquivado"]
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    telefone: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiInscritosNewsletterInscritosNewsletter
   extends Struct.CollectionTypeSchema {
   collectionName: "inscritos_newsletters";
@@ -1170,6 +1244,7 @@ declare module "@strapi/strapi" {
       "admin::transfer-token": AdminTransferToken;
       "admin::transfer-token-permission": AdminTransferTokenPermission;
       "admin::user": AdminUser;
+      "api::formulario-inscricao.formulario-inscricao": ApiFormularioInscricaoFormularioInscricao;
       "api::inscritos-newsletter.inscritos-newsletter": ApiInscritosNewsletterInscritosNewsletter;
       "api::pagina-casos-juridico.pagina-casos-juridico": ApiPaginaCasosJuridicoPaginaCasosJuridico;
       "api::pagina-do-blog.pagina-do-blog": ApiPaginaDoBlogPaginaDoBlog;
