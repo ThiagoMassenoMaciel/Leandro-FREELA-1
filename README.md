@@ -1,6 +1,5 @@
 # Javascript + React + Vite + Tailwind + Strapi 5 + Postegre sql
 
-
 [LiquidJS - template email](https://github.com/dynolabs/strapi-liquid-templates#readme)
 
 ## API's
@@ -455,5 +454,10 @@
     14:30 até 15:40 --- 1h10'
 
 01-12-2025
-    18:02 até
+    18:02 até 20:02 --- 2h
+    21:20 até 22:00 -- 40'
+
+20-12-2025
+    16:52 até 17:52 ---- 1h
+    22:30 até
 ```

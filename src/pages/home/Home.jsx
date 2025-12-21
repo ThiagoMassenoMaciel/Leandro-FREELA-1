@@ -32,6 +32,18 @@ import h_icon5 from "../../assets/h_icon5.svg";
 import { GetDataHome } from "../../hooks/GetDataHome.js";
 import ModalFormContato from "../../components/ModalFormContato.jsx";
 import UseStrapiURL from "../../hooks/UseStrapiURL.js";
+import { useNewsletter } from "../../hooks/useNewsletter";
+import ModalNewsletter from "../../components/ModalNewsletter";
+
+const {
+  email: newsletterEmail,
+  setEmail: setNewsletterEmail,
+  loading: newsletterLoading,
+  modal: newsletterModal,
+  handleSubscribe,
+  closeModal,
+  handleRetry,
+} = useNewsletter();
 
 /*
 async function load_data_to_homepage() {
@@ -195,6 +207,15 @@ const Home = () => {
   return (
     <>
       {showModal && <ModalFormContato onClose={() => setShowModal(false)} />}
+
+      {newsletterModal.show && (
+        <ModalNewsletter
+          type={newsletterModal.type}
+          message={newsletterModal.message}
+          onClose={closeModal}
+          onRetry={handleRetry}
+        />
+      )}
 
       <div className="flex h-[120vh] w-full flex-col-reverse gap-[calc(34px+1vw)] overflow-hidden bg-white px-[24px] md:px-[34px] lg:h-[calc(100vh-58px)] lg:flex-row-reverse lg:items-center lg:px-[44px]">
         <div className="mx-auto flex h-[50vh] h-screen w-[80vw] flex-row gap-4 gap-[12px] overflow-hidden sm:w-[70vw] md:w-[60vw] lg:mx-0 lg:w-[50vw]">
@@ -827,7 +848,7 @@ const Home = () => {
           <div className="mt-4 flex w-full justify-center gap-4">
             <button
               className="bg-black px-6 py-3 text-white transition hover:bg-gray-900"
-              onClick={() => exibirFormularioNoModal()}
+              onClick={exibirFormularioNoModal()}
             >
               Contato
             </button>
@@ -836,6 +857,7 @@ const Home = () => {
       </section>
 
       <section
+        id="newsletter-section"
         className="h-fit w-full bg-cover bg-center"
         style={{ backgroundImage: `url(${h14})` }}
       >
@@ -851,19 +873,29 @@ const Home = () => {
             </p>
             <div className="flex w-full flex-col items-center justify-center gap-3 min-[600px]:flex-row">
               <input
-                className="w-full border-2 border-white p-3 text-base text-white placeholder-white min-[600px]:max-w-[380px]"
+                className="w-full border-2 border-white bg-transparent p-3 text-base text-white placeholder-white focus:border-blue-400 focus:outline-none min-[600px]:max-w-[380px]"
                 type="email"
                 placeholder="Digite seu e-mail aqui"
                 name="email_newsletter"
                 id="email_newsletter"
+                value={newsletterEmail}
+                onChange={(e) => setNewsletterEmail(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") handleSubscribe();
+                }}
+                disabled={newsletterLoading}
               />
-              <button className="px-auto w-full bg-white py-3 text-base font-bold text-black transition hover:bg-gray-100 min-[600px]:max-w-[116px]">
-                Inscrever-se
+              <button
+                onClick={handleSubscribe}
+                disabled={newsletterLoading}
+                className="px-auto w-full bg-white py-3 text-base font-bold text-black transition hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-50 min-[600px]:max-w-[116px]"
+              >
+                {newsletterLoading ? "Enviando..." : "Inscrever-se"}
               </button>
             </div>
             <p className="w-full text-center text-[14px] text-white">
               Ao clicar em Inscreva-se agora, você concorda com os meus Termos e
-              Condições.
+              Condições disponíveis no rodapé deste site.
             </p>
           </div>
         </div>
