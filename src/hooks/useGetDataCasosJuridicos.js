@@ -1,5 +1,5 @@
 //GetDataPassingQueryEndpointParameters for Blog
-import { Load_data_to_webpage } from "./Load_data_to_webpage";
+import { useLoad_data_to_webpage } from "./useLoad_data_to_webpage";
 import qs from "qs";
 
 const endpoint_QUERY_URL_PARAMS = qs.stringify({
@@ -36,14 +36,17 @@ const endpoint_QUERY_URL_PARAMS = qs.stringify({
   },
 });
 
-export function GetDataCasosJuridicos() {
+export function useGetDataCasosJuridicos() {
   const {
     data: blogData,
     loading,
     error,
-  } = Load_data_to_webpage("pagina-casos-juridicos", endpoint_QUERY_URL_PARAMS);
+  } = useLoad_data_to_webpage(
+    "pagina-casos-juridicos",
+    endpoint_QUERY_URL_PARAMS,
+  );
 
   return { blogData, loading, error };
 }
 
-export default GetDataCasosJuridicos;
+export default useGetDataCasosJuridicos;

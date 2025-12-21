@@ -2,7 +2,7 @@ import sobre2 from "../../assets/sobre2.png";
 
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import { Load_data_to_webpage } from "../../hooks/Load_data_to_webpage";
+import { useLoad_data_to_webpage } from "../../hooks/useLoad_data_to_webpage";
 import UseStrapiURL from "../../hooks/UseStrapiURL.js";
 import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 import qs from "qs";

@@ -5,7 +5,10 @@ import { UseStrapiURL } from "./UseStrapiURL";
 // API_strapi = rota da API, ex: "pagina-home"
 
 //export function useStrapi(API_strapi, ENDPOINT_queryURLParams  = "") {
-export function Load_data_to_webpage(API_strapi, ENDPOINT_queryURLParams = "") {
+export function useLoad_data_to_webpage(
+  API_strapi,
+  ENDPOINT_queryURLParams = "",
+) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -45,4 +48,4 @@ export function Load_data_to_webpage(API_strapi, ENDPOINT_queryURLParams = "") {
   return { data, loading, error };
 }
 
-export default Load_data_to_webpage;
+export default useLoad_data_to_webpage;

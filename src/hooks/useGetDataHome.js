@@ -1,5 +1,5 @@
 //GetDataPassingQueryEndpointParameters
-import { Load_data_to_webpage } from "./Load_data_to_webpage";
+import { useLoad_data_to_webpage } from "./useLoad_data_to_webpage";
 import qs from "qs";
 
 const endpoint_QUERY_URL_PARAMS = qs.stringify(
@@ -74,13 +74,13 @@ const endpoint_QUERY_URL_PARAMS = qs.stringify(
   },
   { encodeValuesOnly: true },
 );
-export function GetDataHome() {
+export function useGetDataHome() {
   const {
     data: homeData,
     loading,
     error,
-  } = Load_data_to_webpage("pagina-home", endpoint_QUERY_URL_PARAMS);
+  } = useLoad_data_to_webpage("pagina-home", endpoint_QUERY_URL_PARAMS);
   return { homeData, loading, error };
 }
 
-export default GetDataHome;
+export default useGetDataHome;

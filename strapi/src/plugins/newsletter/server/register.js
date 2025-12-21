@@ -25,7 +25,8 @@ export default ({ strapi }) => {
     const resumo = novoPost.resumo_do_assunto_do_blog || "";
     const slug = novoPost.slug_do_blog || novoPost.slug_caso_juridico || "";
     const baseUrl = process.env.SITE_URL || "https://localhost:1337";
-    const link = `${baseUrl}/blog/${slug}`;
+    //se o que foi criado no content type do strapi foi um post de caso juridico o link deve ter baseUrl/galeria/slug se o que foi criado no content type do strapi foi um post blog o link deve ter baseUrl/blog/slug
+    const link = `${baseUrl}/${novoPost.slug_do_blog ? "blog" : "galeria"}/${slug}`;
 
     const inscritos = await strapi.db
       .query("api::inscritos-newsletter.inscritos-newsletter")

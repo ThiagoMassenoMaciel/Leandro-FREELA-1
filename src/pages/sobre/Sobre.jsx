@@ -1,12 +1,20 @@
-import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import s1 from "../../assets/sobre1.png";
 import s2 from "../../assets/sobre2.png";
 import s3 from "../../assets/sobre3.png";
 
+import ModalFormContato from "../../components/ModalFormContato.jsx";
+
 const Sobre = () => {
+  const [showModal, setShowModal] = useState(false); // Novo estado para modal
+
+  const exibirFormularioNoModal = () => {
+    setShowModal(true); // Abre o modal
+  };
   return (
     <>
+      {showModal && <ModalFormContato onClose={() => setShowModal(false)} />}
       <section
         id="cabecalho"
         className="h-fit w-full bg-cover bg-center text-white"
@@ -46,7 +54,10 @@ const Sobre = () => {
           </p>
 
           <div className="mt-4 flex w-full justify-start gap-4">
-            <button className="bg-black px-6 py-3 text-white transition hover:bg-gray-900">
+            <button
+              className="bg-black px-6 py-3 text-white transition hover:bg-gray-900"
+              onClick={exibirFormularioNoModal}
+            >
               Contato
             </button>
           </div>

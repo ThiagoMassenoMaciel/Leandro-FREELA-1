@@ -137,13 +137,12 @@ const Home = () => {
   useEffect(() => {
     const faqData = homeData?.sessoes?.[3]?.perguntas;
 
-    if (openFaqIds.length === 0 && faqData && Array.isArray(faqData)) {
+    if (faqData && Array.isArray(faqData)) {
       // se variavel tiver algum valor e for uma array
       // Quando os dados chegarem, atualize o estado com os IDs de cada objeto pergunta
       // 1. O estado agora é um ARRAY de IDs.
       // Iniciamos o estado com os IDs de todos os itens do FAQ para que todas os blocos comecem abertos.
-      const allIds = faqData.map((item) => item.id);
-      setOpenFaqIds(allIds);
+      setOpenFaqIds(faqData.map((item) => item.id));
     }
   }, [homeData]); // Executa quando homeData mudar
 
@@ -326,10 +325,7 @@ const Home = () => {
                 {homeData?.sessoes[0].texto.descricao}
               </p>
               <div className="mt-8 flex w-full justify-center gap-4 lg:justify-start">
-                <button
-                  className="bg-black px-6 py-3 text-white transition hover:bg-gray-900"
-                  onClick={exibirFormularioNoModal}
-                >
+                <button className="bg-black px-6 py-3 text-white transition hover:bg-gray-900">
                   Contato
                 </button>
                 <button className="bg-white px-6 py-3 text-black shadow-[inset_0_0_0_2px_black] transition hover:bg-black hover:text-white">
@@ -372,10 +368,7 @@ const Home = () => {
                 <button className="bg-white px-6 py-3 text-black shadow-[inset_0_0_0_2px_black] transition hover:bg-black hover:text-white">
                   Saiba Mais
                 </button>
-                <button
-                  className="bg-black px-6 py-3 text-white transition hover:bg-gray-900"
-                  onClick={exibirFormularioNoModal}
-                >
+                <button className="bg-black px-6 py-3 text-white transition hover:bg-gray-900">
                   Contato
                 </button>
               </div>
@@ -429,7 +422,7 @@ const Home = () => {
 
               <button
                 className="bg-black px-6 py-3 text-white transition hover:bg-gray-900"
-                onClick={exibirFormularioNoModal}
+                onClick={() => exibirFormularioNoModal()}
               >
                 Contato
               </button>
@@ -556,7 +549,7 @@ const Home = () => {
             <div className="flex w-full justify-start gap-4 lg:justify-start">
               <button
                 className="border-none bg-white px-6 py-3 text-black transition hover:bg-gray-100"
-                onClick={exibirFormularioNoModal}
+                onClick={() => exibirFormularioNoModal()}
               >
                 Contato
               </button>
@@ -857,7 +850,7 @@ const Home = () => {
           <div className="mt-4 flex w-full justify-center gap-4">
             <button
               className="bg-black px-6 py-3 text-white transition hover:bg-gray-900"
-              onClick={exibirFormularioNoModal}
+              onClick={exibirFormularioNoModal()}
             >
               Contato
             </button>

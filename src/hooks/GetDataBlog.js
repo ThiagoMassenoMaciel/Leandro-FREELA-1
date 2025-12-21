@@ -1,5 +1,5 @@
 //GetDataPassingQueryEndpointParameters for Blog
-import { Load_data_to_webpage } from "./Load_data_to_webpage";
+import { useLoad_data_to_webpage } from "./useLoad_data_to_webpage";
 import qs from "qs";
 
 const endpoint_QUERY_URL_PARAMS = qs.stringify({
@@ -41,7 +41,7 @@ export function GetDataBlog() {
     data: blogData,
     loading,
     error,
-  } = Load_data_to_webpage("pagina-do-blogs", endpoint_QUERY_URL_PARAMS);
+  } = useLoad_data_to_webpage("pagina-do-blogs", endpoint_QUERY_URL_PARAMS);
 
   return { blogData, loading, error };
 }

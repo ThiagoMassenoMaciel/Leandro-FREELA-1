@@ -22,17 +22,27 @@ import ser_icon12 from "../../assets/servicos_icon12.svg";
 import ser_icon13 from "../../assets/servicos_icon13.svg";
 import ser_icon14 from "../../assets/servicos_icon14.svg";
 
+import { useState } from "react";
+import ModalFormContato from "../../components/ModalFormContato.jsx";
+
 const Servicos = () => {
+  const [showModal, setShowModal] = useState(false); // Novo estado para modal
+
+  const exibirFormularioNoModal = () => {
+    setShowModal(true); // Abre o modal
+  };
+
   return (
     <>
+      {showModal && <ModalFormContato onClose={() => setShowModal(false)} />}
       {/*SECTION 1*/}
 
       <section
-        className="w-full h-fit  bg-cover bg-center"
+        className="h-fit w-full bg-cover bg-center"
         style={{ backgroundImage: `url(${ser1})` }}
       >
-        <div className="w-full h-full bg-[rgba(0,0,0,0.8)] py-16 px-[24px] md:px-[34px] lg:px-[44px]">
-          <div className="w-fit h-fit flex flex-col justify-center text-center gap-5 max-w-[768px] mx-auto text-white">
+        <div className="h-full w-full bg-[rgba(0,0,0,0.8)] px-[24px] py-16 md:px-[34px] lg:px-[44px]">
+          <div className="mx-auto flex h-fit w-fit max-w-[768px] flex-col justify-center gap-5 text-center text-white">
             <h2 className="text-[40px] font-bold">Soluções Jurídicas</h2>
             <p className="text-[18px]">
               Serviços jurídicos especializados e adaptados às suas
@@ -45,15 +55,15 @@ const Servicos = () => {
 
       {/*SECTION 2*/}
       <section className="bg-white">
-        <div className="w-full h-fit flex flex-col gap-12 py-16 px-[24px] md:px-[34px] lg:px-[44px]">
-          <h1 className="text-4xl text-center font-bold leading-9">
+        <div className="flex h-fit w-full flex-col gap-12 px-[24px] py-16 md:px-[34px] lg:px-[44px]">
+          <h1 className="text-center text-4xl leading-9 font-bold">
             Explore os meus serviços jurídicos abrangentes adaptados às suas
             necessidades
           </h1>
 
-          <div className="w-full h-fit grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-6 lg:gap-20">
+          <div className="grid h-fit w-full grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-6 lg:gap-20">
             <section
-              className="w-full h-fit text-center text-black flex flex-col gap-5  p-5 lg:col-span-2"
+              className="flex h-fit w-full flex-col gap-5 p-5 text-center text-black lg:col-span-2"
               id="sombreamento"
             >
               <img
@@ -72,7 +82,7 @@ const Servicos = () => {
             </section>
 
             <section
-              className="w-full h-fit text-center text-black flex flex-col gap-5  shadow-xl/30 p-5 lg:col-span-2 "
+              className="flex h-fit w-full flex-col gap-5 p-5 text-center text-black shadow-xl/30 lg:col-span-2"
               id="sombreamento"
             >
               <img
@@ -91,7 +101,7 @@ const Servicos = () => {
             </section>
 
             <section
-              className="w-full h-fit text-center text-black flex flex-col gap-5  shadow-xl/30 p-5 lg:col-span-2"
+              className="flex h-fit w-full flex-col gap-5 p-5 text-center text-black shadow-xl/30 lg:col-span-2"
               id="sombreamento"
             >
               <img
@@ -110,7 +120,7 @@ const Servicos = () => {
             </section>
 
             <section
-              className="w-full h-fit text-center text-black flex flex-col gap-5  shadow-xl/30 p-5 lg:col-span-3"
+              className="flex h-fit w-full flex-col gap-5 p-5 text-center text-black shadow-xl/30 lg:col-span-3"
               id="sombreamento"
             >
               <img
@@ -129,7 +139,7 @@ const Servicos = () => {
             </section>
 
             <section
-              className="w-full h-fit text-center text-black flex flex-col gap-5  shadow-xl/30 p-5 md:col-span-2 lg:col-span-3"
+              className="flex h-fit w-full flex-col gap-5 p-5 text-center text-black shadow-xl/30 md:col-span-2 lg:col-span-3"
               id="sombreamento"
             >
               <img
@@ -151,12 +161,12 @@ const Servicos = () => {
       </section>
 
       {/*SECTION 3*/}
-      <section className=" bg-gradient-to-b from-[#f5f5f5] to-[#fefefe] py-25 px-[24px] md:px-[34px] lg:px-[44px] ">
-        <div className=" flex flex-col gap-12 text-center md:flex-row md:text-start md:justify-start mb-16">
+      <section className="bg-gradient-to-b from-[#f5f5f5] to-[#fefefe] px-[24px] py-25 md:px-[34px] lg:px-[44px]">
+        <div className="mb-16 flex flex-col gap-12 text-center md:flex-row md:justify-start md:text-start">
           <h2 className="text-4xl font-bold md:w-1/2">
             Seu caminho para suporte jurídico especializado
           </h2>
-          <p className="text-[18px]  md:w-1/2">
+          <p className="text-[18px] md:w-1/2">
             Trabalhando comigo, suas necessidades são priorizadas desde o
             primeiro momento em que você me contata. Irei explicar para você
             cada etapa até a resolução do seu caso, garantindo que você se sinta
@@ -164,10 +174,10 @@ const Servicos = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 text-center gap-10 min-[900px]:grid-cols-2 lg:grid-cols-3 lg:text-start">
-          <section className="flex flex-col justify-start items-center gap-2 md:gap-4 lg:items-start">
+        <div className="grid grid-cols-1 gap-10 text-center min-[900px]:grid-cols-2 lg:grid-cols-3 lg:text-start">
+          <section className="flex flex-col items-center justify-start gap-2 md:gap-4 lg:items-start">
             <img
-              className="w-[48px] h-[49px]"
+              className="h-[49px] w-[48px]"
               src={ser_icon6}
               alt="icone etapa 1"
             />
@@ -180,9 +190,9 @@ const Servicos = () => {
             </p>
           </section>
 
-          <section className="flex flex-col justify-start items-center gap-2 md:gap-4 lg:items-start">
+          <section className="flex flex-col items-center justify-start gap-2 md:gap-4 lg:items-start">
             <img
-              className="w-[48px] h-[49px]"
+              className="h-[49px] w-[48px]"
               src={ser_icon7}
               alt="icone etapa 2"
             />
@@ -194,9 +204,9 @@ const Servicos = () => {
             </p>
           </section>
 
-          <section className="flex flex-col justify-start items-center gap-2 md:gap-4 min-[900px]:col-span-2 lg:col-span-1 lg:items-start">
+          <section className="flex flex-col items-center justify-start gap-2 min-[900px]:col-span-2 md:gap-4 lg:col-span-1 lg:items-start">
             <img
-              className="w-[48px] h-[49px]"
+              className="h-[49px] w-[48px]"
               src={ser_icon8}
               alt="icone etapa 3"
             />
@@ -211,9 +221,9 @@ const Servicos = () => {
       </section>
 
       {/*SECTION 4*/}
-      <section className="w-full h-fit py-16 flex flex-col items-center gap-12 px-[24px] md:px-[34px] lg:px-[44px] lg:flex-row-reverse">
+      <section className="flex h-fit w-full flex-col items-center gap-12 px-[24px] py-16 md:px-[34px] lg:flex-row-reverse lg:px-[44px]">
         <div className="flex flex-col gap-3 text-start lg:w-1/2">
-          <h1 className="text-[32px] font-bold text-center lg:text-start">
+          <h1 className="text-center text-[32px] font-bold lg:text-start">
             Serviços de Direito de Família compassivos para você
           </h1>
           <p className="text-base">
@@ -224,7 +234,7 @@ const Servicos = () => {
           <div className="flex flex-col gap-6 sm:flex-row">
             <section className="flex flex-col gap-3">
               <img
-                className="w-[64px] h-[64px]"
+                className="h-[64px] w-[64px]"
                 src={ser_icon9}
                 alt="icone 9"
               />
@@ -239,7 +249,7 @@ const Servicos = () => {
 
             <section className="flex flex-col gap-3">
               <img
-                className="w-[64px] h-[64px]"
+                className="h-[64px] w-[64px]"
                 src={ser_icon10}
                 alt="icone 9"
               />
@@ -253,15 +263,15 @@ const Servicos = () => {
         </div>
 
         <div
-          className="w-full h-[calc(50vh+10vw)] bg-cover bg-center lg:h-[640px] lg:w-1/2"
+          className="h-[calc(50vh+10vw)] w-full bg-cover bg-center lg:h-[640px] lg:w-1/2"
           style={{ backgroundImage: `url(${ser2})` }}
         ></div>
       </section>
 
       {/*SECTION 5*/}
-      <section className=" bg-gradient-to-b from-[#f5f5f5] to-[#fefefe] w-full h-fit py-16 flex flex-col items-center gap-12 px-[24px] md:px-[34px] lg:px-[44px] lg:flex-row">
+      <section className="flex h-fit w-full flex-col items-center gap-12 bg-gradient-to-b from-[#f5f5f5] to-[#fefefe] px-[24px] py-16 md:px-[34px] lg:flex-row lg:px-[44px]">
         <div className="flex flex-col gap-3 text-start lg:w-1/2">
-          <h1 className="text-[32px] font-bold text-center lg:text-start">
+          <h1 className="text-center text-[32px] font-bold lg:text-start">
             Serviços abrangentes de defesa criminal adaptados às suas
             necessidades
           </h1>
@@ -289,15 +299,15 @@ const Servicos = () => {
         </div>
 
         <div
-          className="w-full h-[calc(50vh+10vw)] bg-cover bg-center lg:h-[600px] lg:w-1/2"
+          className="h-[calc(50vh+10vw)] w-full bg-cover bg-center lg:h-[600px] lg:w-1/2"
           style={{ backgroundImage: `url(${ser3})` }}
         ></div>
       </section>
 
       {/*SECTION 6*/}
-      <section className="w-full h-fit py-16 flex flex-col items-center gap-12 px-[24px] md:px-[34px] lg:px-[44px] lg:flex-row-reverse">
+      <section className="flex h-fit w-full flex-col items-center gap-12 px-[24px] py-16 md:px-[34px] lg:flex-row-reverse lg:px-[44px]">
         <div className="flex flex-col gap-3 text-start lg:w-1/2">
-          <h1 className="text-[32px] font-bold text-center lg:text-start">
+          <h1 className="text-center text-[32px] font-bold lg:text-start">
             Serviços especializados em direito tributário adaptados às suas
             necessidades
           </h1>
@@ -308,11 +318,10 @@ const Servicos = () => {
             recuperação de créditos, sempre com foco na proteção do seu
             patrimônio e no cumprimento correto das obrigações legais.
           </p>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 CUSTOM-grid-container lg:grid-cols-1">
-            <section className="flex gap-4  min-[896px]:col-span-2 lg:col-span-1 CUSTOM-grid-item">
+          <div className="CUSTOM-grid-container grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-1">
+            <section className="CUSTOM-grid-item flex gap-4 min-[896px]:col-span-2 lg:col-span-1">
               <img
-                className="w-[48px] h-[48px] animate-pulse
-                "
+                className="h-[48px] w-[48px] animate-pulse"
                 src={ser_icon11}
                 alt="icone 11"
               />
@@ -322,9 +331,9 @@ const Servicos = () => {
                 legalmente sua carga de impostos.
               </p>
             </section>
-            <section className="flex gap-4  min-[896px]:col-span-2 lg:col-span-1 CUSTOM-grid-item">
+            <section className="CUSTOM-grid-item flex gap-4 min-[896px]:col-span-2 lg:col-span-1">
               <img
-                className="w-[48px] h-[48px]  animate-pulse"
+                className="h-[48px] w-[48px] animate-pulse"
                 src={ser_icon11}
                 alt="icone 11"
               />
@@ -334,9 +343,9 @@ const Servicos = () => {
                 fiscais e cobranças indevidas.
               </p>
             </section>
-            <section className="flex gap-4  min-[896px]:col-span-2 lg:col-span-1 CUSTOM-grid-item">
+            <section className="CUSTOM-grid-item flex gap-4 min-[896px]:col-span-2 lg:col-span-1">
               <img
-                className="w-[48px] h-[48px]  animate-pulse"
+                className="h-[48px] w-[48px] animate-pulse"
                 src={ser_icon11}
                 alt="icone 11"
               />
@@ -346,9 +355,9 @@ const Servicos = () => {
                 riscos e impactos financeiros.
               </p>
             </section>
-            <section className="flex gap-4  min-[896px]:col-span-3 row-span-1  lg:col-span-1 CUSTOM-grid-item CUSTOM-span-3">
+            <section className="CUSTOM-grid-item CUSTOM-span-3 row-span-1 flex gap-4 min-[896px]:col-span-3 lg:col-span-1">
               <img
-                className="w-[48px] h-[48px]  animate-pulse"
+                className="h-[48px] w-[48px] animate-pulse"
                 src={ser_icon11}
                 alt="icone 11"
               />
@@ -359,9 +368,9 @@ const Servicos = () => {
               </p>
             </section>
 
-            <section className="flex gap-4 sm:col-span-2  min-[896px]:col-span-3  row-span-1 lg:col-span-1 CUSTOM-grid-item CUSTOM-span-3">
+            <section className="CUSTOM-grid-item CUSTOM-span-3 row-span-1 flex gap-4 min-[896px]:col-span-3 sm:col-span-2 lg:col-span-1">
               <img
-                className="w-[48px] h-[48px]  animate-pulse"
+                className="h-[48px] w-[48px] animate-pulse"
                 src={ser_icon11}
                 alt="icone 11"
               />
@@ -375,15 +384,15 @@ const Servicos = () => {
         </div>
 
         <div
-          className="w-full h-[calc(50vh+10vw)] bg-cover bg-center lg:h-[640px] lg:w-1/2"
+          className="h-[calc(50vh+10vw)] w-full bg-cover bg-center lg:h-[640px] lg:w-1/2"
           style={{ backgroundImage: `url(${ser4})` }}
         ></div>
       </section>
 
       {/*SECTION 8*/}
-      <section className="w-full h-fit py-16 bg-gradient-to-b from-[#f5f5f5] to-[#fefefe] items-center flex flex-col gap-12 px-[24px] md:px-[34px] lg:px-[44px] lg:flex-row">
+      <section className="flex h-fit w-full flex-col items-center gap-12 bg-gradient-to-b from-[#f5f5f5] to-[#fefefe] px-[24px] py-16 md:px-[34px] lg:flex-row lg:px-[44px]">
         <div className="flex flex-col gap-3 text-start lg:w-1/2">
-          <h1 className="text-[32px] font-bold text-center lg:text-start">
+          <h1 className="text-center text-[32px] font-bold lg:text-start">
             Cuidando dos seus direitos previdenciários com segurança e
             comprometimento
           </h1>
@@ -396,7 +405,7 @@ const Servicos = () => {
           <div className="flex flex-col gap-6 sm:flex-row">
             <section className="flex flex-col gap-3">
               <img
-                className="w-[64px] h-[64px]"
+                className="h-[64px] w-[64px]"
                 src={ser_icon12}
                 alt="icone 9"
               />
@@ -411,7 +420,7 @@ const Servicos = () => {
 
             <section className="flex flex-col gap-3">
               <img
-                className="w-[64px] h-[64px]"
+                className="h-[64px] w-[64px]"
                 src={ser_icon13}
                 alt="icone 9"
               />
@@ -426,15 +435,15 @@ const Servicos = () => {
           </div>
         </div>
         <div
-          className="w-full h-[calc(50vh+10vw)] bg-cover bg-center lg:h-[640px] lg:w-1/2"
+          className="h-[calc(50vh+10vw)] w-full bg-cover bg-center lg:h-[640px] lg:w-1/2"
           style={{ backgroundImage: `url(${ser5})` }}
         ></div>
       </section>
 
       {/*SECTION 9*/}
-      <section className="w-full h-fit py-16 flex flex-col items-center gap-12 px-[24px] md:px-[34px] lg:px-[44px] lg:flex-row-reverse">
+      <section className="flex h-fit w-full flex-col items-center gap-12 px-[24px] py-16 md:px-[34px] lg:flex-row-reverse lg:px-[44px]">
         <div className="flex flex-col gap-3 text-start lg:w-1/2">
-          <h1 className="text-[32px] font-bold text-center lg:text-start">
+          <h1 className="text-center text-[32px] font-bold lg:text-start">
             Soluções completas em direito trabalhista para proteger seus
             direitos profissionais
           </h1>
@@ -463,47 +472,47 @@ const Servicos = () => {
           </div>
         </div>
         <div
-          className="w-full h-[calc(50vh+10vw)] bg-cover bg-center lg:h-[600px] lg:w-1/2"
+          className="h-[calc(50vh+10vw)] w-full bg-cover bg-center lg:h-[600px] lg:w-1/2"
           style={{ backgroundImage: `url(${ser6})` }}
         ></div>
       </section>
 
       {/*SECTION 10*/}
-      <section className="flex flex-col justify-start py-16 px-[24px] md:px-[34px] lg:px-[44px] lg:py-26 mb-20">
+      <section className="mb-20 flex flex-col justify-start px-[24px] py-16 md:px-[34px] lg:px-[44px] lg:py-26">
         <div className="text-center">
           <h2 className="text-4xl font-bold">Quem confia, recomenda!</h2>
-          <p className="text-base mt-5">Depoimentos de clientes</p>
+          <p className="mt-5 text-base">Depoimentos de clientes</p>
         </div>
 
-        <div className="mt-12 lg:mt-20  grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:mt-20 lg:grid-cols-3">
           <section
-            className="w-full h-fit border-2 border-black p-6"
+            className="h-fit w-full border-2 border-black p-6"
             id="CUSTOM-sombreado-animado"
           >
             <img src={ser_icon14} alt="estrelinhas" />
-            <p className="text-base mt-5">
+            <p className="mt-5 text-base">
               "Profissional excepcional! Desde o primeiro atendimento, senti
               segurança e clareza. Meu processo foi resolvido com rapidez e
               total transparência..."
             </p>
           </section>
           <section
-            className="w-full h-fit border-2 border-black p-6"
+            className="h-fit w-full border-2 border-black p-6"
             id="CUSTOM-sombreado-animado"
           >
             <img src={ser_icon14} alt="estrelinhas" />
-            <p className="text-base mt-5">
+            <p className="mt-5 text-base">
               "Profissional excepcional! Desde o primeiro atendimento, senti
               segurança e clareza. Meu processo foi resolvido com rapidez e
               total transparência..."
             </p>
           </section>
           <section
-            className="w-full h-fit border-2 border-black p-6 md:col-span-2 lg:col-span-1"
+            className="h-fit w-full border-2 border-black p-6 md:col-span-2 lg:col-span-1"
             id="CUSTOM-sombreado-animado"
           >
             <img src={ser_icon14} alt="estrelinhas" />
-            <p className="text-base mt-5">
+            <p className="mt-5 text-base">
               "Profissional excepcional! Desde o primeiro atendimento, senti
               segurança e clareza. Meu processo foi resolvido com rapidez e
               total transparência..."
@@ -514,22 +523,25 @@ const Servicos = () => {
 
       {/*SECTION 11*/}
       <section
-        className="w-full h-fit bg-cover bg-center"
+        className="h-fit w-full bg-cover bg-center"
         style={{ backgroundImage: `url(${ser7})` }}
       >
-        <div className="w-full h-fit py-16 flex flex-col text-white gap-5 text-start bg-[rgba(0,0,0,0.7)] px-[24px] md:px-[34px] lg:px-[44px] lg:py-28">
-          <h1 className="text-4xl lg:text-5xl font-bold">
+        <div className="flex h-fit w-full flex-col gap-5 bg-[rgba(0,0,0,0.7)] px-[24px] py-16 text-start text-white md:px-[34px] lg:px-[44px] lg:py-28">
+          <h1 className="text-4xl font-bold lg:text-5xl">
             Sua jornada jurídica começa aqui
           </h1>
           <p className="text-[18px]">
             Entre em contato com Leandro hoje mesmo para discutir suas
             necessidades jurídicas e agendar uma consulta personalizada.
           </p>
-          <div className="flex gap-4 justify-start w-full">
-            <button className="px-6 py-3 bg-white text-black hover:bg-gray-100 transition border-none">
+          <div className="flex w-full justify-start gap-4">
+            <button
+              className="border-none bg-white px-6 py-3 text-black transition hover:bg-gray-100"
+              onClick={exibirFormularioNoModal}
+            >
               Contato
             </button>
-            <button className="px-6 py-3 bg-transparent text-white shadow-[inset_0_0_0_1px_white] hover:bg-black hover:text-white transition">
+            <button className="bg-transparent px-6 py-3 text-white shadow-[inset_0_0_0_1px_white] transition hover:bg-black hover:text-white">
               Saiba Mais
             </button>
           </div>
