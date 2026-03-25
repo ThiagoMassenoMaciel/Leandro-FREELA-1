@@ -1,4 +1,4 @@
-const endpoint_QUERY_URL_PARAMS = qs.stringify(
+```const endpoint_QUERY_URL_PARAMS = qs.stringify(
 {
 populate: {
 Sobre_sessaoUM: { // ✅ nome exato do atributo no schema
@@ -18,7 +18,6 @@ fields: ["url"],
 },
 { encodeValuesOnly: true },
 );
-
 ```
 
 ---
@@ -36,6 +35,7 @@ fields: ["url"],
 ## Verificação rápida no Postman
 
 Teste primeiro com:
-```
 
+```
 GET http://localhost:1337/api/pagina-sobre?populate=\*
+```
