@@ -473,8 +473,8 @@ const FormularioJuridico4 = () => {
       </label>
 
       <p className="my-2 text-sm">
-        Click no botão enviar para ter o link das redes sociais de Leandro Viana
-        e contato do whatsapp
+        Click no botão "enviar formulário"para ter o link das redes sociais de
+        Leandro Viana e contato do whatsapp
       </p>
 
       <button

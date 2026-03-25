@@ -50,8 +50,10 @@ async function load_data_to_homepage() {
 const Home = () => {
   /*
   const { data: homeData, loading, error } = useStrapi("pagina-home");
-  */
+ 
   console.log("Building o componente Home");
+ */
+
   const { homeData, loading, error } = useGetDataHome();
   /*
   console.log("homeData:", homeData);

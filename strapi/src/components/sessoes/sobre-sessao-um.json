@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sessoes_sobre_sessao_ums",
+  "info": {
+    "displayName": "Sobre_sessaoUM"
+  },
+  "options": {},
+  "attributes": {
+    "cabecalho": {
+      "type": "component",
+      "component": "elementos.cabecalho",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

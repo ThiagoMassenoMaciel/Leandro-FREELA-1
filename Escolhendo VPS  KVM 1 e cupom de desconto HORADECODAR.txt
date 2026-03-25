@@ -1,0 +1,120 @@
+[User]
+quando for pagar paga o valor de uma vez ? não é dividido a parcela do KVM1 de 30 reais durante 12 meses não ?
+(03/03/2026 21:55)
+
+[Kodee]
+Ótima pergunta! Vejo que você está visualizando nossos planos VPS KVM no site da Hostinger Brasil.
+
+Na Hostinger Brasil, você pode sim parcelar o pagamento do seu VPS (como o **KVM 1**) em até 12 vezes no cartão de crédito, dependendo do valor total e das condições do seu banco. O valor exibido (por exemplo, R$30/mês) é referente ao preço mensal, mas ao finalizar a compra, você pode escolher pagar à vista ou dividir em parcelas.
+
+💡 **Dica:** A disponibilidade de parcelas e possíveis juros depende do seu banco e bandeira do cartão. O valor total do plano será dividido conforme a opção de parcelamento escolhida na finalização da compra.
+
+Pronto para garantir seu VPS com o melhor preço? Se quiser, posso te enviar o link direto para o carrinho com o plano **KVM 1**!
+(03/03/2026 21:55)
+
+[User]
+a minha aplicação é postegreSQL , strapi versao 5 e node.js e javascript e react , css , tailwind . O meu site é full stack , ele é um site institucional + blog de um advogado . No dominio "leandrovianna.net" geral vai aparecer somente aqueles elementos do site que as pessoas podem ver e ler . E vou colocar a parte da interface do strapi v5 vai ser executado no subdominio   "admin.leandrovianna.net " Este plano do KVM 1 é suficiente para o meu site ?
+(03/03/2026 21:59)
+
+[Kodee]
+Excelente escolha de tecnologias! Para um site institucional + blog de advogado, usando PostgreSQL, Strapi v5, Node.js, React, CSS e Tailwind, o plano **KVM 1** é perfeito. Ele oferece 4GB de RAM, 50GB de disco NVMe, recursos dedicados e suporte total para subdomínios — ideal para separar o site principal (leandrovianna.net) do painel administrativo (admin.leandrovianna.net).
+
+Você terá liberdade para configurar tudo, garantir performance e segurança, além de backups semanais e acesso root. Pronto para começar? Clique aqui para garantir seu VPS com o melhor preço:
+
+👉 [Contrate o KVM 1 agora](https://www.hostinger.com/br/cart?product=vps:vps_kvm_1&period=12&kodee_generated=1&conversation_id=8c8fcafa-1949-4849-8bf5-da05a7457a66)
+
+Se quiser, posso te ajudar com o domínio ou e-mail profissional também!
+(03/03/2026 22:00)
+
+[User]
+nesse plano kvm1 voces me dá o dominio de graça ? o vps kvm1 de voces vem com ssl de graça ?  qual o preço do dominio leandroviana.net ?
+(03/03/2026 22:01)
+
+[Kodee]
+Ótimas perguntas! No plano **KVM 1 VPS**, o domínio não é gratuito — ele precisa ser adquirido separadamente. Porém, você pode instalar SSL grátis facilmente (via Let's Encrypt) para proteger seu site e painel admin.
+
+O domínio "leandrovianna.net" está disponível por R$82,99/ano (valor sem impostos). Recomendo garantir agora para não perder!
+
+👉 [Adquira o domínio leandrovianna.net](https://www.hostinger.com/br/cart?domain=leandrovianna.net&product_type=domain&kodee_generated=1&conversation_id=8c8fcafa-1949-4849-8bf5-da05a7457a66)
+
+Pronto para lançar seu projeto com segurança e profissionalismo? Se precisar de e-mail ou ajuda na configuração, posso orientar!
+(03/03/2026 22:01)
+
+[User]
+você me disse que O domínio "leandrovianna.net" está disponível por R$82,99/ano (valor sem impostos)., e  eu lhe pergunto , quanto é o valor total do dominio considerando todos os impostos por um ano ? como instalar o ssl gratis no vps ? qual o preço do dominio "leandrovianna.net" por 2 anos ? e qual é  o preço do dominio "leandrovianna.net" por 6 anos ?
+(03/03/2026 22:04)
+
+[Kodee]
+Ótimas perguntas! Vou esclarecer cada ponto:
+
+1. **Valor do domínio com impostos:**  
+O preço base do domínio "leandrovianna.net" é R$82,99/ano, mas o valor final com impostos só aparece no carrinho de compras, pois depende do seu estado e tipo de imposto aplicado. Basta clicar no link do domínio, avançar para o carrinho e conferir o valor total antes de finalizar.
+
+2. **Instalação de SSL grátis no VPS:**  
+Você pode instalar SSL gratuito (Let's Encrypt) no seu VPS usando o Certbot. Basta acessar seu VPS via SSH e executar:
+```bash
+sudo apt update
+sudo apt install certbot
+sudo certbot certonly --standalone -d leandrovianna.net -d admin.leandrovianna.net
+```
+Depois, configure o SSL no seu servidor web (Nginx/Apache). Se precisar de um passo a passo visual, confira nosso guia:  
+👉 [Guia SSL Hostinger](https://hostinger.navattic.com/SSLcertificate)
+
+3. **Preço do domínio por 2 anos:**  
+R$173,98 (valor base, sem impostos).
+
+4. **Preço do domínio por 6 anos:**  
+No momento, a Hostinger oferece registro de até 3 anos para ".net". Para períodos maiores, você pode renovar após o registro inicial.
+
+Pronto para garantir seu domínio e VPS? Clique nos links e confira o valor final no carrinho!
+(03/03/2026 22:04)
+
+[User]
+O KVM 1 suporta PostgreSQL e Node.js?
+(03/03/2026 22:05)
+
+[Kodee]
+Sim, o **KVM 1 VPS** suporta perfeitamente **PostgreSQL** e **Node.js**!  
+Você terá recursos dedicados, acesso root e liberdade total para instalar e configurar ambos — ideal para aplicações modernas e full stack como a sua.
+
+💡 **Dica:** O VPS permite instalar qualquer versão do PostgreSQL e Node.js, além de frameworks como Strapi e React, sem limitações de hospedagem compartilhada.
+
+Pronto para começar? Garanta seu VPS e tenha controle total sobre seu ambiente! Se precisar de um tutorial para instalar PostgreSQL ou Node.js, posso enviar o passo a passo.
+(03/03/2026 22:05)
+
+[User]
+o kvm1 suporta strapi versao 5 ?
+(03/03/2026 22:05)
+
+[Kodee]
+Sim! O **KVM 1 VPS** suporta totalmente o **Strapi v5**. Você pode instalar e rodar qualquer versão do Strapi, incluindo a mais recente, graças ao acesso root e recursos dedicados do VPS.
+
+Inclusive, a Hostinger oferece templates de VPS com Strapi pré-instalado, facilitando ainda mais o setup.  
+Você terá liberdade para configurar o painel admin, conectar com PostgreSQL e rodar seu site full stack sem restrições.
+
+Pronto para lançar seu projeto com Strapi v5? Se quiser, posso te enviar o link direto para contratação e um guia visual de instalação!
+(03/03/2026 22:05)
+
+[User]
+estas parcelas de 30 reais por mes vai continuar os 30 reis por mês ou vai aumentar apartir do terceiro mes pagando kvm1 ?
+(03/03/2026 22:07)
+
+[Kodee]
+Ótima dúvida! O valor das parcelas do **KVM 1** (R$30/mês) permanece fixo durante todo o período contratado, desde que você escolha o plano anual e parcele no cartão de crédito. Não há aumento nas parcelas após o terceiro mês — você paga exatamente o valor dividido conforme a opção escolhida na hora da compra.
+
+💡 **Dica:** O preço só muda se você renovar ou contratar um novo período após o vencimento. O valor das parcelas atuais é garantido até o fim do contrato.
+
+Pronto para garantir seu VPS com preço fixo? Se quiser, posso te ajudar a finalizar a compra!
+(03/03/2026 22:07)
+
+[User]
+kvm1 por 2 anos custa quanto ?
+(03/03/2026 22:08)
+
+[Kodee]
+O **KVM 1 VPS** por 2 anos sai por R$29,99/mês, totalizando 24 parcelas (valor base, sem impostos).  
+Esse preço é promocional e pode mudar, então recomendo garantir agora para aproveitar o desconto!
+
+Você pode conferir o valor final com impostos no carrinho antes de concluir a compra.  
+Pronto para contratar e garantir seu VPS por 2 anos com preço fixo?
+(03/03/2026 22:08)

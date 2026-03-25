@@ -729,6 +729,24 @@ export interface ApiPaginaSobrePaginaSobre extends Struct.SingleTypeSchema {
       "api::pagina-sobre.pagina-sobre"
     >;
     publishedAt: Schema.Attribute.DateTime;
+    Sobre_sessaoDOIS: Schema.Attribute.Component<
+      "sessoes.sobre-sessao-dois",
+      false
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    Sobre_sessaoUM: Schema.Attribute.Component<
+      "sessoes.sobre-sessao-um",
+      false
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> &
       Schema.Attribute.Private;

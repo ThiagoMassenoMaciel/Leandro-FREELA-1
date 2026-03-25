@@ -334,6 +334,16 @@ export interface SessoesSobreSessaoDois extends Struct.ComponentSchema {
   };
 }
 
+export interface SessoesSobreSessaoUm extends Struct.ComponentSchema {
+  collectionName: "components_sessoes_sobre_sessao_ums";
+  info: {
+    displayName: "Sobre_sessaoUM";
+  };
+  attributes: {
+    cabecalho: Schema.Attribute.Component<"elementos.cabecalho", false>;
+  };
+}
+
 declare module "@strapi/strapi" {
   export module Public {
     export interface ComponentSchemas {
@@ -361,6 +371,7 @@ declare module "@strapi/strapi" {
       "sessoes.servicos-sessao-tres": SessoesServicosSessaoTres;
       "sessoes.servicos-sessao-um": SessoesServicosSessaoUm;
       "sessoes.sobre-sessao-dois": SessoesSobreSessaoDois;
+      "sessoes.sobre-sessao-um": SessoesSobreSessaoUm;
     }
   }
 }

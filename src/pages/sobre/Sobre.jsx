@@ -12,6 +12,7 @@ const Sobre = () => {
   const exibirFormularioNoModal = () => {
     setShowModal(true); // Abre o modal
   };
+
   return (
     <>
       {showModal && <ModalFormContato onClose={() => setShowModal(false)} />}
@@ -37,6 +38,7 @@ const Sobre = () => {
           </div>
         </div>
       </section>
+
       {/*SECTION 2*/}
 
       <section className="flex h-fit w-full flex-col gap-8 bg-white px-[24px] py-16 md:px-[34px] lg:flex-row-reverse lg:px-[44px]">
@@ -84,7 +86,10 @@ const Sobre = () => {
               e descobrir como posso ajudá-lo.
             </p>
             <div className="mt-4 w-full text-center">
-              <button className="bg-white px-6 py-3 text-black transition hover:font-bold">
+              <button
+                className="bg-white px-6 py-3 text-black transition hover:font-bold"
+                onClick={exibirFormularioNoModal}
+              >
                 Contato
               </button>
             </div>

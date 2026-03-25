@@ -353,7 +353,6 @@
       18:36 até 19:36 ----- 1h
       19h   até 20:28 ----- 1h28'
 
-
 27-10-2025
       10:20 até 11:40
       18:03 até 19:33 ----- 1h 30 so para resolver o problema de renderizar markdown em react
@@ -463,5 +462,13 @@
 
 21-12-2025
     00:00 até 00:25 ---- 25'
-    09:52 até 
+    09:52 até 12:26 ---- 2h34'
+
+17-03-2026
+    17:45 até 18: 15
+    19:05 até 20:30
+
+    put /api/pagina-sobre
+    get /api/pagina-sobre
+    delete /
 ```

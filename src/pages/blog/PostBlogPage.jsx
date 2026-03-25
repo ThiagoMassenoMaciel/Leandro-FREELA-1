@@ -13,11 +13,16 @@ import { Share2 } from "lucide-react";
 
 import ScrollToTop from "../../components/ScrollToTop.jsx";
 import CALCULARtempoDeLeituraDesteBLOG from "../../../testesFUNCOES/CalcTIME.jsx";
+import exibirFormularioNoModal from "../../components/ModalFormContato.jsx";
+import ModalFormContato from "../../components/ModalFormContato.jsx";
 
 import "./postBlogPage.css";
 
 const PostBlogPage = () => {
   const { id } = useParams(); // Pega o ID da URL
+
+  const [showModal, setShowModal] = useState(false); // Novo estado para modal
+
   const [postData, setPostData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -119,6 +124,10 @@ const PostBlogPage = () => {
     createdAt,
   } = postData;
 
+  const exibirFormularioNoModal = () => {
+    setShowModal(true); // Abre o modal
+  };
+
   return (
     <>
       {/*console.log("PostBlogPage - conteudo_blog:", conteudo_blog)*/}
@@ -165,6 +174,7 @@ const PostBlogPage = () => {
     //-------------------------------------------------------------
     */}
 
+      {showModal && <ModalFormContato onClose={() => setShowModal(false)} />}
       <article className="w-full bg-white">
         {/* Breadcrumb */}
 
@@ -246,6 +256,7 @@ const PostBlogPage = () => {
                       <li className="no-underline">
                         <a
                           href={`#${block.link_id}`}
+                          key={index}
                           className="h-fit w-full px-3 py-1 font-bold text-black no-underline hover:bg-white lg:block"
                         >
                           {block.Texto_Cabecalho}
@@ -272,7 +283,10 @@ const PostBlogPage = () => {
             <p className="mb-8 text-lg text-gray-700">
               Entre em contato para uma consultoria especializada
             </p>
-            <button className="bg-black px-8 py-4 text-white transition hover:bg-gray-900">
+            <button
+              className="bg-black px-8 py-4 text-white transition hover:bg-gray-900"
+              onClick={exibirFormularioNoModal}
+            >
               Agendar Consultoria
             </button>
           </div>

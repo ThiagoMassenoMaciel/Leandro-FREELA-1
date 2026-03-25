@@ -14,5 +14,26 @@
       "localized": true
     }
   },
-  "attributes": {}
+  "attributes": {
+    "Sobre_sessaoUM": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sessoes.sobre-sessao-um",
+      "repeatable": false
+    },
+    "Sobre_sessaoDOIS": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sessoes.sobre-sessao-dois",
+      "repeatable": false
+    }
+  }
 }
