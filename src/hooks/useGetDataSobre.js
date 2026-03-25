@@ -5,30 +5,21 @@ import qs from "qs";
 const endpoint_QUERY_URL_PARAMS = qs.stringify(
   {
     populate: {
-      sessoes: {
-        on: {
-          "sessoes.sobre-sessao-um": {
-            populate: {
-              cabecalho: {
-                populate:{
-                  titulo: true,
-                  subtitulo: true,
-                },
-              },
-            },
+      Sobre_sessaoUM: {
+        populate: {
+          cabecalho: {
+            // ✅ componente aninhado primeiro
+            fields: ["titulo", "subtitulo"], // ✅ aí sim os campos escalares
           },
-          "sessoes.sobre-sessao-dois":{
-            populate:{
-              introducao_pessoal:{
-                populate:{
-                  titulo: true,
-                  subtitulo: true,
-                }
-              },
-              imagem_sobre_2:{
-                fields:["url"],
-              },
-            },
+        },
+      },
+      Sobre_sessaoDOIS: {
+        populate: {
+          introducao_pessoal: {
+            fields: ["titulo", "subtitulo"],
+          },
+          imagem_sobre_2: {
+            fields: ["url"],
           },
         },
       },
@@ -36,7 +27,7 @@ const endpoint_QUERY_URL_PARAMS = qs.stringify(
   },
   { encodeValuesOnly: true },
 );
-export function useGetDataHome() {
+export function useGetDataSobre() {
   const {
     data: sobreData,
     loading,
@@ -45,4 +36,4 @@ export function useGetDataHome() {
   return { sobreData, loading, error };
 }
 
-export default useGetDataHome;
+export default useGetDataSobre;

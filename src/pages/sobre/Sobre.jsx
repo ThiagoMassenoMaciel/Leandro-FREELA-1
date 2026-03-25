@@ -4,9 +4,19 @@ import s1 from "../../assets/sobre1.png";
 import s2 from "../../assets/sobre2.png";
 import s3 from "../../assets/sobre3.png";
 
+import { useGetDataSobre } from "../../hooks/useGetDataSobre.js";
 import ModalFormContato from "../../components/ModalFormContato.jsx";
 
 const Sobre = () => {
+  const { sobreData, loading, error } = useGetDataSobre();
+  console.log("\n--- Página Sobre ---\n\n");
+  console.log("Carregando dados da página Sobre:", loading);
+  if (error) {
+    console.error("Erro ao carregar dados da página Sobre:", error);
+  }
+
+  console.log("Dados da página Sobre:", sobreData);
+
   const [showModal, setShowModal] = useState(false); // Novo estado para modal
 
   const exibirFormularioNoModal = () => {
@@ -28,12 +38,11 @@ const Sobre = () => {
         >
           <div className="flex h-fit w-full max-w-[768px] flex-col gap-5">
             <h2 className="text-[40px] font-bold md:text-5xl">
-              Excelência e Compromisso
+              {sobreData?.Sobre_sessaoUM?.cabecalho?.titulo || "Carregando..."}
             </h2>
             <p className="text-base">
-              Descubra soluções jurídicas especializadas e adaptadas às suas
-              necessidades com o escritório de advocacia especializado de
-              Leandro Viana.
+              {sobreData?.Sobre_sessaoUM?.cabecalho?.subtitulo ||
+                "Carregando..."}
             </p>
           </div>
         </div>
@@ -44,15 +53,12 @@ const Sobre = () => {
       <section className="flex h-fit w-full flex-col gap-8 bg-white px-[24px] py-16 md:px-[34px] lg:flex-row-reverse lg:px-[44px]">
         <div className="flex h-fit w-full flex-col gap-5 md:gap-8 lg:gap-10">
           <h2 className="text-start text-4xl font-bold md:text-5xl">
-            Conheça Leandro Viana: Seu Consultor Jurídico de Confiança
+            {sobreData?.Sobre_sessaoDOIS?.introducao_pessoal?.titulo ||
+              "Carregando..."}
           </h2>
           <p className="text-[18px]">
-            Leandro Viana é um advogado dedicado, com sólida formação acadêmica,
-            formado em Direito por uma prestigiada universidade. Possui
-            certificação em diversas especialidades jurídicas, incluindo direito
-            de família e direito contratual, garantindo suporte integral aos
-            seus clientes. Com anos de experiência, Leandro se dedica a fornecer
-            soluções jurídicas personalizadas e adaptadas aos seus interesses.
+            {sobreData?.Sobre_sessaoDOIS?.introducao_pessoal?.subtitulo ||
+              "Carregando..."}
           </p>
 
           <div className="mt-4 flex w-full justify-start gap-4">
@@ -74,7 +80,9 @@ const Sobre = () => {
       {/*SECTION 3*/}
       <section
         className="h-fit w-full bg-cover bg-center"
-        style={{ backgroundImage: `url(${s3})` }}
+        style={{
+          backgroundImage: `url(${UseStrapiURL()}${sobreData?.Sobre_sessaoDOIS?.imagem_sobre_2?.url})`,
+        }}
       >
         <div className="h-full w-full bg-[rgba(0,0,0,0.8)] px-[24px] py-16 md:px-[34px] lg:px-[44px] lg:py-26">
           <div className="mx-auto flex h-fit w-full max-w-[768px] flex-col items-center justify-center gap-5 text-white">
