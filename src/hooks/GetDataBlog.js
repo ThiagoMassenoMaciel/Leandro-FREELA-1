@@ -36,7 +36,7 @@ const endpoint_QUERY_URL_PARAMS = qs.stringify({
   },
 });
 
-export function useGetDataBlog() {
+export function GetDataBlog() {
   const {
     data: blogData,
     loading,
@@ -46,4 +46,4 @@ export function useGetDataBlog() {
   return { blogData, loading, error };
 }
 
-export default useGetDataBlog;
+export default GetDataBlog;

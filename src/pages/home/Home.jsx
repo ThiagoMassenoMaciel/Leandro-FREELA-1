@@ -29,7 +29,7 @@ import h_icon5 from "../../assets/h_icon5.svg";
 
 //import { useStrapi } from "../../hooks/Load_data_to_webpage.jsx";
 
-import { useGetDataHome } from "../../hooks/useGetDataHome.js";
+import GetDataHome from "../../hooks/GetDataHome.js";
 import ModalFormContato from "../../components/ModalFormContato.jsx";
 import UseStrapiURL from "../../hooks/UseStrapiURL.js";
 import { useNewsletter } from "../../hooks/useNewsletter.js";
@@ -54,7 +54,7 @@ const Home = () => {
   console.log("Building o componente Home");
  */
 
-  const { homeData, loading, error } = useGetDataHome();
+  const { homeData, loading, error } = GetDataHome();
   /*
   console.log("homeData:", homeData);
   console.log("sessoes", homeData?.sessoes[0].texto);

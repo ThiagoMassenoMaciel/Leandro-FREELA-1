@@ -5,6 +5,7 @@ import s2 from "../../assets/sobre2.png";
 import s3 from "../../assets/sobre3.png";
 
 import { useGetDataSobre } from "../../hooks/useGetDataSobre.js";
+import UseStrapiURL from "../../hooks/UseStrapiURL.js";
 import ModalFormContato from "../../components/ModalFormContato.jsx";
 
 const Sobre = () => {
@@ -73,7 +74,9 @@ const Sobre = () => {
 
         <div
           className="h-[65vh] w-full bg-cover bg-center px-[24px] min-[375px]:h-[calc(70vh+50vw)] min-[687px]:h-[calc(80vh+60vw)] md:px-[34px] lg:h-[calc(400px+20vw)] lg:px-[44px]"
-          style={{ backgroundImage: `url(${s2})` }}
+          style={{
+            backgroundImage: `url(${UseStrapiURL()}${sobreData?.Sobre_sessaoDOIS?.imagem_sobre_2?.url})`,
+          }}
         ></div>
       </section>
 
@@ -81,7 +84,7 @@ const Sobre = () => {
       <section
         className="h-fit w-full bg-cover bg-center"
         style={{
-          backgroundImage: `url(${UseStrapiURL()}${sobreData?.Sobre_sessaoDOIS?.imagem_sobre_2?.url})`,
+          backgroundImage: `url(${s3})`,
         }}
       >
         <div className="h-full w-full bg-[rgba(0,0,0,0.8)] px-[24px] py-16 md:px-[34px] lg:px-[44px] lg:py-26">

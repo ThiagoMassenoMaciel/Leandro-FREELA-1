@@ -5,7 +5,7 @@ import blog1 from "../../assets/blog1.png";
 import icon_lerMAIS from "../../assets/icon_lerMAIS.svg";
 import BlogMiniatura from "./BlogMiniatura";
 
-import { useGetDataBlog } from "../../hooks/useGetDataBlog.js";
+import { GetDataBlog } from "../../hooks/GetDataBlog.js";
 import UseStrapiURL from "../../hooks/UseStrapiURL.js";
 import { BlocksRenderer } from "@strapi/blocks-react-renderer";
 
