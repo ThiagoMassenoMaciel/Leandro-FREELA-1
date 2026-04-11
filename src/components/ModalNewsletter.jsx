@@ -22,7 +22,7 @@ const ModalNewsletter = ({ type, message, onClose, onRetry }) => {
       />
 
       {/* Modal */}
-      <div className="fixed top-1/2 left-1/2 z-[1200] w-[90%] max-w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white p-6 shadow-2xl sm:max-w-[500px]">
+      <div className="fixed top-1/2 left-1/2 z-[1200] w-[90%] max-w-[500px] -translate-x-1/2 -translate-y-1/2 bg-white p-6 shadow-2xl sm:max-w-[500px]">
         {/* Botão Fechar (X) */}
         <button
           onClick={onClose}
@@ -54,7 +54,7 @@ const ModalNewsletter = ({ type, message, onClose, onRetry }) => {
           {isSuccess ? (
             <button
               onClick={onClose}
-              className="rounded-lg bg-green-500 px-8 py-3 font-bold text-white transition hover:bg-green-600"
+              className="bg-green-500 px-8 py-3 font-bold text-white transition hover:bg-green-600"
             >
               Fechar
             </button>
@@ -62,13 +62,13 @@ const ModalNewsletter = ({ type, message, onClose, onRetry }) => {
             <>
               <button
                 onClick={onClose}
-                className="rounded-lg bg-gray-300 px-6 py-3 font-bold text-black transition hover:bg-gray-400"
+                className="bg-gray-300 px-6 py-3 font-bold text-black transition hover:bg-gray-400"
               >
                 Cancelar
               </button>
               <button
                 onClick={onRetry}
-                className="rounded-lg bg-black px-6 py-3 font-bold text-white transition hover:bg-gray-800"
+                className="bg-black px-6 py-3 font-bold text-white transition hover:bg-gray-800"
               >
                 Tentar Novamente
               </button>

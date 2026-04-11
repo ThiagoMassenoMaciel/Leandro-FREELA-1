@@ -76,9 +76,9 @@ export default ({ strapi }) => {
 
       const htmlBoasVindas = `
         <div style="font-family: Arial, sans-serif; line-height:1.8; color:#222; max-width:600px; margin:0 auto;">
-          <h1 style="color:#111; margin-bottom:24px;">Bem-vindo à Nossa Newsletter! 🎉</h1>
+          <h1 style="color:#111; margin-bottom:24px;">Bem-vindo à Newsletter do advogado Leandro Viana! 🎉</h1>
           <p style="font-size:16px; margin-bottom:16px;">
-            Olá! Obrigado por se inscrever na nossa newsletter jurídica.
+            Olá! Obrigado por se inscrever na minha newsletter jurídica.
           </p>
           <p style="font-size:16px; margin-bottom:16px;">
             A partir de agora, você receberá atualizações exclusivas, dicas jurídicas e os últimos artigos diretamente no seu email.
