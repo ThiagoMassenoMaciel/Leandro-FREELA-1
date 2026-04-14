@@ -61,6 +61,7 @@ export default ({ strapi }) => {
       } catch (err) {
         strapi.log.error(`Erro ao enviar para ${email}: ${err.message}`);
       }
+      
     }
   });
 
