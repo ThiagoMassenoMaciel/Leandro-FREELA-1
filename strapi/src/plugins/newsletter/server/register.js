@@ -28,6 +28,17 @@ export default ({ strapi }) => {
     //se o que foi criado no content type do strapi foi um post de caso juridico o link deve ter baseUrl/galeria/slug se o que foi criado no content type do strapi foi um post blog o link deve ter baseUrl/blog/slug
     const link = `${baseUrl}/${novoPost.slug_do_blog ? "blog" : "galeria"}/${slug}`;
 
+    // estou colocandoestes console.log para monitorar o processo de envio de email, para verificar se o processo está sendo iniciado corretamente quando um novo post é publicado
+    {
+      strapi.log.info(
+        `Novo post publicado: ${titulo} - Enviando emails para inscritos...`,
+      ); // Log para monitorar o processo
+      console.log(`\n\n\n\nNovo post publicado:\n\n`); // Log para monitorar o processo
+      console.log(`Título: ${titulo}\n`);
+      console.log(`Resumo: ${resumo}\n`);
+      console.log(`Link: ${link}\n`);
+    }
+
     const inscritos = await strapi.db
       .query("api::inscritos-newsletter.inscritos-newsletter")
       .findMany({ select: ["email"] });
@@ -61,7 +72,6 @@ export default ({ strapi }) => {
       } catch (err) {
         strapi.log.error(`Erro ao enviar para ${email}: ${err.message}`);
       }
-      
     }
   });
 
