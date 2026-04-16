@@ -28,8 +28,8 @@ export default ({ env }) => ({
         // ignoreTLS: true, // Descomente esta linha APENAS se você enfrentar problemas de certificado de segurança no servidor local
       },
       settings: {
-        defaultFrom: env("GMAIL_DEFAULT_FROM", "eestudarti@gmail.com"),
-        defaultReplyTo: env("GMAIL_DEFAULT_REPLY_TO", "eestudarti@gmail.com"),
+        defaultFrom: env("GMAIL_DEFAULT_FROM", "umteste919@gmail.com"),
+        defaultReplyTo: env("GMAIL_DEFAULT_REPLY_TO", "umteste919@gmail.com"),
       },
     },
   },
