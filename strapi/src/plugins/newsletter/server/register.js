@@ -125,7 +125,10 @@ export default ({ strapi }) => {
   });
 };
 
-*/
+
+
+
+SECOND TRY TO SOLVE THE PROBLEM OF THE LIFECYCLE HOOK NOT WORKING IN STRAPI V4.10.5
 
 export default ({ strapi }) => {
   // 1º Middleware: Envio de email automático ao publicar um novo post
@@ -144,11 +147,7 @@ export default ({ strapi }) => {
 
     const publishedNow =
       (ctx.action === "create" && !!novoPost.publishedAt) ||
-      (ctx.action === "update" &&
-        !!novoPost.publishedAt &&
-        !!ctx.previousValue &&
-        !ctx.previousValue.publishedAt);
-
+      (ctx.action === "update" && !!novoPost.publishedAt && !!ctx.previousValue && !ctx.previousValue.publishedAt);
     if (!publishedNow) return;
 
     const titulo =
@@ -244,5 +243,149 @@ export default ({ strapi }) => {
         );
       }
     }
+  });
+};
+*/
+
+export default ({ strapi }) => {
+  // 1º Middleware: Envio de email automático ao publicar um novo post
+  strapi.documents.use(async (context, next) => {
+    // 1. Processa a ação no banco de dados PRIMEIRO e captura a resposta final
+    const result = await next();
+
+    // Regra de segurança: se a criação falhar no banco, pare a execução
+    if (!result) return result;
+
+    const BLOG_UID = "api::pagina-do-blog.pagina-do-blog";
+    const CASOS_UID = "api::pagina-casos-juridico.pagina-casos-juridico";
+
+    // 2. Identifica se o alvo da requisição foi o banco de posts
+    const isAlvo = context.uid === BLOG_UID || context.uid === CASOS_UID;
+    if (!isAlvo) return result; // Sempre termine o middleware retornando 'result'
+
+    // 3. Verifica se o post acabou de ser publicado
+    const publishedNow =
+      (context.action === "create" && !!result.publishedAt) ||
+      (context.action === "update" && !!result.publishedAt) ||
+      context.action === "publish";
+
+    if (!publishedNow) return result;
+
+    const titulo =
+      result.titulo_do_blog || result.titulo_caso_juridico || "Novo post";
+    const resumo = result.resumo_do_assunto_do_blog || "";
+    const slug = result.slug_do_blog || result.slug_caso_juridico || "";
+
+    // Atualizado para focar diretamente no URL do Vite/React
+    const baseUrl = process.env.SITE_URL || "http://localhost:5173";
+    const link = `${baseUrl}/${result.slug_do_blog ? "blog" : "galeria"}/${slug}`;
+
+    console.log(`\n\n[LOG] Novo post publicado e aprovado!\n`);
+    console.log(`Título: ${titulo}\nLink: ${link}\n`);
+
+    // 4. Disparo em background (Sem usar "await" externamente para não deixar o Admin lento)
+    strapi.db
+      .query("api::inscritos-newsletter.inscritos-newsletter")
+      .findMany({ select: ["email"] })
+      .then(async (inscritos) => {
+        if (!inscritos?.length) return;
+
+        const html = `
+          <div style="font-family: Arial, sans-serif; line-height:1.6; color:#222;">
+            <h2 style="margin:0 0 12px 0;">${titulo}</h2>
+            <p style="margin:0 0 16px 0;">${resumo}</p>
+            <p style="margin:0 0 24px 0;">
+              <a href="${link}" style="background:#111;color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none;display:inline-block;">
+                Ler post completo
+              </a>
+            </p>
+            <p style="font-size:12px;color:#666;">Você recebeu este e-mail porque se inscreveu na nossa newsletter.</p>
+            <h3>Advogado Leandro Viana</h3>
+          </div>
+        `;
+
+        for (const { email } of inscritos) {
+          try {
+            await strapi
+              .plugin("email")
+              .service("email")
+              .send({
+                to: email,
+                subject: `Leandro Viana - Novo post publicado: ${titulo}`,
+                html,
+              });
+          } catch (err) {
+            // O "instanceof Error" resolve o aviso do VS Code
+            strapi.log.error(
+              `Erro ao enviar para ${email}: ${err instanceof Error ? err.message : String(err)}`,
+            );
+          }
+        }
+      });
+
+    // 5. Retorna o documento gravado de volta para a API
+    return result;
+  });
+
+  // 2º Middleware: Email de boas-vindas ao cadastrar na newsletter
+  strapi.documents.use(async (context, next) => {
+    // 1. Processa a inclusão do email no banco e salva a variável 'result'
+    const result = await next();
+
+    if (!result) return result;
+
+    // 2. Trava a porta: Isso só rola se for uma adição na coleção de Inscritos
+    if (
+      context.action === "create" &&
+      context.uid === "api::inscritos-newsletter.inscritos-newsletter"
+    ) {
+      const emailInscrito = result.email;
+      if (!emailInscrito) return result;
+
+      const htmlBoasVindas = `
+        <div style="font-family: Arial, sans-serif; line-height:1.8; color:#222; max-width:600px; margin:0 auto;">
+          <h1 style="color:#111; margin-bottom:24px;">Bem-vindo à Newsletter do advogado Leandro Viana! 🎉</h1>
+          <p style="font-size:16px; margin-bottom:16px;">
+            Olá! Obrigado por se inscrever na minha newsletter jurídica.
+          </p>
+          <p style="font-size:16px; margin-bottom:16px;">
+            A partir de agora, você receberá atualizações exclusivas, dicas jurídicas e os últimos artigos diretamente no seu email.
+          </p>
+          <p style="margin:24px 0;">
+            <a href="${process.env.SITE_URL || "http://localhost:5173"}/blogs" 
+               style="background:#111;color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;display:inline-block;">
+              Explorar Blog
+            </a>
+          </p>
+          <hr style="border:none;border-top:1px solid #ddd;margin:32px 0;">
+          <p style="font-size:12px;color:#666;">
+            Se você não se inscreveu, ignore este email.
+          </p>
+        </div>
+      `;
+
+      // 3. Executa o disparo do serviço com Promises limpas
+      strapi
+        .plugin("email")
+        .service("email")
+        .send({
+          to: emailInscrito,
+          subject: "Bem-vindo à Newsletter Jurídica!",
+          html: htmlBoasVindas,
+        })
+        .then(() => {
+          strapi.log.info(
+            `Email de boas-vindas enviado para: ${emailInscrito}`,
+          );
+        })
+        .catch((error) => {
+          strapi.log.error(
+            `Erro ao enviar email de boas-vindas: ${error instanceof Error ? error.message : String(error)}`,
+          );
+        });
+    }
+    
+    // 4. Fundamental no Strapi 5: retorne sempre o result.
+    return result;
   });
 };
