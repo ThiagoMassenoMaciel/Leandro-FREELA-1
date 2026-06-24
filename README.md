@@ -69,6 +69,10 @@
 
 # o ideal seria instalar o strapi depois de ja ter criado o banco no neon servless postgresql, e `conectar strapi ao BD feiot no neon`
 
+# maior problema que encontrei foi : configurei todos arquivos do servidor de email no strapi e nao funcionava . `O motivo de ainda não ter funcionado (e do terminal continuar mudo) é que, no ecossistema do Strapi, não basta apenas criar um arquivo chamado register.js dentro da pasta do plugin e ativá-lo no plugins.js. O arquivo principal do seu plugin (o strapi-server.js) atua como um porteiro: ele precisa obrigatoriamente importar o register.js e "entregá-lo" para o servidor. Se essa ponte não estiver escrita explicitamente lá, o Strapi liga o plugin, mas ignora o código dentro dele.`
+
+## [link documentação middleware do strapi](https://docs.strapi.io/cms/api/document-service/middlewares)
+
 ```
 4h
 10-07-2025  4h`
@@ -499,7 +503,11 @@
 
 28-04-2026
 
-  17:43 até 
+  17:43 até 18:43
+
+30-05-2026
+  18:54 até 20:13
+  21:25 até 23:23
 
 
 

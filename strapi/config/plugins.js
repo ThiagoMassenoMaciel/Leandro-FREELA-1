@@ -32,5 +32,10 @@ export default ({ env }) => ({
         defaultReplyTo: env("GMAIL_DEFAULT_REPLY_TO", "umteste919@gmail.com"),
       },
     },
+    // 2. ATIVANDO O SEU PLUGIN LOCAL DA NEWSLETTER
+    newsletter: {
+      enabled: true,
+      resolve: "./src/plugins/newsletter",
+    },
   },
 });
