@@ -609,7 +609,7 @@ export default ({ strapi }) => {
             A partir de agora, você receberá atualizações exclusivas, dicas jurídicas e os últimos artigos diretamente no seu email.
           </p>
           <p style="margin:24px 0;">
-            <a href="${process.env.SITE_URL || "http://localhost:5173"}/blogs" 
+            <a href="${process.env.VITE_FRONTEND_URL || "http://localhost:5173"}/blogs" 
                style="background:#111;color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;display:inline-block;">
               Explorar Blog
             </a>
@@ -623,9 +623,9 @@ export default ({ strapi }) => {
         .plugin("email")
         .service("email")
         .send({
-          to: emailInscrito,
+          to: emailInscrito, // adaptando para o que eu pedi aqui nao seria valor emailInscrito , seria assim : process.env.VITE_FRONTEND_URL
           subject: "Bem-vindo à Newsletter Jurídica!",
-          html: htmlBoasVindas,
+          html: htmlBoasVindas, // e aqui no payload enviado arquivo pdf
         })
         .then(() =>
           console.log(
@@ -663,7 +663,7 @@ export default ({ strapi }) => {
         const resumo = result.resumo_do_assunto_do_blog || "";
         const slug = result.slug_do_blog || result.slug_caso_juridico || "";
 
-        const baseUrl = process.env.SITE_URL || "http://localhost:5173";
+        const baseUrl = process.env.FRONTEND_URL || "http://localhost:5173";
         const isBlog = context.uid.includes("blog");
         const link = `${baseUrl}/${isBlog ? "blog" : "galeria"}/${slug}`;
 
@@ -718,7 +718,6 @@ export default ({ strapi }) => {
       }
     }
 
-    // 3. RETORNO OBRIGATÓRIO: Devolve o documento criado para a API (e para a tela do React)
     return result;
   });
 };

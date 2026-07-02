@@ -1,4 +1,8 @@
 import sobre2 from "../../assets/sobre2.png";
+//about newsletter
+import h14 from "../../assets/home14.png";
+import { useNewsletter } from "../../hooks/useNewsletter.js";
+import ModalNewsletter from "../../components/ModalNewsletter.jsx";
 
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
@@ -95,6 +99,16 @@ const PostBlogPage = () => {
     };
   }, []);
 
+  const {
+    email: newsletterEmail,
+    setEmail: setNewsletterEmail,
+    loading: newsletterLoading,
+    modal: newsletterModal,
+    handleSubscribe,
+    closeModal,
+    handleRetry,
+  } = useNewsletter();
+
   if (loading) {
     return (
       <div className="flex h-screen items-center justify-center">
@@ -173,6 +187,14 @@ const PostBlogPage = () => {
       </div>
     //-------------------------------------------------------------
     */}
+      {newsletterModal.show && (
+        <ModalNewsletter
+          type={newsletterModal.type}
+          message={newsletterModal.message}
+          onClose={closeModal}
+          onRetry={handleRetry}
+        />
+      )}
 
       {showModal && <ModalFormContato onClose={() => setShowModal(false)} />}
       <article className="w-full bg-white">
@@ -253,7 +275,7 @@ const PostBlogPage = () => {
                   // Se o objeto for um cabeçalho exibir em uma lista do aside do site
                   if (block.__component === "elementos.bloco-blog-cabecalho") {
                     return (
-                      <li className="no-underline">
+                      <li className="no-underline" key={index}>
                         <a
                           href={`#${block.link_id}`}
                           key={index}
@@ -289,6 +311,51 @@ const PostBlogPage = () => {
             >
               Agendar Consultoria
             </button>
+          </div>
+        </section>
+        {/* subscription into newsletter  */}
+        <section
+          id="newsletter-section"
+          className="h-fit w-full bg-cover bg-center"
+          style={{ backgroundImage: `url(${h14})` }}
+        >
+          <div className="h-full w-full bg-[rgba(0,0,0,0.7)] px-[24px] py-14 md:px-[34px] md:py-26 lg:px-[44px]">
+            <div className="mx-auto flex max-w-[768px] flex-col gap-6 text-center">
+              <h2 className="text-3xl leading-8 font-bold text-white md:text-[38px] md:leading-10 lg:text-[43px] lg:leading-11">
+                Mantenha-se informado com os meus insights jurídicos do meu blog
+              </h2>
+              <p className="text-[18px] text-white">
+                Assine a minha newsletter para receber dicas jurídicas
+                essenciais e as últimas atualizações diretamente na sua caixa de
+                entrada no gmail.
+              </p>
+              <div className="flex w-full flex-col items-center justify-center gap-3 min-[600px]:flex-row">
+                <input
+                  className="w-full border-2 border-white bg-transparent p-3 text-base text-white placeholder-white focus:border-blue-400 focus:outline-none min-[600px]:max-w-[380px]"
+                  type="email"
+                  placeholder="Digite seu e-mail aqui"
+                  name="email_newsletter"
+                  id="email_newsletter"
+                  value={newsletterEmail}
+                  onChange={(e) => setNewsletterEmail(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") handleSubscribe();
+                  }}
+                  disabled={newsletterLoading}
+                />
+                <button
+                  onClick={handleSubscribe}
+                  disabled={newsletterLoading}
+                  className="px-auto w-full bg-white py-3 text-base font-bold text-black transition hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-50 min-[600px]:max-w-[116px]"
+                >
+                  {newsletterLoading ? "Enviando..." : "Inscrever-se"}
+                </button>
+              </div>
+              <p className="w-full text-center text-[14px] text-white">
+                Ao clicar em Inscreva-se agora, você concorda com os meus Termos
+                e Condições disponíveis no rodapé deste site.
+              </p>
+            </div>
           </div>
         </section>
       </article>

@@ -1,9 +1,9 @@
 // src/hooks/UploadAndSubmitForm.js
 import axios from "axios";
-import UseStrapiURL from "./UseStrapiURL.js";
+import UseFrontURL from "./UseFrontURL.js";
 
 const UploadAndSubmitForm = async (formData, pdfBlob, pdfName) => {
-  const BASE_URL = UseStrapiURL();
+  const BASE_URL = UseFrontURL();
 
   console.log(
     "\n formData: \n-------------",
@@ -15,7 +15,7 @@ const UploadAndSubmitForm = async (formData, pdfBlob, pdfName) => {
   );
 
   try {
-    // 1. Faz upload do PDF para o Strapi (retorna o arquivo salvo)
+    // 1. Faz upload do PDF para enviar apartir do email configurado servidor SMTP para si mesmo contendo o arquivo pdf e o título
     const uploadForm = new FormData();
     uploadForm.append("files", pdfBlob, pdfName);
 
